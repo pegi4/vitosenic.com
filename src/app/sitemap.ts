@@ -1,4 +1,4 @@
-import { getAllPostsMeta } from '@/lib/blog';
+import { getAllPostsMeta } from '@/lib/notes';
 import { MetadataRoute } from 'next';
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
@@ -19,7 +19,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       priority: 0.8,
     },
     {
-      url: `${baseUrl}/blog`,
+      url: `${baseUrl}/notes`,
       lastModified: new Date(),
       changeFrequency: 'weekly',
       priority: 0.8,
@@ -31,7 +31,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   
   // Add blog posts to sitemap
   const postRoutes = posts.map(post => ({
-    url: `${baseUrl}/blog/${post.slug}`,
+    url: `${baseUrl}/notes/${post.slug}`,
     lastModified: new Date(post.date),
     changeFrequency: 'monthly',
     priority: 0.7,

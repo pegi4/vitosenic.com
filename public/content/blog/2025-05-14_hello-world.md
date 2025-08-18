@@ -11,6 +11,7 @@ This is the very first post on my website.
 I kept it simple on purpose. No fluff, no filler — just a starting point.  
 
 I’ll use this space to **write about projects I build, ideas I’m exploring, and lessons I learn along the way**.  
+
 Think of it as my public notebook: sometimes raw, sometimes polished, but always *real*.  
 
 ### Why even write?

@@ -1,4 +1,4 @@
-import { getAllPostsMeta } from '@/lib/blog';
+import { getAllPostsMeta } from '@/lib/notes';
 import { formatISO } from 'date-fns';
 
 export async function GET() {
@@ -10,7 +10,7 @@ export async function GET() {
   const rssXml = `<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Vito Senic — Blog</title>
+    <title>Vito Senic — Notes</title>
     <link>${siteUrl}</link>
     <description>CS student with a builder's mindset — diving deep from code to business strategy to create solutions that actually work in the real world.</description>
     <language>en-us</language>
@@ -21,8 +21,8 @@ export async function GET() {
         return `
     <item>
       <title><![CDATA[${post.title}]]></title>
-      <link>${siteUrl}/blog/${post.slug}</link>
-      <guid isPermaLink="true">${siteUrl}/blog/${post.slug}</guid>
+      <link>${siteUrl}/notes/${post.slug}</link>
+      <guid isPermaLink="true">${siteUrl}/notes/${post.slug}</guid>
       <pubDate>${formatISO(new Date(post.date))}</pubDate>
       <description><![CDATA[${post.summary}]]></description>
     </item>`;

@@ -23,13 +23,13 @@ export async function generateMetadata({ params }: { params: Promise<Params> }):
         title: meta.title,
         description: meta.summary,
         type: 'article',
-        url: `https://vitosenic.com/notes/${meta.slug}`,
+        url: `https://vitosenic.com/blog/${meta.slug}`,
         ...(meta.cover && { 
           images: [{ url: meta.cover, width: 1200, height: 630 }] 
         }),
       },
       alternates: {
-        canonical: meta.canonical || `https://vitosenic.com/notes/${meta.slug}`,
+        canonical: meta.canonical || `https://vitosenic.com/blog/${meta.slug}`,
       },
     };
   } catch {
@@ -48,7 +48,7 @@ export async function generateStaticParams(): Promise<{ slug: string }[]> {
   }));
 }
 
-export default async function NotesPostPage({ params }: { params: Promise<Params> }) {
+export default async function BlogPostPage({ params }: { params: Promise<Params> }) {
   try {
     // Get the post data
     const resolvedParams = await params;
@@ -60,7 +60,7 @@ export default async function NotesPostPage({ params }: { params: Promise<Params
     // Prepare JSON-LD structured data for the blog post
     const jsonLd = {
       "@context": "https://schema.org",
-      "@type": "NotePosting",
+      "@type": "BlogPosting",
       "headline": meta.title,
       "datePublished": formatISO(new Date(meta.date)),
       "dateModified": formatISO(new Date(meta.date)),
@@ -72,7 +72,7 @@ export default async function NotesPostPage({ params }: { params: Promise<Params
       },
       "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": `https://vitosenic.com/notes/${meta.slug}`
+        "@id": `https://vitosenic.com/blog/${meta.slug}`
       },
       ...(meta.cover && {
         "image": {

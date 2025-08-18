@@ -8,6 +8,7 @@ cover: ""
 canonical: "https://vitosenic.com/blog/2025-06-02_docker-presentation"
 ---
 Recently, I needed to create a presentation about **Docker**.  
+
 Instead of using PowerPoint or Google Slides, I wanted something more **developer-friendly, minimal, and web-native**.  
 
 That’s when I found [**Reveal.js**](https://revealjs.com/) — an open-source HTML presentation framework.  

@@ -1,21 +1,21 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import Container from "@/components/Container";
-import { getAllPostsMeta } from "@/lib/blog";
+import { getAllPostsMeta } from "@/lib/notes";
 import { formatISO9075 } from "date-fns";
 
 export const metadata: Metadata = {
-  title: "Blog",
+  title: "Notes",
   description: "Articles on software development, projects, and more.",
 };
 
-export default async function BlogPage() {
+export default async function NotesPage() {
   const posts = await getAllPostsMeta();
 
   return (
     <Container>
-      <div className="py-8">
-        <h1 className="text-3xl font-bold mb-8">Blog</h1>
+      <div className="py-14">
+        <h1 className="text-3xl sm:text-4xl md:text-4xl font-bold mb-6 sm:mb-8">Notes</h1>
         
         {posts.length === 0 ? (
           <p>No posts yet. Check back soon!</p>
@@ -24,7 +24,7 @@ export default async function BlogPage() {
             {posts.map((post) => (
               <li key={post.slug} className="border-b pb-8">
                 <article>
-                  <Link href={`/blog/${post.slug}`}>
+                  <Link href={`/notes/${post.slug}`}>
                     <h2 className="text-xl font-medium hover:underline">{post.title}</h2>
                   </Link>
                   
@@ -38,7 +38,7 @@ export default async function BlogPage() {
                   
                   <div className="mt-3">
                     <Link 
-                      href={`/blog/${post.slug}`}
+                      href={`/notes/${post.slug}`}
                       className="text-sm font-medium hover:underline"
                     >
                       Read more →

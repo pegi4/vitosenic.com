@@ -71,8 +71,8 @@ export default function ProjectsPage() {
           __html: JSON.stringify(jsonLd),
         }}
       />
-      <div className="py-8">
-        <h1 className="text-3xl font-bold mb-8">Projects</h1>
+      <div className="py-14">
+        <h1 className="text-3xl sm:text-4xl md:text-4xl font-bold mb-6 sm:mb-8">Projects</h1>
         
         {projects.length === 0 ? (
           <p>No projects yet. Check back soon!</p>
