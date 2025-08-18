@@ -5,11 +5,14 @@ import Container from "@/components/Container";
 import { getAllPostsMeta, getPostBySlug, markdownToHtml } from "@/lib/blog";
 import { formatISO9075, formatISO } from "date-fns";
 
-type Props = {
-  params: {
-    slug: string;
-  };
-};
+interface PageParams {
+  slug: string;
+}
+
+interface Props {
+  params: PageParams;
+  searchParams: Record<string, string | string[] | undefined>;
+}
 
 // Generate metadata for the page based on the post
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
