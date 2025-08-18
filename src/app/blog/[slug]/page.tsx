@@ -5,19 +5,16 @@ import Container from "@/components/Container";
 import { getAllPostsMeta, getPostBySlug, markdownToHtml } from "@/lib/blog";
 import { formatISO9075, formatISO } from "date-fns";
 
-interface PageParams {
+// Define the type for params
+type Params = {
   slug: string;
-}
-
-interface Props {
-  params: PageParams;
-  searchParams: Record<string, string | string[] | undefined>;
-}
+};
 
 // Generate metadata for the page based on the post
-export async function generateMetadata({ params }: Props): Promise<Metadata> {
+export async function generateMetadata({ params }: { params: Promise<Params> }): Promise<Metadata> {
   try {
-    const { meta } = await getPostBySlug(params.slug);
+    const resolvedParams = await params;
+    const { meta } = await getPostBySlug(resolvedParams.slug);
     
     return {
       title: meta.title,
@@ -43,7 +40,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 // Generate static params for all posts
-export async function generateStaticParams() {
+export async function generateStaticParams(): Promise<{ slug: string }[]> {
   const posts = await getAllPostsMeta();
   
   return posts.map((post) => ({
@@ -51,10 +48,11 @@ export async function generateStaticParams() {
   }));
 }
 
-export default async function BlogPostPage({ params }: Props) {
+export default async function BlogPostPage({ params }: { params: Promise<Params> }) {
   try {
     // Get the post data
-    const { meta, content } = await getPostBySlug(params.slug);
+    const resolvedParams = await params;
+    const { meta, content } = await getPostBySlug(resolvedParams.slug);
     
     // Convert the markdown content to HTML
     const contentHtml = await markdownToHtml(content);
