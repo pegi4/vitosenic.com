@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
-    "build": "ts-node --transpile-only scripts/generate-rss.ts && next build",
+    "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
