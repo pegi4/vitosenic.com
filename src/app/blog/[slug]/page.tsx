@@ -32,7 +32,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         canonical: meta.canonical || `https://vitosenic.com/blog/${meta.slug}`,
       },
     };
-  } catch (error) {
+  } catch {
     return {
       title: 'Post Not Found',
     };
@@ -143,7 +143,7 @@ export default async function BlogPostPage({ params }: Props) {
         </article>
       </Container>
     );
-  } catch (error) {
+  } catch {
     notFound();
   }
 }
