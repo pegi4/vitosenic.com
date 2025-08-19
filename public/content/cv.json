@@ -1,0 +1,100 @@
+{
+    "name": "Vito Senič",
+    "role": "CS student · Web/AI automation",
+    "location": "Slovenia",
+    "socials": {
+      "github": "https://github.com/vitosenic",
+      "linkedin": "https://linkedin.com/in/vitosenic",
+      "x": "https://x.com/vitosenic",
+      "instagram": "https://instagram.com/vitosenic",
+      "email": "vito.senic@gmail.com"
+    },
+    "updated": "2025-08-19",
+  
+    "summary": "Driven CS student focused on AI, automation, and building scalable web solutions. Always learning, always shipping.",
+    "focus_now": "Currently building an AI first agency and finishing Computer Science at FERI.",
+  
+    "experience": [
+      {
+        "id": "blocklab",
+        "company": "Blockchain Lab (FERI)",
+        "role": "Student Researcher",
+        "dates": "Jan 2024 – Present",
+        "bullets": [
+            "Worked on decentralized identity (SSI, DID, VC).",
+            "Focused on R&D and prototyping blockchain integrations.",
+            "Contributed to open source projects: [EduCTX Issuer Platform](https://github.com/blockchain-lab-um/issuer-platform-EduCTX) and [MASCA](https://github.com/blockchain-lab-um/masca)."
+        ]
+      },
+      {
+        "id": "solvex",
+        "company": "SolveX",
+        "role": "Frontend Developer (Vue + TypeScript)",
+        "dates": "Oct 2023 – Feb 2025",
+        "bullets": [
+          "Developed B2B software solutions for Big Bang.",
+          "Worked with Vue.js, REST APIs, and TypeScript.",
+          "Learned teamwork, API integration, and project planning."
+        ]
+      },
+      {
+        "id": "eavio",
+        "company": "eAvio",
+        "role": "Web Developer & E-commerce Manager",
+        "dates": "Jul 2021 – May 2022",
+        "bullets": [
+          "Developed websites using WordPress.",
+          "Maintained e-commerce stores and automated workflows with Python.",
+          "Learned efficiency, automation, and client-facing work."
+        ]
+      },
+      {
+        "id": "marketing-assistant",
+        "company": "Divorce My Job Marketing",
+        "role": "Marketing Assistant",
+        "dates": "Aug 2021 – May 2023",
+        "bullets": [
+          "Managed online products and handled social media content.",
+          "Worked on dropshipping and print-on-demand.",
+          "Designed websites and created marketing materials."
+        ]
+      }
+    ],
+  
+    "skills": {
+      "web": ["Next.js", "React", "Vue", "Tailwind", "HTML/CSS"],
+      "backend": ["Node.js", "Express", "FastAPI", "PHP", "SQL"],
+      "ai": ["RAG pipelines", "Embeddings", "LangChain", "LLMs"],
+      "devops": ["Docker", "CI/CD", "VPS", "Linux servers", "GitHub Actions", "Nginx"],
+      "langs": ["TypeScript", "JavaScript", "Python", "SQL", "C++", "C#"]
+    },
+  
+    "education": [
+      "UM FERI — CS & IT (2023–2026 )",
+      "SERS Maribor — Computer Technician (2019–2023)"
+    ],
+  
+    "roadmap": [
+      { "year": "before 2018", "milestone": "Early curiosity → video editing, modding games, file management." },
+      { "year": "2018", "milestone": "First exposure to web dev → HTML & CSS → built fun websites." },
+      { "year": "2019", "milestone": "Entered SERŠ (Computer Science) → learned C++ and Unity basics." },
+      { "year": "2020", "milestone": "COVID pause → less productive, but gained perspective." },
+      { "year": "2021", "milestone": "Worked at eAvio agency → WordPress e-commerce, marketing integrations, Python automation scripts." },
+      { "year": "2022", "milestone": "Tried entrepreneurship → dropshipping, agencies, investing & crypto. Learned resilience and risk management." },
+      { "year": "2023 (early)", "milestone": "Final high school project: Decentralized portfolio tracker (React + Node + Moralis). Rediscovered passion for programming." },
+      { "year": "2023 (late)", "milestone": "Started CS & IT studies at FERI. Joined SolveX → Vue + TS, teamwork, APIs, project planning." },
+      { "year": "2024 (early)", "milestone": "Blockchain course → joined Blockchain Lab. Worked on DID, VC, Veramo." },
+      { "year": "2024 (late)", "milestone": "Startup Weekend → met co-founder. Began serious work in DevOps & Cloud (Docker, CI/CD, VPS, microservices) and AI integrations." },
+      { "year": "2025", "milestone": "Balancing studies, lab work, and business. Building AI automation agency → merging LLMs, automation, and business execution." }
+    ],
+  
+    "other": {
+      "born": "2004-sep",
+      "music": "Pink Floyd",
+      "favorite_book": "Principles by Ray Dalio",
+      "quote": "Si al pa nisi",
+      "personality": "ENTJ-A",
+      "dream_car": "Renault 5",
+      "dream_motorbike": "Honda XR650L"
+    }
+  }
