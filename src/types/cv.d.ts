@@ -1,4 +1,4 @@
-declare module '../../../public/content/cv.json' {
+declare module '@public/content/cv.json' {
   interface Social {
     github: string;
     linkedin: string;

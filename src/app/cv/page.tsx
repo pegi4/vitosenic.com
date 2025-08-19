@@ -1,4 +1,4 @@
-import cv from "../../../public/content/cv.json";
+import cv from "@public/content/cv.json";
 import { Metadata } from "next";
 import Container from "@/components/Container";
 

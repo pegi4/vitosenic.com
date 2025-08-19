@@ -9,7 +9,7 @@ import rehypeHighlight from 'rehype-highlight';
 import rehypeStringify from 'rehype-stringify';
 
 // Define the directory where blog posts are stored
-const postsDirectory = path.join(process.cwd(), 'public/content/blog');
+const postsDirectory = path.join(process.cwd(), 'public/content/notes');
 
 // Define the type for post metadata
 export type PostMeta = {
