@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Project } from "@public/content/projects";
+import type { Project } from "@public/content/projects.json";
 
 export default function ProjectCard({ project }: { project: Project }) {
   return (
@@ -33,7 +33,7 @@ export default function ProjectCard({ project }: { project: Project }) {
           <span className="bg-gray-100 text-xs px-2 py-1 rounded">
             {project.year}
           </span>
-          {project.stack.slice(0, 4).map((tech) => (
+          {project.stack.slice(0, 4).map((tech: string) => (
             <span key={tech} className="bg-gray-100 text-xs px-2 py-1 rounded">
               {tech}
             </span>
@@ -41,7 +41,7 @@ export default function ProjectCard({ project }: { project: Project }) {
         </div>
 
         <div className="mt-auto pt-3 flex flex-wrap gap-2">
-  {project.links.map((link, index) => {
+  {project.links.map((link: any, index: number) => {
     let bgClass = "bg-white border border-gray-200 text-gray-700 hover:bg-gray-50 hover:border-gray-300";
     
     if (link.type === "demo") {

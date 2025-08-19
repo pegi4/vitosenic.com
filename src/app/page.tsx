@@ -13,7 +13,7 @@ export default function Home() {
           </p>
 
           <p className="mb-6 sm:mb-8 leading-relaxed">
-            Sharing <Link href="/projects" className="text-blue-500 font-medium underline">[projects]</Link> and <Link href="/notes" className="text-blue-500 font-medium underline">[notes]</Link> as I learn, experiment, and grow along the way.
+            Dive into my <Link href="/projects" className="text-blue-500 font-medium underline">[projects]</Link> or browse my <Link href="/notes" className="text-blue-500 font-medium underline">[notes]</Link> to see what I'm building and learning.
           </p>
           
           <p className="leading-relaxed">
