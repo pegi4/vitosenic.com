@@ -7,25 +7,12 @@ declare module '../../../public/content/cv.json' {
     email: string;
   }
 
-  interface Link {
-    label: string;
-    href: string;
-  }
-
   interface Experience {
     id: string;
     company: string;
     role: string;
     dates: string;
     bullets: string[];
-  }
-
-  interface Project {
-    id: string;
-    title: string;
-    one_liner: string;
-    stack?: string[];
-    links?: Link[];
   }
 
   interface Skills {

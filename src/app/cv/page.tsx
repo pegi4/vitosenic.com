@@ -75,7 +75,7 @@ export default function CVPage() {
             <li><strong>Born:</strong> {cv.other.born}</li>
             <li><strong>Music:</strong> {cv.other.music}</li>
             <li><strong>Favorite Book:</strong> {cv.other.favorite_book}</li>
-            <li><strong>Quote:</strong> "{cv.other.quote}"</li>
+            <li><strong>Quote:</strong> &ldquo;{cv.other.quote}&rdquo;</li>
             <li><strong>Personality:</strong> {cv.other.personality}</li>
             <li><strong>Dream Car:</strong> {cv.other.dream_car}</li>
             <li><strong>Dream Motorbike:</strong> {cv.other.dream_motorbike}</li>
