@@ -165,7 +165,6 @@ function readCVData(): any[] {
       `Music: ${cv.other.music}`,
       `Favorite Book: ${cv.other.favorite_book}`,
       `Quote: ${cv.other.quote}`,
-      `Personality: ${cv.other.personality}`,
       `Dream Car: ${cv.other.dream_car}`,
       `Dream Motorbike: ${cv.other.dream_motorbike}`
     ].join("\n");
@@ -278,9 +277,10 @@ async function indexContent() {
     new Document({
       pageContent: item.chunk,
       metadata: {
-        source: `cv_${item.url.replace("/cv#", "")}`,
         title: item.title,
-        url: item.url
+        url: item.url,
+        type: "cv",
+        source: `cv-${item.title.toLowerCase().replace(/\s+/g, '-')}`
       }
     })
   );
@@ -293,9 +293,10 @@ async function indexContent() {
     new Document({
       pageContent: item.chunk,
       metadata: {
-        source: `project_${item.url.replace("/projects#", "")}`,
         title: item.title,
-        url: item.url
+        url: item.url,
+        type: "project",
+        source: `project-${item.title.toLowerCase().replace(/\s+/g, '-')}`
       }
     })
   );
@@ -312,10 +313,11 @@ async function indexContent() {
       new Document({
         pageContent: chunk,
               metadata: {
-        source: `note_${note.slug}${i > 0 ? `_chunk_${i}` : ''}`,
         title: chunks.length > 1 ? `${note.title} (Part ${i+1})` : note.title,
         url: `/notes/${note.slug}`,
-        tags: note.tags?.join(", ")
+        tags: note.tags?.join(", "),
+        type: "note (blog post)",
+        source: `note-${note.slug}`
       }
       })
     );
