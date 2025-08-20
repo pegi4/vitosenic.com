@@ -1,0 +1,6 @@
+messages:
+  - role: system
+    content: kje je kekec pizda?
+  - role: user
+    content: povej mi kje je kekec?
+model: openai/gpt-4o
