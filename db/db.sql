@@ -30,21 +30,30 @@ alter table public.documents enable row level security;
 
 -- ---------- RPC: pure vector top-k ----------
 -- Uses cosine distance operator `<=>`. Similarity = 1 - distance.
+-- This version matches LangChain's SupabaseVectorStore expected signature
 create or replace function public.match_docs(
   query_embedding vector(1536),
-  match_count int default 8
+  match_count int default 8,
+  filter jsonb default '{}'::jsonb
 )
 returns table (
+  id uuid,
   content text,
   metadata jsonb,
-  score double precision
+  similarity double precision
 )
 language sql stable as $$
   select
+    d.id,
     d.content,
     d.metadata,
-    1 - (d.embedding <=> query_embedding) as score
+    1 - (d.embedding <=> query_embedding) as similarity
   from public.documents d
+  where
+    case
+      when filter::text = '{}'::text then true
+      else d.metadata @> filter
+    end
   order by d.embedding <-> query_embedding
   limit match_count
 $$;
@@ -56,19 +65,26 @@ create or replace function public.match_docs_hybrid(
   query_embedding vector(1536),
   text_query text,
   match_count int default 8,
+  filter jsonb default '{}'::jsonb,
   vec_weight double precision default 0.8,
   txt_weight double precision default 0.2
 )
 returns table (
+  id uuid,
   content text,
   metadata jsonb,
-  score double precision
+  similarity double precision
 )
 language sql stable as $$
   with vec as (
     select id, content, metadata,
            1 - (embedding <=> query_embedding) as vscore
     from public.documents
+    where
+      case
+        when filter::text = '{}'::text then true
+        else metadata @> filter
+      end
     order by embedding <-> query_embedding
     limit 50
   ),
@@ -76,13 +92,18 @@ language sql stable as $$
     select id, ts_rank(tsv, plainto_tsquery('simple', text_query)) as tscore
     from public.documents
     where tsv @@ plainto_tsquery('simple', text_query)
+    and case
+      when filter::text = '{}'::text then true
+      else metadata @> filter
+    end
   )
   select
+    v.id,
     v.content,
     v.metadata,
-    coalesce(v.vscore,0)*vec_weight + coalesce(t.tscore,0)*txt_weight as score
+    coalesce(v.vscore,0)*vec_weight + coalesce(t.tscore,0)*txt_weight as similarity
   from vec v
   left join t using (id)
-  order by score desc
+  order by similarity desc
   limit match_count
 $$;
