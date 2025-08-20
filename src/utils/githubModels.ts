@@ -22,7 +22,7 @@ export const MODELS = {
     type: "embedding" as const
   },
   CHAT: {
-    name: "openai/gpt-4o-mini",
+    name: "openai/gpt-4.1-mini",
     maxTokens: 4096,
     type: "chat" as const
   }
@@ -54,6 +54,7 @@ export async function createChatCompletion(
   options?: {
     temperature?: number;
     maxTokens?: number;
+    top_p?: number;
   }
 ): Promise<string> {
   const response = await githubModelsClient.path("/chat/completions").post({
@@ -61,7 +62,8 @@ export async function createChatCompletion(
       model: MODELS.CHAT.name,
       messages,
       temperature: options?.temperature ?? 0.7,
-      max_tokens: options?.maxTokens ?? MODELS.CHAT.maxTokens
+      max_tokens: options?.maxTokens ?? MODELS.CHAT.maxTokens,
+      top_p: options?.top_p ?? 0.9
     }
   });
 
@@ -93,6 +95,7 @@ export class GithubModelsChat {
     options?: {
       temperature?: number;
       maxTokens?: number;
+      top_p?: number;
     }
   ): Promise<string> {
     return await createChatCompletion(messages, options);
