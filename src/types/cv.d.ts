@@ -33,7 +33,6 @@ declare module '@public/content/cv.json' {
     music: string;
     favorite_book: string;
     quote: string;
-    personality: string;
     dream_car: string;
     dream_motorbike: string;
   }
