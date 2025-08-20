@@ -66,6 +66,24 @@ function readCVData(): any[] {
   
   const chunks: any[] = [];
   
+  // Socials
+  if (cv.socials) {
+    const socialsText = [
+      `GitHub: ${cv.socials.github}`,
+      `LinkedIn: ${cv.socials.linkedin}`,
+      `X (Twitter): ${cv.socials.x}`,
+      `Instagram: ${cv.socials.instagram}`,
+      `Email: ${cv.socials.email}`
+    ].join("\n");
+    
+    chunks.push({
+      source_type: "cv",
+      title: "Social Media & Contact",
+      url: "/cv#socials",
+      chunk: socialsText
+    });
+  }
+  
   // Summary
   if (cv.summary) {
     chunks.push({
