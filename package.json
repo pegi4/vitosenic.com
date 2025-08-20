@@ -2,6 +2,7 @@
   "name": "vitosenic.com",
   "version": "0.1.0",
   "private": true,
+  "type": "modules",
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
@@ -9,9 +10,18 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@azure-rest/ai-inference": "latest",
+    "@azure/core-auth": "latest",
+    "@azure/core-sse": "latest",
+    "@langchain/community": "^0.3.53",
+    "@langchain/core": "^0.3.72",
+    "@supabase/supabase-js": "^2.55.0",
     "date-fns": "^3.0.0",
+    "dotenv": "^17.2.1",
     "gray-matter": "^4.0.3",
+    "langchain": "^0.3.31",
     "next": "15.4.6",
+    "pg": "^8.16.3",
     "react": "19.1.0",
     "react-dom": "19.1.0",
     "rehype-highlight": "^7.0.0",
