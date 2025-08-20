@@ -64,7 +64,19 @@
     "skills": {
       "web": ["Next.js", "React", "Vue", "Tailwind", "HTML/CSS"],
       "backend": ["Node.js", "Express", "FastAPI", "PHP", "SQL"],
-      "ai": ["RAG pipelines", "Embeddings", "LangChain", "LLMs"],
+      "ai": [
+        "RAG pipelines",
+        "Embeddings",
+        "LangChain",
+        "LLMs",
+        "Vector databases (pgvector, Pinecone, Weaviate)",
+        "Prompt engineering",
+        "AI agents & orchestration",
+        "Model fine-tuning basics",
+        "OpenAI / Anthropic APIs",
+        "Image classification (K-Means, Mean-Shift, GTSRB dataset)",
+        "Face recognition (custom FastAPI microservice)"
+      ],
       "devops": ["Docker", "CI/CD", "VPS", "Linux servers", "GitHub Actions", "Nginx"],
       "langs": ["TypeScript", "JavaScript", "Python", "SQL", "C++", "C#"]
     },
@@ -93,8 +105,7 @@
       "music": "Pink Floyd",
       "favorite_book": "Principles by Ray Dalio",
       "quote": "Si al pa nisi",
-      "personality": "ENTJ-A",
-      "dream_car": "Renault 5",
+      "dream_car": "Renault 5 Turbo II",
       "dream_motorbike": "Honda XR650L"
     }
-  }
+}
