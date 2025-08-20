@@ -7,11 +7,11 @@ import dotenv from "dotenv";
 // Load environment variables
 dotenv.config();
 
-const token = process.env.GITHUB_TOKEN;
+const token = process.env.TOKEN_GITHUB;
 const endpoint = "https://models.github.ai/inference";
 
 if (!token) {
-  throw new Error("GITHUB_TOKEN environment variable is not set.");
+  throw new Error("TOKEN_GITHUB environment variable is not set.");
 }
 
 // Model configurations
