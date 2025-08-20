@@ -41,7 +41,7 @@ export default function ProjectCard({ project }: { project: Project }) {
         </div>
 
         <div className="mt-auto pt-3 flex flex-wrap gap-2">
-  {project.links.map((link: any, index: number) => {
+  {project.links.map((link: { type: string; label: string; url: string; gated?: boolean }, index: number) => {
     let bgClass = "bg-white border border-gray-200 text-gray-700 hover:bg-gray-50 hover:border-gray-300";
     
     if (link.type === "demo") {
