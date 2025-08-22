@@ -2,9 +2,8 @@ import { NextRequest } from 'next/server';
 import { supabaseAdmin } from '@/utils/supabase';
 import { chat, embeddings } from '@/utils/githubModels';
 import { SupabaseVectorStore } from '@langchain/community/vectorstores/supabase';
-import { loadPromptConfig } from '@/lib/prompt-yaml-to-json';
+import { mainPrompt, queryRewriterPrompt } from '@/prompts';
 import { PromptMessage } from '@/types/prompt';
-import path from 'path';
 
 // Number of relevant documents to retrieve
 const RETRIEVE_K = 5;
@@ -38,7 +37,7 @@ export async function POST(req: NextRequest) {
       .join('\n');
 
     // Rewrite the query for better context retrieval
-    const queryRewriterConfig = loadPromptConfig(path.join(process.cwd(), 'src/prompts/query_rewriter.prompt.yml'));
+    const queryRewriterConfig = queryRewriterPrompt();
     const rewriterSystemMessage = queryRewriterConfig.messages.find((msg: PromptMessage) => msg.role === 'system');
     const rewriterUserMessage = queryRewriterConfig.messages.find((msg: PromptMessage) => msg.role === 'user');
     
@@ -87,8 +86,8 @@ export async function POST(req: NextRequest) {
 
     console.log('getting CONTEXT:', context);
 
-    // Load the prompt configuration
-    const promptConfig = loadPromptConfig();
+    // Load the main prompt configuration
+    const promptConfig = mainPrompt();
     
     // Get the system message from the prompt config
     const systemMessage = promptConfig.messages.find((msg: PromptMessage) => msg.role === 'system');
