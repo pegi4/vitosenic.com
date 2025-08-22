@@ -15,17 +15,10 @@ if (!token) {
 }
 
 // Model configurations
-export const MODELS = {
-  EMBEDDINGS: {
-    name: "openai/text-embedding-3-small",
-    maxTokens: 8192,
-    type: "embedding" as const
-  },
-  CHAT: {
-    name: "openai/gpt-4.1-mini",
-    maxTokens: 4096,
-    type: "chat" as const
-  }
+export const EMBEDDINGS = {
+  name: "openai/text-embedding-3-small",
+  maxTokens: 8192,
+  type: "embedding" as const
 } as const;
 
 // Create the client
@@ -36,7 +29,7 @@ export async function createEmbeddings(texts: string[]): Promise<number[][]> {
   const response = await githubModelsClient.path("/embeddings").post({
     body: {
       input: texts,
-      model: MODELS.EMBEDDINGS.name
+      model: EMBEDDINGS.name
     }
   });
 
@@ -50,6 +43,7 @@ export async function createEmbeddings(texts: string[]): Promise<number[][]> {
 
 // Chat completion function
 export async function createChatCompletion(
+  model: string,
   messages: Array<{ role: string; content: string }>,
   options?: {
     temperature?: number;
@@ -57,13 +51,16 @@ export async function createChatCompletion(
     top_p?: number;
   }
 ): Promise<string> {
+  console.log('model:', model);
+  console.log('messages:', messages);
+  console.log('options:', options);
   const response = await githubModelsClient.path("/chat/completions").post({
     body: {
-      model: MODELS.CHAT.name,
       messages,
-      temperature: options?.temperature ?? 0.7,
-      max_tokens: options?.maxTokens ?? MODELS.CHAT.maxTokens,
-      top_p: options?.top_p ?? 0.9
+      model: model || "openai/gpt-4.1-mini",
+      temperature: options?.temperature,
+      max_tokens: options?.maxTokens,
+      top_p: options?.top_p
     }
   });
 
@@ -91,6 +88,7 @@ export class GithubModelsEmbeddings implements Embeddings {
 // Chat completion class for easy use
 export class GithubModelsChat {
   async chat(
+    model: string,
     messages: Array<{ role: string; content: string }>,
     options?: {
       temperature?: number;
@@ -98,10 +96,11 @@ export class GithubModelsChat {
       top_p?: number;
     }
   ): Promise<string> {
-    return await createChatCompletion(messages, options);
+    return await createChatCompletion(model, messages, options);
   }
 
   async chatWithSystem(
+    model: string,
     systemPrompt: string,
     userMessage: string,
     options?: {
@@ -113,7 +112,7 @@ export class GithubModelsChat {
       { role: "system", content: systemPrompt },
       { role: "user", content: userMessage }
     ];
-    return await createChatCompletion(messages, options);
+    return await createChatCompletion(model, messages, options);
   }
 }
 
