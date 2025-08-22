@@ -4,6 +4,7 @@ import { chat, embeddings } from '@/utils/githubModels';
 import { SupabaseVectorStore } from '@langchain/community/vectorstores/supabase';
 import { loadPromptConfig } from '@/lib/prompt-yaml-to-json';
 import { PromptMessage } from '@/types/prompt';
+import path from 'path';
 
 // Number of relevant documents to retrieve
 const RETRIEVE_K = 5;
@@ -30,6 +31,38 @@ export async function POST(req: NextRequest) {
 
     console.log('latestMessage:', latestMessage);
 
+    // Format chat history for the query rewriter
+    const historyMessages = messages
+      .filter((m, index) => index !== messages.length - 1) // Exclude the latest message which we're currently processing
+      .map(m => `${m.role}: ${m.content}`)
+      .join('\n');
+
+    // Rewrite the query for better context retrieval
+    const queryRewriterConfig = loadPromptConfig(path.join(process.cwd(), 'src/prompts/query_rewriter.prompt.yml'));
+    const rewriterSystemMessage = queryRewriterConfig.messages.find((msg: PromptMessage) => msg.role === 'system');
+    const rewriterUserMessage = queryRewriterConfig.messages.find((msg: PromptMessage) => msg.role === 'user');
+    
+    // Format the rewriter prompt
+    let rewriterContent = rewriterUserMessage?.content || '';
+    rewriterContent = rewriterContent.replace('{{QUESTION}}', latestMessage.content);
+    rewriterContent = rewriterContent.replace('{{HISTORY}}', historyMessages);
+    
+    // Create messages for the query rewriter
+    const rewriterMessages = [
+      { role: 'system', content: rewriterSystemMessage?.content || '' },
+      { role: 'user', content: rewriterContent }
+    ];
+    
+    // Get the rewritten query
+    const rewrittenQuery = await chat.chat(queryRewriterConfig.model, rewriterMessages, {
+      temperature: queryRewriterConfig.modelParameters?.temperature || 0.2,
+      maxTokens: queryRewriterConfig.modelParameters?.max_completion_tokens || 200,
+      top_p: queryRewriterConfig.modelParameters?.top_p || 0.9
+    });
+    
+    console.log('Original query:', latestMessage.content);
+    console.log('Rewritten query:', rewrittenQuery);
+    
     // Initialize vector store with our embeddings
     const vectorStore = new SupabaseVectorStore(embeddings, {
       client: supabaseAdmin,
@@ -38,9 +71,9 @@ export async function POST(req: NextRequest) {
       filter: {} // Empty filter to match the function signature
     });
 
-    // Search for relevant documents based on the user's query
+    // Search for relevant documents based on the rewritten query
     const vectorResults = await vectorStore.similaritySearch(
-      latestMessage.content,
+      rewrittenQuery, // Use the rewritten query instead of the original
       RETRIEVE_K
     );
 
@@ -56,8 +89,6 @@ export async function POST(req: NextRequest) {
 
     // Load the prompt configuration
     const promptConfig = loadPromptConfig();
-
-    console.log('promptConfig:', promptConfig);
     
     // Get the system message from the prompt config
     const systemMessage = promptConfig.messages.find((msg: PromptMessage) => msg.role === 'system');
@@ -66,7 +97,7 @@ export async function POST(req: NextRequest) {
     // Replace the {{text}} and {{QUESTION}} placeholders with the actual values
     let userContent = userMessage?.content || '';
     userContent = userContent.replace('{{text}}', context);
-    userContent = userContent.replace('{{QUESTION}}', latestMessage.content);
+    userContent = userContent.replace('{{QUESTION}}', latestMessage.content); // Keep the original query for the final response
 
     // Create messages array with the structured prompt
     const chatMessages = [

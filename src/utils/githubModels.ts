@@ -59,6 +59,9 @@ export async function createChatCompletion(
     top_p?: number;
   }
 ): Promise<string> {
+
+  console.log('messages:', messages);
+  
   const response = await githubModelsClient.path("/chat/completions").post({
     body: {
       messages,

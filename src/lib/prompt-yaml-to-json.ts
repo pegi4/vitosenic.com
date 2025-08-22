@@ -4,9 +4,9 @@ import { join } from 'path';
 import { PromptConfig } from '@/types/prompt';
 
 // Load the prompt configuration
-export function loadPromptConfig(): PromptConfig {
+export function loadPromptConfig(customPath?: string): PromptConfig {
   try {
-    const promptPath = join(process.cwd(), 'src', 'prompts', 'main.prompt.yaml');
+    const promptPath = customPath || join(process.cwd(), 'src', 'prompts', 'main.prompt.yaml');
     const promptContent = readFileSync(promptPath, 'utf8');
     return load(promptContent) as PromptConfig;
   } catch (error) {
