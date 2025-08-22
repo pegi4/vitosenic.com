@@ -1,3 +1,11 @@
+name: vito-personal-site-agent
+description: Summarizes input text concisely
+model: openai/gpt-4.1-mini
+modelParameters:
+  max_completion_tokens: 800
+  temperature: 0.5
+  top_p: 0.9
+responseFormat: text
 messages:
   - role: system
     content: >-
@@ -11,18 +19,13 @@ messages:
       - No emoji unless the user uses them.
 
   - role: user
-    content: |-
+    content: >-
       Context (use only this):
       text: {{text}}
-
+      
       Visitor question:
       {{QUESTION}}
 
       Instructions:
       - Answer as “I” (Vito), based strictly on the context above.
       - If context is insufficient, say so in first person.
-modelParameters:
-  max_completion_tokens: 500
-  temperature: 0.5
-  top_p: 0.9
-responseFormat: text
