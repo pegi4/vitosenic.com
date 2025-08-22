@@ -57,16 +57,58 @@ const recordManager = new PostgresRecordManager("vitosenic_content", {
 // Create GitHub Embeddings class that implements LangChain's Embeddings interface
 // This class is now imported directly from githubModels.ts
 
+// Type definitions for structured data
+type ProjectType = {
+  slug: string;
+  title: string;
+  tagline?: string;
+  year?: string | null;
+  stack?: string[];
+  image?: string | null;
+  summary?: string;
+  highlights?: string[];
+  links?: ProjectLink[];
+  case_study?: string;
+};
+
+type ContentChunk = {
+  title: string;
+  url: string;
+  type: string;
+  section: string;
+  date: string | null;
+  source: string;
+  text: string;
+};
+
+type CVJob = {
+  id: string;
+  company: string;
+  role: string;
+  dates: string;
+  bullets?: string[];
+};
+
+type ProjectLink = {
+  type: string;
+  label: string;
+  url: string;
+};
+
+type RoadmapItem = {
+  year: string;
+  milestone: string;
+};
+
 // Function to read CV data
-// Function to read CV data
-function readCVData(): any[] {
+function readCVData(): ContentChunk[] {
   console.log(`Reading CV data from ${CV_JSON}`);
   const cvRaw = fs.readFileSync(path.join(process.cwd(), CV_JSON), 'utf8');
   const cv = JSON.parse(cvRaw);
   
-  const chunks: any[] = [];
+  const chunks: ContentChunk[] = [];
   
-  // Socials
+  // Socials - one chunk for top-level section
   if (cv.socials) {
     const socialsText = [
       `GitHub: ${cv.socials.github}`,
@@ -77,46 +119,58 @@ function readCVData(): any[] {
     ].join("\n");
     
     chunks.push({
-      source_type: "cv",
       title: "Social Media & Contact",
       url: "/cv#socials",
-      chunk: socialsText
+      type: "cv",
+      section: "Socials",
+      date: null,
+      source: "cv-socials",
+      text: socialsText
     });
   }
   
-  // Summary
+  // Summary - one chunk for top-level section
   if (cv.summary) {
     chunks.push({
-      source_type: "cv",
       title: "Summary",
       url: "/cv#summary",
-      chunk: cv.summary
+      type: "cv",
+      section: "Summary",
+      date: null,
+      source: "cv-summary",
+      text: cv.summary
     });
   }
   
-  // Focus now
+  // Focus now - one chunk for top-level section
   if (cv.focus_now) {
     chunks.push({
-      source_type: "cv",
       title: "Now / Focus",
       url: "/cv#focus-now",
-      chunk: cv.focus_now
+      type: "cv",
+      section: "Focus Now",
+      date: null,
+      source: "cv-focus-now",
+      text: cv.focus_now
     });
   }
   
-  // Experience
+  // Experience - one chunk per work experience
   if (cv.experience) {
-    cv.experience.forEach((job: any) => {
+    cv.experience.forEach((job: CVJob) => {
       chunks.push({
-        source_type: "cv",
         title: `${job.company} — ${job.role}`,
         url: `/cv#${job.id}`,
-        chunk: `${job.company} — ${job.role}\n${job.dates}\n${job.bullets?.join("\n")}`
+        type: "cv",
+        section: "Experience",
+        date: null,
+        source: `cv-experience-${job.id}`,
+        text: `${job.company} — ${job.role}\n${job.dates}\n${job.bullets?.join("\n")}`
       });
     });
   }
   
-  // Skills
+  // Skills - one chunk for top-level section
   if (cv.skills) {
     const skillsText = [
       `Web: ${cv.skills.web?.join(", ")}`,
@@ -127,38 +181,47 @@ function readCVData(): any[] {
     ].join("\n");
     
     chunks.push({
-      source_type: "cv",
       title: "Skills",
       url: "/cv#skills",
-      chunk: skillsText
+      type: "cv",
+      section: "Skills",
+      date: null,
+      source: "cv-skills",
+      text: skillsText
     });
   }
   
-  // Education
+  // Education - one chunk for top-level section
   if (cv.education) {
     chunks.push({
-      source_type: "cv",
       title: "Education",
       url: "/cv#education",
-      chunk: cv.education.join("\n")
+      type: "cv",
+      section: "Education",
+      date: null,
+      source: "cv-education",
+      text: cv.education.join("\n")
     });
   }
   
-  // Roadmap
+  // Roadmap - one chunk for top-level section
   if (cv.roadmap) {
-    const roadmapText = cv.roadmap.map((item: any) => 
+    const roadmapText = cv.roadmap.map((item: RoadmapItem) => 
       `${item.year}: ${item.milestone}`
     ).join("\n");
     
     chunks.push({
-      source_type: "cv",
       title: "Roadmap",
       url: "/cv#roadmap",
-      chunk: roadmapText
+      type: "cv",
+      section: "Roadmap",
+      date: null,
+      source: "cv-roadmap",
+      text: roadmapText
     });
   }
   
-  // Other
+  // Other - one chunk for top-level section
   if (cv.other) {
     const otherText = [
       `Born: ${cv.other.born}`,
@@ -170,10 +233,26 @@ function readCVData(): any[] {
     ].join("\n");
     
     chunks.push({
-      source_type: "cv",
       title: "Other",
       url: "/cv#other",
-      chunk: otherText
+      type: "cv",
+      section: "Other",
+      date: null,
+      source: "cv-other",
+      text: otherText
+    });
+  }
+  
+  // FAQ - added as requested
+  if (cv.faq) {
+    chunks.push({
+      title: cv.faq.title || "FAQ",
+      url: cv.faq.url || "/cv#faq",
+      type: cv.faq.type || "cv",
+      section: cv.faq.section || "FAQ",
+      date: cv.faq.date || null,
+      source: cv.faq.source || "cv-faq",
+      text: cv.faq.text || ""
     });
   }
   
@@ -182,27 +261,38 @@ function readCVData(): any[] {
 }
 
 // Function to read projects data
-function readProjectsData(): any[] {
+function readProjectsData(): ContentChunk[] {
   console.log(`Reading projects data from ${PROJECTS_JSON}`);
   const projectsRaw = fs.readFileSync(path.join(process.cwd(), PROJECTS_JSON), 'utf8');
   const projects = JSON.parse(projectsRaw);
   
-  const chunks = projects.map((project: any) => {
-    const linksText = project.links?.map((link: any) => 
+  // Each project = 1 canonical chunk
+  const chunks = projects.map((project: ProjectType) => {
+    // Format all project details
+    const highlights = project.highlights?.join("\n");
+    const linksText = project.links?.map((link: ProjectLink) => 
       `${link.label}: ${link.url}`
     ).join(", ");
     
+    const projectText = [
+      `Title: ${project.title}`,
+      `Tagline: ${project.tagline}`,
+      project.year ? `Year: ${project.year}` : null,
+      project.stack && project.stack.length > 0 ? `Stack: ${project.stack.join(", ")}` : null,
+      project.summary ? `Summary: ${project.summary}` : null,
+      highlights ? `Highlights:\n${highlights}` : null,
+      linksText ? `Links: ${linksText}` : null,
+      project.case_study ? `Case Study: ${project.case_study}` : null
+    ].filter(Boolean).join("\n");
+    
     return {
-      source_type: "project",
       title: project.title,
       url: `/projects#${project.slug}`,
-      chunk: [
-        `Title: ${project.title}`,
-        `Year: ${project.year}`,
-        `Stack: ${project.stack?.join(", ")}`,
-        `Tagline: ${project.tagline}`,
-        linksText ? `Links: ${linksText}` : null
-      ].filter(Boolean).join("\n")
+      type: "project",
+      section: project.tagline || "Project",
+      date: project.year ? `${project.year}-01-01` : null, // Default to Jan 1st of the year if only year is provided
+      source: `project-${project.slug}`,
+      text: projectText
     };
   });
   
@@ -211,7 +301,7 @@ function readProjectsData(): any[] {
 }
 
 // Function to read notes/blog posts
-async function readNotes(): Promise<any[]> {
+async function readNotes(): Promise<ContentChunk[]> {
   console.log(`Reading notes from ${NOTES_DIR}`);
   
   if (!fs.existsSync(NOTES_DIR)) {
@@ -222,27 +312,199 @@ async function readNotes(): Promise<any[]> {
   const noteFiles = fs.readdirSync(NOTES_DIR).filter(f => f.endsWith('.md'));
   console.log(`Found ${noteFiles.length} markdown files`);
   
-  const notes = [];
+  const allChunks: ContentChunk[] = [];
   
   for (const file of noteFiles) {
     const filePath = path.join(NOTES_DIR, file);
     const content = fs.readFileSync(filePath, 'utf8');
     
     try {
+      // Parse front-matter
       const { data, content: noteContent } = matter(content);
-      notes.push({
-        title: data.title || path.basename(file, '.md'),
-        slug: data.slug || path.basename(file, '.md'),
-        content: noteContent,
-        tags: data.tags || []
-      });
+      const title = data.title || path.basename(file, '.md');
+      const slug = data.slug || path.basename(file, '.md');
+      const date = data.date || null;
+      const lead = data.lead || data.summary || null;
+      const tags = data.tags || [];
+      const url = `/notes/${slug}`;
+      
+      // Generate chunks according to the rules
+      const chunks = await processNoteContent(noteContent, title, slug, date, lead, url, tags);
+      allChunks.push(...chunks);
+      
     } catch (error) {
       console.error(`Error processing note ${file}:`, error);
     }
   }
   
-  console.log(`Processed ${notes.length} notes`);
-  return notes;
+  console.log(`Generated ${allChunks.length} chunks from ${noteFiles.length} notes`);
+  return allChunks;
+}
+
+// Helper function to process note content into chunks according to rules
+async function processNoteContent(
+  content: string, 
+  title: string, 
+  slug: string, 
+  date: string | null,
+  lead: string | null,
+  url: string,
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  tags: string[]
+): Promise<ContentChunk[]> {
+  const chunks: ContentChunk[] = [];
+  
+  // 1. Always create a Summary chunk
+  if (lead) {
+    chunks.push({
+      title: `${title} - Summary`,
+      url,
+      type: "note",
+      section: "Summary",
+      date,
+      source: `note-${slug}-summary`,
+      text: lead
+    });
+  }
+  
+  // Normalize content - trim whitespace, collapse multiple blank lines
+  content = content.trim().replace(/\n{3,}/g, '\n\n');
+  
+  // Split the content by headings
+  const sections: Array<{ heading: string; content: string }> = [];
+  
+  // Find content before first heading
+  const lines = content.split('\n');
+  let lineIndex = 0;
+  let bodyContent = '';
+  
+  // Collect content before the first heading (if any)
+  while (lineIndex < lines.length) {
+    const line = lines[lineIndex];
+    if (line.startsWith('## ') || line.startsWith('### ')) {
+      break;
+    }
+    bodyContent += line + '\n';
+    lineIndex++;
+  }
+  
+  // If there's content before first heading and it's not just whitespace
+  if (bodyContent.trim() && bodyContent !== lead) {
+    sections.push({
+      heading: 'Body',
+      content: bodyContent.trim()
+    });
+  }
+  
+  // Process remaining content with headings
+  let currentHeading = '';
+  let currentContent = '';
+  
+  for (; lineIndex < lines.length; lineIndex++) {
+    const line = lines[lineIndex];
+    
+    if (line.startsWith('## ') || line.startsWith('### ')) {
+      // If we have accumulated content, save the previous section
+      if (currentHeading) {
+        sections.push({
+          heading: currentHeading,
+          content: currentContent.trim()
+        });
+      }
+      
+      // Start a new section
+      currentHeading = line.replace(/^#+\s+/, '');
+      currentContent = '';
+    } else {
+      // Add to current section content
+      currentContent += line + '\n';
+    }
+  }
+  
+  // Don't forget the last section
+  if (currentHeading && currentContent.trim()) {
+    sections.push({
+      heading: currentHeading,
+      content: currentContent.trim()
+    });
+  }
+  
+  // Process each section to create chunks
+  for (const section of sections) {
+    const sectionText = section.content;
+    
+    // If section is too large, split it on paragraph boundaries
+    if (sectionText.length > 1200) {
+      const paragraphs = sectionText.split(/\n\n+/);
+      let currentChunk = '';
+      let chunkCount = 1;
+      
+      for (const paragraph of paragraphs) {
+        // If adding this paragraph would make the chunk too large, create a new chunk
+        if (currentChunk && (currentChunk.length + paragraph.length) > 1200) {
+          // Generate chunk with overlap for context
+          const overlapStart = Math.max(0, currentChunk.length - 200);
+          const overlap = currentChunk.substring(overlapStart);
+          
+          chunks.push({
+            title: `${title} - ${section.heading} (Part ${chunkCount})`,
+            url,
+            type: "note",
+            section: section.heading,
+            date,
+            source: `note-${slug}-${section.heading.toLowerCase().replace(/\s+/g, '-')}-p${chunkCount}`,
+            text: currentChunk
+          });
+          
+          // Start new chunk with overlap for context
+          currentChunk = overlap + '\n\n' + paragraph;
+          chunkCount++;
+        } else {
+          // Add to current chunk
+          currentChunk = currentChunk ? currentChunk + '\n\n' + paragraph : paragraph;
+        }
+      }
+      
+      // Don't forget the last chunk
+      if (currentChunk) {
+        chunks.push({
+          title: `${title} - ${section.heading}${chunkCount > 1 ? ` (Part ${chunkCount})` : ''}`,
+          url,
+          type: "note",
+          section: section.heading,
+          date,
+          source: `note-${slug}-${section.heading.toLowerCase().replace(/\s+/g, '-')}${chunkCount > 1 ? `-p${chunkCount}` : ''}`,
+          text: currentChunk
+        });
+      }
+    } else {
+      // Section fits in a single chunk
+      chunks.push({
+        title: `${title} - ${section.heading}`,
+        url,
+        type: "note",
+        section: section.heading,
+        date,
+        source: `note-${slug}-${section.heading.toLowerCase().replace(/\s+/g, '-')}`,
+        text: sectionText
+      });
+    }
+  }
+  
+  // If there are no sections and no summary yet (rare case), create a default chunk
+  if (chunks.length === 0) {
+    chunks.push({
+      title,
+      url,
+      type: "note",
+      section: "Body",
+      date,
+      source: `note-${slug}`,
+      text: content
+    });
+  }
+  
+  return chunks;
 }
 
 async function indexContent() {
@@ -251,7 +513,8 @@ async function indexContent() {
   // Initialize embeddings
   const embeddings = new GithubModelsEmbeddings();
   
-  // Initialize text splitter
+  // Initialize text splitter (not actively used but keeping for reference)
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const textSplitter = new RecursiveCharacterTextSplitter({
     chunkSize: 800,
     chunkOverlap: 100
@@ -275,12 +538,14 @@ async function indexContent() {
   const cvData = readCVData();
   const cvDocs = cvData.map(item => 
     new Document({
-      pageContent: item.chunk,
+      pageContent: item.text,
       metadata: {
         title: item.title,
         url: item.url,
-        type: "cv",
-        source: `cv-${item.title.toLowerCase().replace(/\s+/g, '-')}`
+        type: item.type,
+        section: item.section,
+        date: item.date,
+        source: item.source
       }
     })
   );
@@ -291,38 +556,36 @@ async function indexContent() {
   const projectsData = readProjectsData();
   const projectsDocs = projectsData.map(item => 
     new Document({
-      pageContent: item.chunk,
+      pageContent: item.text,
       metadata: {
         title: item.title,
         url: item.url,
-        type: "project",
-        source: `project-${item.title.toLowerCase().replace(/\s+/g, '-')}`
+        type: item.type,
+        section: item.section,
+        date: item.date,
+        source: item.source
       }
     })
   );
   console.log(`Created ${projectsDocs.length} Project documents`);
   
-  // 3. Process notes/blog posts
+  // 3. Process notes/blog posts - now using the new chunking strategy
   console.log("\n==== Processing Notes/Blog posts ====");
   const notesData = await readNotes();
   
-  const notesDocs: Document[] = [];
-  for (const note of notesData) {
-    const chunks = await textSplitter.splitText(note.content);
-    const docs = chunks.map((chunk, i) => 
-      new Document({
-        pageContent: chunk,
-              metadata: {
-        title: chunks.length > 1 ? `${note.title} (Part ${i+1})` : note.title,
-        url: `/notes/${note.slug}`,
-        tags: note.tags?.join(", "),
-        type: "note (blog post)",
-        source: `note-${note.slug}`
+  const notesDocs = notesData.map(item => 
+    new Document({
+      pageContent: item.text,
+      metadata: {
+        title: item.title,
+        url: item.url,
+        type: item.type,
+        section: item.section,
+        date: item.date,
+        source: item.source
       }
-      })
-    );
-    notesDocs.push(...docs);
-  }
+    })
+  );
   console.log(`Created ${notesDocs.length} Note documents`);
   
   // 4. Combine all documents

@@ -1,111 +1,139 @@
 {
-    "name": "Vito Senič",
-    "role": "CS student · Web/AI automation",
-    "location": "Slovenia",
-    "socials": {
-      "github": "https://github.com/vitosenic",
-      "linkedin": "https://linkedin.com/in/vitosenic",
-      "x": "https://x.com/vitosenic",
-      "instagram": "https://instagram.com/vitosenic",
-      "email": "vito.senic@gmail.com"
+  "name": "Vito Senič",
+  "role": "CS student · Web/AI automation",
+  "location": "Slovenia",
+  "socials": {
+    "github": "https://github.com/vitosenic",
+    "linkedin": "https://linkedin.com/in/vitosenic",
+    "x": "https://x.com/vitosenic",
+    "instagram": "https://instagram.com/vitosenic",
+    "email": "vito.senic@gmail.com"
+  },
+  "updated": "2025-08-22",
+
+  "summary": "I’m a Computer Science student at UM FERI, currently combining my studies with hands-on work in research and development. Through my studies, research at the Blockchain Lab, and personal experiments with AI, I’m exploring how technology can solve real problems, make work easier, and reduce manual effort. I like keeping things practical, curious, and always moving forward.",
+
+  "focus_now": "Right now I’m finishing my CS degree and spending time at the Blockchain Lab as a student researcher. I’m also exploring how AI can make everyday work easier, more creative, and reduce manual work for businesses. For me, this stage is about learning, growing, and building projects that reflect both my technical skills and curiosity.",
+
+  "experience": [
+    {
+      "id": "experience-index",
+      "company": "Experience — Index",
+      "role": "Timeline",
+      "dates": "",
+      "bullets": [
+        "• Blockchain Lab (Student Researcher) — Jan 2024 – Present — /cv#blocklab",
+        "• SolveX (Frontend Developer, Vue + TypeScript) — Oct 2023 – Feb 2025 — /cv#solvex",
+        "• Divorce My Job Marketing (Marketing Assistant) — Aug 2021 – May 2023 — /cv#marketing-assistant",
+        "• eAvio (Web Developer & E-commerce Manager) — Jul 2021 – May 2022 — /cv#eavio"
+      ]
     },
-    "updated": "2025-08-19",
-  
-    "summary": "Driven CS student focused on AI, automation, and building scalable web solutions. Always learning, always shipping.",
-    "focus_now": "Currently building an AI first agency and finishing Computer Science at FERI.",
-  
-    "experience": [
-      {
-        "id": "blocklab",
-        "company": "Blockchain Lab (FERI)",
-        "role": "Student Researcher",
-        "dates": "Jan 2024 – Present",
-        "bullets": [
-            "Worked on decentralized identity (SSI, DID, VC).",
-            "Focused on R&D and prototyping blockchain integrations.",
-            "Contributed to open source projects: [EduCTX Issuer Platform](https://github.com/blockchain-lab-um/issuer-platform-EduCTX) and [MASCA](https://github.com/blockchain-lab-um/masca)."
-        ]
-      },
-      {
-        "id": "solvex",
-        "company": "SolveX",
-        "role": "Frontend Developer (Vue + TypeScript)",
-        "dates": "Oct 2023 – Feb 2025",
-        "bullets": [
-          "Developed B2B software solutions for Big Bang.",
-          "Worked with Vue.js, REST APIs, and TypeScript.",
-          "Learned teamwork, API integration, and project planning."
-        ]
-      },
-      {
-        "id": "eavio",
-        "company": "eAvio",
-        "role": "Web Developer & E-commerce Manager",
-        "dates": "Jul 2021 – May 2022",
-        "bullets": [
-          "Developed websites using WordPress.",
-          "Maintained e-commerce stores and automated workflows with Python.",
-          "Learned efficiency, automation, and client-facing work."
-        ]
-      },
-      {
-        "id": "marketing-assistant",
-        "company": "Divorce My Job Marketing",
-        "role": "Marketing Assistant",
-        "dates": "Aug 2021 – May 2023",
-        "bullets": [
-          "Managed online products and handled social media content.",
-          "Worked on dropshipping and print-on-demand.",
-          "Designed websites and created marketing materials."
-        ]
-      }
-    ],
-  
-    "skills": {
-      "web": ["Next.js", "React", "Vue", "Tailwind", "HTML/CSS"],
-      "backend": ["Node.js", "Express", "FastAPI", "PHP", "SQL"],
-      "ai": [
-        "RAG pipelines",
-        "Embeddings",
-        "LangChain",
-        "LLMs",
-        "Vector databases (pgvector, Pinecone, Weaviate)",
-        "Prompt engineering",
-        "AI agents & orchestration",
-        "Model fine-tuning basics",
-        "OpenAI / Anthropic APIs",
-        "Image classification (K-Means, Mean-Shift, GTSRB dataset)",
-        "Face recognition (custom FastAPI microservice)"
-      ],
-      "devops": ["Docker", "CI/CD", "VPS", "Linux servers", "GitHub Actions", "Nginx"],
-      "langs": ["TypeScript", "JavaScript", "Python", "SQL", "C++", "C#"]
+    {
+      "id": "blocklab",
+      "company": "Blockchain Lab (FERI)",
+      "role": "Student Researcher",
+      "dates": "Sep 2024 – Present",
+      "bullets": [
+        "Researched and prototyped decentralized identity systems (Self-Sovereign Identity, DID, Verifiable Credentials).",
+        "Developed proof-of-concept integrations with Veramo agents for issuing and verifying credentials.",
+        "Contributed to open source projects: [EduCTX Issuer Platform](https://github.com/blockchain-lab-um/issuer-platform-EduCTX) and [MASCA](https://github.com/blockchain-lab-um/masca).",
+        "Collaborated in a small research team, applying R&D methods to blockchain-based authentication."
+      ]
     },
-  
-    "education": [
-      "UM FERI — CS & IT (2023–2026 )",
-      "SERS Maribor — Computer Technician (2019–2023)"
-    ],
-  
-    "roadmap": [
-      { "year": "before 2018", "milestone": "Early curiosity → video editing, modding games, file management." },
-      { "year": "2018", "milestone": "First exposure to web dev → HTML & CSS → built fun websites." },
-      { "year": "2019", "milestone": "Entered SERŠ (Computer Science) → learned C++ and Unity basics." },
-      { "year": "2020", "milestone": "COVID pause → less productive, but gained perspective." },
-      { "year": "2021", "milestone": "Worked at eAvio agency → WordPress e-commerce, marketing integrations, Python automation scripts." },
-      { "year": "2022", "milestone": "Tried entrepreneurship → dropshipping, agencies, investing & crypto. Learned resilience and risk management." },
-      { "year": "2023 (early)", "milestone": "Final high school project: Decentralized portfolio tracker (React + Node + Moralis). Rediscovered passion for programming." },
-      { "year": "2023 (late)", "milestone": "Started CS & IT studies at FERI. Joined SolveX → Vue + TS, teamwork, APIs, project planning." },
-      { "year": "2024 (early)", "milestone": "Blockchain course → joined Blockchain Lab. Worked on DID, VC, Veramo." },
-      { "year": "2024 (late)", "milestone": "Startup Weekend → met co-founder. Began serious work in DevOps & Cloud (Docker, CI/CD, VPS, microservices) and AI integrations." },
-      { "year": "2025", "milestone": "Balancing studies, lab work, and business. Building AI automation agency → merging LLMs, automation, and business execution." }
-    ],
-  
-    "other": {
-      "born": "2004-sep",
-      "music": "Pink Floyd",
-      "favorite_book": "Principles by Ray Dalio",
-      "quote": "Si al pa nisi",
-      "dream_car": "Renault 5 Turbo II",
-      "dream_motorbike": "Honda XR650L"
+    {
+      "id": "solvex",
+      "company": "SolveX",
+      "role": "Frontend Developer (Vue + TypeScript)",
+      "dates": "Oct 2023 – Feb 2025",
+      "bullets": [
+        "Built and maintained B2B software solutions for Big Bang, a major Slovenian retailer.",
+        "Implemented user interfaces using Vue.js 3 and TypeScript, following component-driven development.",
+        "Integrated REST APIs with backend systems and improved data flows between teams.",
+        "Gained hands-on experience in agile teamwork, project planning, and communication across roles."
+      ]
+    },
+    {
+      "id": "eavio",
+      "company": "eAvio",
+      "role": "Web Developer & E-commerce Manager",
+      "dates": "Jul 2021 – May 2022",
+      "bullets": [
+        "Developed and maintained WordPress websites and WooCommerce e-commerce stores.",
+        "Automated workflows with small Python scripts, improving efficiency in product updates.",
+        "Handled content updates, email collection, and basic online marketing tasks.",
+        "Learned client-facing communication and the importance of reliable delivery."
+      ]
+    },
+    {
+      "id": "marketing-assistant",
+      "company": "Divorce My Job Marketing",
+      "role": "Marketing Assistant",
+      "dates": "Aug 2021 – May 2023",
+      "bullets": [
+        "Managed online product listings and created social media content for campaigns.",
+        "Worked on dropshipping and print-on-demand stores, assisting with order management and customer support.",
+        "Designed marketing materials and contributed to website design improvements.",
+        "Gained insights into e-commerce operations and digital marketing tactics."
+      ]
     }
+  ],
+
+  "skills": {
+    "web": ["Next.js", "React", "Vue", "Tailwind", "HTML/CSS"],
+    "backend": ["Node.js", "Express", "FastAPI", "PHP", "SQL"],
+    "ai": [
+      "RAG pipelines",
+      "Embeddings",
+      "LangChain",
+      "LLMs",
+      "Vector databases (pgvector, Pinecone, Weaviate)",
+      "Prompt engineering",
+      "AI agents & orchestration",
+      "Model fine-tuning basics",
+      "OpenAI / Anthropic APIs",
+      "Image classification (K-Means, Mean-Shift, GTSRB dataset)",
+      "Face recognition (custom FastAPI microservice)"
+    ],
+    "devops": ["Docker", "CI/CD", "VPS", "Linux servers", "GitHub Actions", "Nginx"],
+    "langs": ["TypeScript", "JavaScript", "Python", "SQL", "C++", "C#"]
+  },
+
+  "education": [
+    "UM FERI — Computer Science (2023–2026)",
+    "SERS Maribor — Computer Technician (2019–2023)"
+  ],
+
+  "roadmap": [
+    { "year": "before 2018", "milestone": "Early curiosity → video editing, modding games, file management." },
+    { "year": "2018", "milestone": "First exposure to web dev → HTML & CSS → built fun websites." },
+    { "year": "2019", "milestone": "Entered SERŠ (Computer Science) → learned C++ and Unity basics." },
+    { "year": "2020", "milestone": "COVID pause → less productive, but gained perspective." },
+    { "year": "2021", "milestone": "Worked at eAvio agency → WordPress e-commerce, marketing integrations, Python automation scripts." },
+    { "year": "2022", "milestone": "Tried entrepreneurship → dropshipping, agencies, investing & crypto. Learned resilience and risk management." },
+    { "year": "2023 (early)", "milestone": "Final high school project: Decentralized portfolio tracker (React + Node + Moralis). Rediscovered passion for programming." },
+    { "year": "2023 (late)", "milestone": "Started CS & IT studies at FERI. Joined SolveX → Vue + TS, teamwork, APIs, project planning." },
+    { "year": "2024 (early)", "milestone": "Blockchain course → joined Blockchain Lab. Worked on DID, VC, Veramo." },
+    { "year": "2024 (late)", "milestone": "Startup Weekend → met co-founder. Began serious work in DevOps & Cloud (Docker, CI/CD, VPS, microservices) and AI integrations." },
+    { "year": "2025", "milestone": "Balancing studies, lab work, and business. Building AI automation agency → merging LLMs, automation, and business execution." }
+  ],
+
+  "other": {
+    "born": "2004-sep",
+    "music": "Pink Floyd",
+    "favorite_book": "Principles by Ray Dalio",
+    "quote": "Si al pa nisi",
+    "dream_car": "Renault 5 Turbo II",
+    "dream_motorbike": "Honda XR650L"
+  },
+
+  "faq": {
+    "title": "FAQ — About Vito",
+    "url": "/cv#faq",
+    "type": "cv",
+    "section": "FAQ",
+    "date": null,
+    "source": "cv-faq",
+    "text": "Who am I?\nI’m a CS student at UM FERI focused on practical web apps, AI automation, and scalable backends.\n\nWhat am I focused on now?\nFinishing CS at FERI and building an AI-first automation agency (LLMs + automation).\n\nHow to contact me?\nEmail: vito.senic@gmail.com • GitHub/LinkedIn/X links are on /cv#socials.\n\nWhat stacks do I use?\nWeb: Next.js • Backend: NestJS/FastAPI • db: Supabase • AI: RAG, embeddings, LangChain, LLMs • DevOps: Docker, CI/CD • Languages: TS/JS/Python.\n\nBlockchain background?\nAt FERI Blockchain Lab I worked on SSI/DID/Verifiable Credentials and contributed to EduCTX Issuer Platform and MASCA."
+  }
+  
 }

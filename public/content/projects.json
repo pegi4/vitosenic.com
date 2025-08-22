@@ -1,14 +1,92 @@
 [
   {
+    "slug": "projects-index",
+    "title": "Projects — Index",
+    "tagline": "Overview of all projects I’ve built so far.",
+    "year": null,
+    "stack": [],
+    "image": null,
+    "summary": "A quick overview of my projects with links for deeper exploration.",
+    "highlights": [
+      "• Feri Urnik Google Calendar Generator (2023) — Convert Wisetime tables to Google Calendar — /projects#feri-urnik-personal-url-google-calendar-generator",
+      "• Personal Website (2021) — My first public site in plain HTML/CSS/JS — /projects#old-website",
+      "• Personal Website (2025) — Current minimalist portfolio and blog — /projects#personal-website-2025",
+      "• Smart Delivery Box (2025) — IoT capstone project with mobile + cloud integration — /projects#school-capstone-project"
+    ],
+    "links": [
+      { "type": "page", "label": "View Projects", "url": "/projects" }
+    ]
+  },
+  {
     "slug": "feri-urnik-personal-url-google-calendar-generator",
-    "title": "Feri urnik personal-url-google-calendar-generator",
-    "tagline": "Convert wisetime table to add it as a url to google calander.",
+    "title": "Feri Urnik Google Calendar Generator",
+    "tagline": "Convert Wisetime tables into Google Calendar links.",
     "year": "2023",
-    "stack": ["Next.js","Tailwind"],
+    "stack": ["Next.js", "Tailwind"],
     "image": "/images/feri_urnik_ical.png",
+    "summary": "A tool that converts timetable exports from Wisetime into a URL that can be imported into Google Calendar. Built with Next.js and Tailwind to help students keep schedules synced automatically.",
+    "highlights": [
+      "Built a parser for Wisetime tables → converted them into iCal format.",
+      "Deployed on Vercel for instant use without installation.",
+      "Learned how to handle date/time parsing and integration with external calendar systems."
+    ],
     "links": [
       { "type": "repo", "label": "Code", "url": "https://github.com/pegi4/feri-urnik-personal-url-google-calendar-generator" },
-      { "type": "demo", "label": "Link", "url": "https://feri-calendar.vercel.app/"}
+      { "type": "demo", "label": "Live Demo", "url": "https://feri-calendar.vercel.app/" }
+    ],
+    "case_study": "/notes/2023-xx-xx_feri-calendar"
+  },
+  {
+    "slug": "old-website",
+    "title": "Personal Website (2021)",
+    "tagline": "My first public personal website, built in plain HTML/CSS/JS.",
+    "year": "2021",
+    "stack": ["HTML", "CSS", "javaScript"],
+    "image": "/images/old_website.png",
+    "summary": "My first attempt at building a personal website. Minimal design but helped me learn web fundamentals, hosting, and version control basics.",
+    "highlights": [
+      "Learned basics of static web hosting and domain setup.",
+      "Applied responsive design concepts with pure CSS.",
+      "Kickstarted my habit of building in public."
+    ],
+    "links": [
+      { "type": "demo", "label": "Archive", "url": "https://github.com/pegi4/old-website" }
     ]
+  },
+  {
+    "slug": "personal-website-2025",
+    "title": "Personal Website (Current)",
+    "tagline": "My current minimalist portfolio, blog, and project hub.",
+    "year": "2025",
+    "stack": ["Next.js", "Supabase", "Tailwind"],
+    "image": "/images/current_website.png",
+    "summary": "A minimalist personal site focused on clarity: blog, projects, and AI-powered assistant. Designed to be functional, fast, and serve as the foundation for my personal RAG-powered LLM.",
+    "highlights": [
+      "Implemented static + dynamic routes for blog and projects.",
+      "Integrated Supabase for storage, authentication, and RAG pipeline.",
+      "Built foundation for personalized LLM chat with embeddings and vector search."
+    ],
+    "links": [
+      { "type": "repo", "label": "Code", "url": "https://github.com/vitosenic/vitosenic.com" },
+      { "type": "demo", "label": "Live Site", "url": "https://vitosenic.com" }
+    ]
+  },
+  {
+    "slug": "school-capstone-project",
+    "title": "Smart Delivery Box (Capstone Project)",
+    "tagline": "Team project focused on IoT, mobile, and cloud integration.",
+    "year": "2025",
+    "stack": ["React", "NestJS", "FastAPI", "Kotlin", "Docker"],
+    "image": "/images/smart_delivery_box.png",
+    "summary": "Capstone project where I led DevOps and architecture decisions for a smart delivery box system. While not AI-focused, this project taught me about teamwork, designing technical roadmaps, and applying full-stack skills in a complex setting.",
+    "highlights": [
+      "Coordinated between frontend (React), backend (NestJS), and mobile app (Kotlin).",
+      "Set up CI/CD pipelines, Dockerized microservices, and deployed on VPS.",
+      "Learned project management, new tech adoption, and technical leadership."
+    ],
+    "links": [
+      { "type": "repo", "label": "Code", "url": "https://github.com/vitosenic/delivery-box" }
+    ],
+    "case_study": "/notes/2025-07-xx_delivery-box"
   }
 ]
