@@ -8,6 +8,47 @@ type Message = {
   content: string;
 };
 
+// Function to parse markdown links and render them as styled links
+const renderMessageWithLinks = (content: string) => {
+  // Regex to match markdown links: [text](url)
+  const markdownLinkRegex = /\[([^\]]+)\]\(([^)]+)\)/g;
+  
+  const parts = [];
+  let lastIndex = 0;
+  let match;
+  
+  while ((match = markdownLinkRegex.exec(content)) !== null) {
+    // Add text before the link
+    if (match.index > lastIndex) {
+      parts.push(content.slice(lastIndex, match.index));
+    }
+    
+    // Add the styled link
+    const linkText = match[1];
+    const linkUrl = match[2];
+    parts.push(
+      <a
+        key={match.index}
+        href={linkUrl}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-blue-600 font-semibold underline hover:text-blue-800 transition-colors"
+      >
+        {linkText}
+      </a>
+    );
+    
+    lastIndex = match.index + match[0].length;
+  }
+  
+  // Add any remaining text after the last link
+  if (lastIndex < content.length) {
+    parts.push(content.slice(lastIndex));
+  }
+  
+  return parts.length > 0 ? parts : content;
+};
+
 export default function ChatPage() {
   const [messages, setMessages] = useState<Message[]>([
     { role: 'system', content: 'I am an AI assistant that can answer questions about Vito Senič based on his CV, projects, and notes.' },
@@ -74,7 +115,7 @@ export default function ChatPage() {
               <div className="font-semibold mb-1">
                 {message.role === 'assistant' ? 'AI Assistant' : 'You'}
               </div>
-              <div className="whitespace-pre-wrap">{message.content}</div>
+              <div className="whitespace-pre-wrap">{renderMessageWithLinks(message.content)}</div>
             </div>
           ))}
           {isLoading && (
