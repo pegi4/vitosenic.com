@@ -4,12 +4,30 @@ import { chat, embeddings } from '@/utils/githubModels';
 import { SupabaseVectorStore } from '@langchain/community/vectorstores/supabase';
 import { mainPrompt, queryRewriterPrompt } from '@/prompts';
 import { PromptMessage } from '@/types/prompt';
+import { RateLimiter } from '@/lib/rate-limit';
 
 // Number of relevant documents to retrieve
 const RETRIEVE_K = 5;
 
 export async function POST(req: NextRequest) {
   try {
+    // Check rate limit first
+    const rateLimitResult = await RateLimiter.checkLimit(req);
+    if (!rateLimitResult.success) {
+      return new Response(JSON.stringify({ 
+        error: 'Rate limit exceeded',
+        message: rateLimitResult.message,
+        resetTime: rateLimitResult.resetTime
+      }), {
+        status: 429, // Too Many Requests
+        headers: { 
+          'Content-Type': 'application/json',
+          'X-RateLimit-Remaining': '0',
+          'X-RateLimit-Reset': rateLimitResult.resetTime.toString()
+        }
+      });
+    }
+
     const { messages } = await req.json();
     
     if (!messages || !Array.isArray(messages)) {
@@ -112,9 +130,13 @@ export async function POST(req: NextRequest) {
       top_p: promptConfig.modelParameters?.top_p || 0.9
     });
 
-    // Return the response
+    // Return the response with rate limit headers
     return new Response(JSON.stringify({ content: response }), {
-      headers: { 'Content-Type': 'application/json' }
+      headers: { 
+        'Content-Type': 'application/json',
+        'X-RateLimit-Remaining': rateLimitResult.remaining.toString(),
+        'X-RateLimit-Reset': rateLimitResult.resetTime.toString()
+      }
     });
   } catch (error) {
     console.error('Chat API error:', error);
