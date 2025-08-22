@@ -107,3 +107,32 @@ language sql stable as $$
   order by similarity desc
   limit match_count
 $$;
+
+-- =========================================================
+-- CHAT LOGS TABLE
+-- =========================================================
+
+-- Table to store chat interactions for analytics
+create table if not exists public.chat_logs (
+  id          uuid primary key default gen_random_uuid(),
+  timestamp   timestamptz default now(),
+  user_fingerprint text not null,      -- User fingerprint (IP + user agent)
+  user_input  text not null,          -- User's message
+  system_output text not null,        -- System's response
+  created_at  timestamptz default now()
+);
+
+-- Index on timestamp for efficient querying by date
+create index if not exists chat_logs_timestamp_idx
+  on public.chat_logs (timestamp);
+
+-- Index on user fingerprint for analytics
+create index if not exists chat_logs_user_fingerprint_idx
+  on public.chat_logs (user_fingerprint);
+
+-- RLS: Only server can write, no public access
+alter table public.chat_logs enable row level security;
+create policy "Only server can insert chat logs" on public.chat_logs
+  for insert with check (false);
+create policy "Only server can select chat logs" on public.chat_logs
+  for select using (false);

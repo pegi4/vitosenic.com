@@ -1,5 +1,5 @@
 import { NextRequest } from 'next/server';
-import { supabaseAdmin } from '@/utils/supabase';
+import { supabaseAdmin, logChatInteraction } from '@/utils/supabase';
 import { chat, embeddings } from '@/utils/githubModels';
 import { SupabaseVectorStore } from '@langchain/community/vectorstores/supabase';
 import { mainPrompt, queryRewriterPrompt } from '@/prompts';
@@ -9,8 +9,27 @@ import { RateLimiter } from '@/lib/rate-limit';
 // Number of relevant documents to retrieve
 const RETRIEVE_K = 5;
 
+// Helper function to extract IP address from request
+function getClientIP(req: NextRequest): string {
+  // Use the same approach as the rate limiter
+  return req.headers.get('x-forwarded-for') || 
+         req.headers.get('x-real-ip') || 
+         req.headers.get('cf-connecting-ip') ||
+         'unknown';
+}
+
+// Generate a unique user fingerprint
+function generateUserFingerprint(req: NextRequest): string {
+  const ip = getClientIP(req);
+  const userAgent = req.headers.get('user-agent') || 'unknown';
+  return `${ip}:${userAgent}`;
+}
+
 export async function POST(req: NextRequest) {
   try {
+    // Extract user fingerprint for logging
+    const fingerprint = generateUserFingerprint(req);
+    
     // Check rate limit first
     const rateLimitResult = await RateLimiter.checkLimit(req);
     if (!rateLimitResult.success) {
@@ -129,6 +148,13 @@ export async function POST(req: NextRequest) {
       maxTokens: promptConfig.modelParameters?.max_completion_tokens || 600,
       top_p: promptConfig.modelParameters?.top_p || 0.9
     });
+
+    // Log the chat interaction with fingerprint instead of just IP
+    await logChatInteraction(
+      fingerprint, // Use fingerprint instead of just IP
+      latestMessage.content,
+      response
+    );
 
     // Return the response with rate limit headers
     return new Response(JSON.stringify({ content: response }), {

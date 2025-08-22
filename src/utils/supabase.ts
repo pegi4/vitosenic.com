@@ -24,3 +24,26 @@ export const supabaseAdmin = createClient(
     }
   }
 )
+
+// Function to log chat interactions
+export async function logChatInteraction(
+  userFingerprint: string,
+  userInput: string,
+  systemOutput: string
+) {
+  try {
+    const { error } = await supabaseAdmin
+      .from('chat_logs')
+      .insert({
+        user_fingerprint: userFingerprint,
+        user_input: userInput,
+        system_output: systemOutput
+      })
+
+    if (error) {
+      console.error('Error logging chat interaction:', error)
+    }
+  } catch (error) {
+    console.error('Failed to log chat interaction:', error)
+  }
+}
