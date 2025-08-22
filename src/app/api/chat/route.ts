@@ -2,32 +2,11 @@ import { NextRequest } from 'next/server';
 import { supabaseAdmin } from '@/utils/supabase';
 import { chat, embeddings } from '@/utils/githubModels';
 import { SupabaseVectorStore } from '@langchain/community/vectorstores/supabase';
-import { load } from 'js-yaml';
-import { readFileSync } from 'fs';
-import { join } from 'path';
+import { loadPromptConfig } from '@/lib/prompt-yaml-to-json';
+import { PromptMessage } from '@/types/prompt';
 
 // Number of relevant documents to retrieve
 const RETRIEVE_K = 5;
-
-// Load the prompt configuration
-function loadPromptConfig() {
-  try {
-    const promptPath = join(process.cwd(), 'src', 'prompts', 'index.prompt.yml');
-    const promptContent = readFileSync(promptPath, 'utf8');
-    return load(promptContent) as any;
-  } catch (error) {
-    console.error('Error loading prompt config:', error);
-    // Fallback to default prompt
-    return {
-      messages: [
-        {
-          role: 'system',
-          content: 'You are an AI assistant for Vito Senič. Answer questions based on the provided context.'
-        }
-      ]
-    };
-  }
-}
 
 export async function POST(req: NextRequest) {
   try {
@@ -77,23 +56,27 @@ export async function POST(req: NextRequest) {
 
     // Load the prompt configuration
     const promptConfig = loadPromptConfig();
+
+    console.log('promptConfig:', promptConfig);
     
     // Get the system message from the prompt config
-    const systemMessage = promptConfig.messages.find((msg: any) => msg.role === 'system');
+    const systemMessage = promptConfig.messages.find((msg: PromptMessage) => msg.role === 'system');
+    const userMessage = promptConfig.messages.find((msg: PromptMessage) => msg.role === 'user');
     
     // Replace the {{text}} and {{QUESTION}} placeholders with the actual values
-    let systemContent = systemMessage?.content || '';
-    systemContent = systemContent.replace('{{text}}', context);
-    systemContent = systemContent.replace('{{QUESTION}}', latestMessage.content);
+    let userContent = userMessage?.content || '';
+    userContent = userContent.replace('{{text}}', context);
+    userContent = userContent.replace('{{QUESTION}}', latestMessage.content);
 
     // Create messages array with the structured prompt
     const chatMessages = [
-      { role: 'system', content: systemContent },
+      { role: 'system', content: systemMessage?.content || '' },
+      { role: 'user', content: userContent },
       ...messages.filter(m => m.role !== 'system')
     ];
 
     // Get response from GitHub Models
-    const response = await chat.chat(chatMessages, {
+    const response = await chat.chat(promptConfig.model, chatMessages, {
       temperature: promptConfig.modelParameters?.temperature || 0.7,
       maxTokens: promptConfig.modelParameters?.max_completion_tokens || 600,
       top_p: promptConfig.modelParameters?.top_p || 0.9

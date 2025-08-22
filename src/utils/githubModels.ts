@@ -37,8 +37,16 @@ export async function createEmbeddings(texts: string[]): Promise<number[][]> {
     throw new Error(`Embedding error: ${response.body.error?.message}`);
   }
 
+  // FIX: Parse string response to JSON
+  const responseData = typeof response.body === 'string' 
+  ? JSON.parse(response.body) 
+  : response.body;
+
+  console.log('response:', responseData);
+  console.log('embedding usage:',responseData.usage);
+
   // Explicitly cast to ensure correct type
-  return response.body.data.map(item => item.embedding as number[]);
+  return responseData.data.map((item: { embedding: number[] }) => item.embedding);
 }
 
 // Chat completion function
@@ -51,9 +59,6 @@ export async function createChatCompletion(
     top_p?: number;
   }
 ): Promise<string> {
-  console.log('model:', model);
-  console.log('messages:', messages);
-  console.log('options:', options);
   const response = await githubModelsClient.path("/chat/completions").post({
     body: {
       messages,
@@ -65,10 +70,20 @@ export async function createChatCompletion(
   });
 
   if (isUnexpected(response)) {
-    throw new Error(`Chat error: ${response.body.error?.message}`);
+    // FIX: Parse string response to JSON for error handling
+    const responseData = typeof response.body === 'string' 
+      ? JSON.parse(response.body) 
+      : response.body;
+    
+    throw new Error(`Chat error: ${responseData.error?.message || 'Unknown error'}`);
   }
 
-  return response.body.choices[0]?.message?.content || "";
+  // FIX: Parse string response to JSON for success handling
+  const responseData = typeof response.body === 'string' 
+    ? JSON.parse(response.body) 
+    : response.body;
+
+  return responseData.choices[0]?.message?.content || "";
 }
 
 // LangChain-compatible embeddings class
