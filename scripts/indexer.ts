@@ -306,7 +306,7 @@ async function indexContent() {
   console.log("\n==== Processing Notes/Blog posts ====");
   const notesData = await readNotes();
   
-  let notesDocs: Document[] = [];
+  const notesDocs: Document[] = [];
   for (const note of notesData) {
     const chunks = await textSplitter.splitText(note.content);
     const docs = chunks.map((chunk, i) => 
