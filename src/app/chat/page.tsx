@@ -122,8 +122,8 @@ export default function ChatPage() {
 
   // Suggested questions for users to click
   const suggestedQuestions = [
-    "Tell me about your projects",
-    "What's your background in CS?",
+    "Tell me more about your projects",
+    "Tell more more about who you are...",
     "What are you currently working on?"
   ];
 
