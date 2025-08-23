@@ -29,8 +29,9 @@ jobs:
         with:
           version: 8
           
-      - name: Install dependencies
-        run: pnpm install
+      - name: Install only required dependencies
+        run: |
+          pnpm add langchain @langchain/community @langchain/core gray-matter tsx
         
       - name: Run content indexing
         run: npx tsx scripts/indexer.ts
