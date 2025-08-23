@@ -3,15 +3,15 @@ import type { Project } from "@public/content/projects.json";
 
 export default function ProjectCard({ project }: { project: Project }) {
   return (
-    <div className="flex flex-col bg-white rounded-lg overflow-hidden shadow-sm border border-gray-100">
-      <div className="relative aspect-video">
+    <div className="group flex flex-col bg-white rounded-lg overflow-hidden shadow-sm border border-gray-100 hover:shadow-lg hover:border-gray-200 transition-all duration-300 transform hover:-translate-y-1">
+      <div className="relative aspect-video overflow-hidden">
         {project.image ? (
           <Image
             src={project.image}
             alt={`${project.title} - ${project.tagline}`}
             fill
             sizes="(min-width: 1280px) 384px, (min-width: 768px) 50vw, 100vw"
-            className="object-cover"
+            className="object-cover group-hover:scale-105 transition-transform duration-300"
             loading="lazy"
             placeholder="blur"
             blurDataURL="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Cpath d='M0 0h40v40H0z' fill='%23f5f5f5'/%3E%3C/svg%3E"
@@ -24,20 +24,13 @@ export default function ProjectCard({ project }: { project: Project }) {
       </div>
 
       <div className="p-4 flex-1 flex flex-col">
-        <div className="mb-2">
-          <h3 className="text-lg font-medium">{project.title}</h3>
-          <p className="text-sm text-gray-600 line-clamp-2">{project.tagline}</p>
-        </div>
-
-        <div className="flex flex-wrap gap-1 mb-3">
-          <span className="bg-gray-100 text-xs px-2 py-1 rounded">
-            {project.year}
-          </span>
-          {project.stack.slice(0, 4).map((tech: string) => (
-            <span key={tech} className="bg-gray-100 text-xs px-2 py-1 rounded">
-              {tech}
-            </span>
-          ))}
+        <div className="mb-4">
+          <h3 className="text-lg font-semibold text-gray-900 group-hover:text-rose-600 transition-colors duration-200 mb-2">
+            {project.title}
+          </h3>
+          <p className="text-sm text-gray-600 leading-relaxed">
+            {project.tagline}
+          </p>
         </div>
 
         <div className="mt-auto pt-3 flex flex-wrap gap-2">
@@ -54,7 +47,7 @@ export default function ProjectCard({ project }: { project: Project }) {
         href={link.url}
         target="_blank"
         rel="noopener noreferrer"
-        className={`text-xs font-medium ${bgClass} px-3 py-2.5 rounded-md inline-flex items-center transition-all duration-200 ease-in-out cursor-pointer`}
+                        className={`text-xs font-medium ${bgClass} px-3 py-2.5 rounded-md inline-flex items-center transition-all duration-200 ease-in-out cursor-pointer hover:scale-105 transform`}
       >
         <span className="hover:underline hover:underline-offset-2">{link.label}</span>
         {link.gated && " 🔒"}

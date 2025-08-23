@@ -77,9 +77,11 @@ export default function ProjectsPage() {
         {projects.length === 0 ? (
           <p>No projects yet. Check back soon!</p>
         ) : (
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="columns-1 sm:columns-2 lg:columns-3 gap-6 space-y-6">
             {projects.slice(1).map((project) => (
-              <ProjectCard key={project.slug} project={project} />
+              <div key={project.slug} className="break-inside-avoid mb-6">
+                <ProjectCard project={project} />
+              </div>
             ))}
           </div>
         )}
