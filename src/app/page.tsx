@@ -28,7 +28,7 @@ export default function Home() {
             . It’s not perfect, but I’m proud of it. 
             If you’re curious how I made it, I wrote about the process{" "}
             <Link
-              href="/notes/building-personal-ai-chat"
+              href="/notes/2025-08-23_building-vitosenic-site"
               className="text-rose-500 font-medium underline"
             >
               [here]
