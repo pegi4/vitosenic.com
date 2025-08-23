@@ -279,7 +279,24 @@ export default function ChatPage() {
             {isLoading && (
               <div className="pl-2 border-l-4 border-rose-500 mb-4">
                 <div className="font-semibold mb-1">Vito</div>
-                <div className="animate-pulse">Thinking...</div>
+                <div className="relative">
+                  <div className="bg-gradient-to-r from-gray-400 via-gray-600 to-gray-400 bg-clip-text text-transparent font-semibold animate-pulse">
+                    Thinking...
+                  </div>
+                  <div 
+                    className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent shadow-lg blur-sm"
+                    style={{
+                      animation: 'slideShadow 2s ease-in-out infinite'
+                    }}
+                  ></div>
+                </div>
+                <style jsx>{`
+                  @keyframes slideShadow {
+                    0% { transform: translateX(-100%); opacity: 0; }
+                    50% { opacity: 1; }
+                    100% { transform: translateX(100%); opacity: 0; }
+                  }
+                `}</style>
               </div>
             )}
             <div ref={messagesEndRef} />
