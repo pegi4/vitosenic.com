@@ -72,12 +72,20 @@ const renderMessageWithLinks = (content: string) => {
 export default function ChatPage() {
   const [messages, setMessages] = useState<Message[]>([
     { role: 'system', content: 'I am an AI assistant that can answer questions about Vito Senič based on his CV, projects, and notes.' },
-    { role: 'assistant', content: 'Hi! I\'m Vito\'s AI assistant. Ask me anything about his experience, projects, or interests!' }
+    { role: 'assistant', content: 'Hej, Vito here! 👋 What do you wanna know about me?' }
   ]);
   const [input, setInput] = useState('');
   const [isLoading, setIsLoading] = useState(false);
   const [rateLimitInfo, setRateLimitInfo] = useState<RateLimitInfo>({ remaining: 10, resetTime: Date.now() + 5 * 60 * 1000 });
+  const [showSuggestions, setShowSuggestions] = useState(true);
   const messagesEndRef = useRef<HTMLDivElement>(null);
+
+  // Suggested questions for users to click
+  const suggestedQuestions = [
+    "Tell me about your projects",
+    "What's your background in CS?",
+    "What are you currently working on?"
+  ];
 
   // Fetch current rate limit status on page load
   useEffect(() => {
@@ -130,9 +138,71 @@ export default function ChatPage() {
     messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
   }, [messages]);
 
+  const handleSuggestedQuestion = async (question: string) => {
+    if (isLoading || rateLimitInfo.remaining === 0) return;
+    
+    // Hide suggestions after clicking
+    setShowSuggestions(false);
+    
+    // Update rate limit immediately when user sends message
+    setRateLimitInfo(prev => ({
+      ...prev,
+      remaining: prev.remaining - 1
+    }));
+
+    // Add user message
+    const userMessage = { role: 'user' as const, content: question };
+    setMessages(prev => [...prev, userMessage]);
+    setIsLoading(true);
+
+    try {
+      // Call API endpoint
+      const response = await fetch('/api/chat', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ messages: [...messages, userMessage] })
+      });
+
+      // Update rate limit info from headers
+      const remaining = response.headers.get('X-RateLimit-Remaining');
+      const resetTime = response.headers.get('X-RateLimit-Reset');
+      if (remaining && resetTime) {
+        setRateLimitInfo({
+          remaining: parseInt(remaining),
+          resetTime: parseInt(resetTime)
+        });
+      }
+
+      if (!response.ok) {
+        if (response.status === 429) {
+          // Rate limit exceeded
+          const errorData = await response.json();
+          throw new Error(errorData.message || 'Rate limit exceeded');
+        }
+        throw new Error('Failed to get response');
+      }
+
+      const data = await response.json();
+      
+      // Add assistant response
+      setMessages(prev => [...prev, { role: 'assistant', content: data.content }]);
+    } catch (error) {
+      console.error('Error:', error);
+      setMessages(prev => [...prev, { 
+        role: 'assistant', 
+        content: 'Sorry, I encountered an error. Please try again later.' 
+      }]);
+    } finally {
+      setIsLoading(false);
+    }
+  };
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!input.trim() || isLoading || rateLimitInfo.remaining === 0) return;
+    
+    // Hide suggestions after user types
+    setShowSuggestions(false);
 
     // Update rate limit immediately when user sends message
     setRateLimitInfo(prev => ({
@@ -190,63 +260,78 @@ export default function ChatPage() {
 
   return (
     <Container>
-      <div className="flex flex-col min-h-[calc(100vh-8rem)] py-8">
-        <h1 className="text-3xl font-bold mb-8">Chat with Vito&apos;s AI</h1>
-        
+      <div className="flex flex-col py-8 md:py-14 h-screen">
         {/* Messages container */}
-        <div className="flex-1 overflow-auto mb-6 border border-gray-200 rounded-lg p-4 bg-gray-50">
-          {messages.filter(m => m.role !== 'system').map((message, index) => (
-            <div 
-              key={index} 
-              className={`mb-4 ${message.role === 'assistant' ? 'pl-2 border-l-4 border-blue-500' : 'pl-2 border-l-4 border-gray-300'}`}
-            >
-              <div className="font-semibold mb-1">
-                {message.role === 'assistant' ? 'AI Assistant' : 'You'}
+        <div className="h-screen md:h-[900px] border border-gray-200 rounded-lg bg-gray-50 flex flex-col">
+          {/* Scrollable messages area */}
+          <div className="flex-1 overflow-y-auto p-4">
+            {messages.filter(m => m.role !== 'system').map((message, index) => (
+              <div 
+                key={index} 
+                className={`mb-4 ${message.role === 'assistant' ? 'pl-2 border-l-4 border-rose-500' : 'pl-2 border-l-4 border-gray-300'}`}
+              >
+                <div className="font-semibold mb-1">
+                  {message.role === 'assistant' ? 'Vito' : 'You'}
+                </div>
+                <div className="whitespace-pre-wrap">{renderMessageWithLinks(message.content)}</div>
               </div>
-              <div className="whitespace-pre-wrap">{renderMessageWithLinks(message.content)}</div>
-            </div>
-          ))}
-          {isLoading && (
-            <div className="pl-2 border-l-4 border-blue-500 mb-4">
-              <div className="font-semibold mb-1">AI Assistant</div>
-              <div className="animate-pulse">Thinking...</div>
-            </div>
-          )}
-          <div ref={messagesEndRef} />
-        </div>
-        
-        {/* Rate limit indicator */}
-        <div className="mb-4 p-3 bg-gray-100 rounded-lg text-sm text-gray-600">
-          <div className="flex justify-between items-center">
-            <span>Questions remaining: <strong>{rateLimitInfo.remaining}</strong></span>
-            <span>Resets in: <strong>{formatTimeRemaining(rateLimitInfo.resetTime)}</strong></span>
+            ))}
+            {isLoading && (
+              <div className="pl-2 border-l-4 border-rose-500 mb-4">
+                <div className="font-semibold mb-1">Vito</div>
+                <div className="animate-pulse">Thinking...</div>
+              </div>
+            )}
+            <div ref={messagesEndRef} />
+            
+            {/* Suggested questions */}
+            {showSuggestions && (
+              <div className="mb-6">
+                <p className="text-sm text-gray-600 mb-3">Try asking me:</p>
+                <div className="flex flex-wrap gap-2">
+                  {suggestedQuestions.map((question, index) => (
+                    <button
+                      key={index}
+                      onClick={() => handleSuggestedQuestion(question)}
+                      disabled={isLoading || rateLimitInfo.remaining === 0}
+                      className="px-4 py-2 bg-rose-500 hover:bg-rose-600 text-white text-sm rounded-lg transition-colors duration-200 disabled:opacity-50 disabled:cursor-not-allowed cursor-pointer"
+                    >
+                      {question}
+                    </button>
+                  ))}
+                </div>
+              </div>
+            )}
           </div>
-          <div className="w-full bg-gray-200 rounded-full h-2 mt-2">
-            <div 
-              className="bg-blue-600 h-2 rounded-full transition-all duration-300"
-              style={{ width: `${(rateLimitInfo.remaining / 10) * 100}%` }}
-            ></div>
+          
+          {/* Input form - always at bottom */}
+          <div className="p-4 border-t border-gray-200 bg-gray-50">
+            <form onSubmit={handleSubmit} className="flex gap-3 items-center">
+              <input
+                type="text"
+                value={input}
+                onChange={(e) => setInput(e.target.value)}
+                placeholder={rateLimitInfo.remaining > 0 ? "Ask me about my projects, studies, or ideas…" : "Rate limit exceeded"}
+                className="flex-1 p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-rose-500 disabled:bg-gray-100"
+                disabled={isLoading || rateLimitInfo.remaining === 0}
+              />
+              <button
+                type="submit"
+                disabled={isLoading || rateLimitInfo.remaining === 0}
+                className="w-12 h-12 bg-rose-500 hover:bg-rose-600 text-white rounded-full flex items-center justify-center transition-colors disabled:opacity-50 disabled:cursor-not-allowed shadow-sm hover:shadow-md cursor-pointer"
+              >
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M9.91158 12H7.45579H4L2.02268 4.13539C2.0111 4.0893 2.00193 4.04246 2.00046 3.99497C1.97811 3.27397 2.77209 2.77366 3.46029 3.10388L22 12L3.46029 20.8961C2.77983 21.2226 1.99597 20.7372 2.00002 20.0293C2.00038 19.9658 2.01455 19.9032 2.03296 19.8425L3.5 15" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
+              </button>
+            </form>
+            
+            {/* Rate limit indicator below input */}
+            <div className="text-center text-xs text-gray-500 mt-2">
+              {rateLimitInfo.remaining}/10 questions • resets in {formatTimeRemaining(rateLimitInfo.resetTime)}
+            </div>
           </div>
         </div>
-
-        {/* Input form */}
-        <form onSubmit={handleSubmit} className="flex gap-2">
-          <input
-            type="text"
-            value={input}
-            onChange={(e) => setInput(e.target.value)}
-            placeholder={rateLimitInfo.remaining > 0 ? "Ask me anything about Vito..." : "Rate limit exceeded"}
-            className="flex-1 p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 disabled:bg-gray-100"
-            disabled={isLoading || rateLimitInfo.remaining === 0}
-          />
-          <button
-            type="submit"
-            disabled={isLoading || rateLimitInfo.remaining === 0}
-            className="bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-6 rounded-lg transition-colors disabled:bg-gray-400"
-          >
-            {rateLimitInfo.remaining === 0 ? 'Rate Limited' : 'Send'}
-          </button>
-        </form>
       </div>
     </Container>
   );

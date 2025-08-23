@@ -78,7 +78,7 @@ export default function ProjectsPage() {
           <p>No projects yet. Check back soon!</p>
         ) : (
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {projects.map((project) => (
+            {projects.slice(1).map((project) => (
               <ProjectCard key={project.slug} project={project} />
             ))}
           </div>

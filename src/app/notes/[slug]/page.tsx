@@ -23,13 +23,13 @@ export async function generateMetadata({ params }: { params: Promise<Params> }):
         title: meta.title,
         description: meta.summary,
         type: 'article',
-        url: `https://vitosenic.com/blog/${meta.slug}`,
+        url: `https://vitosenic.com/notes/${meta.slug}`,
         ...(meta.cover && { 
           images: [{ url: meta.cover, width: 1200, height: 630 }] 
         }),
       },
       alternates: {
-        canonical: meta.canonical || `https://vitosenic.com/blog/${meta.slug}`,
+        canonical: meta.canonical || `https://vitosenic.com/notes/${meta.slug}`,
       },
     };
   } catch {
@@ -72,7 +72,7 @@ export default async function BlogPostPage({ params }: { params: Promise<Params>
       },
       "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": `https://vitosenic.com/blog/${meta.slug}`
+        "@id": `https://vitosenic.com/notes/${meta.slug}`
       },
       ...(meta.cover && {
         "image": {
@@ -138,7 +138,7 @@ export default async function BlogPostPage({ params }: { params: Promise<Params>
           </header>
           
           <div 
-            className="prose prose-slate prose-headings:font-bold prose-a:text-blue-600 max-w-none"
+            className="prose prose-slate prose-headings:font-bold prose-a:text-rose-500 prose-a:underline prose-a:hover:text-rose-600 max-w-none"
             dangerouslySetInnerHTML={{ __html: contentHtml }}
           />
         </article>
