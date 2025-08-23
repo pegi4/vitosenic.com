@@ -1,6 +1,6 @@
 name: query-rewriter-agent
 description: Rewrites user queries to improve context retrieval
-model: openai/gpt-4.1-mini
+model: openai/gpt-4o-mini
 modelParameters:
   max_completion_tokens: 200
   temperature: 0.2
