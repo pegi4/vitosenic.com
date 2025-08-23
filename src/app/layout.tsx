@@ -16,12 +16,12 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://vitosenic.com"),
   title: {
     template: "%s | Vito Senič",
-    default: "Vito Senič | CS Student & Builder",
+    default: "Vito Senič | CS Student & AI Automation Builder",
   },
-  description: "CS student with a builder's mindset — diving deep from code to business strategy to create solutions that actually work in the real world.",
+  description: "CS student at UM FERI researching decentralized identity systems and building AI automation solutions. Currently at Blockchain Lab working on SSI/DID/Verifiable Credentials.",
   openGraph: {
-    title: "Vito Senič | CS Student & Builder",
-    description: "CS student with a builder's mindset — diving deep from code to business strategy to create solutions that actually work in the real world.",
+    title: "Vito Senič | CS Student & AI Automation Builder",
+    description: "CS student at UM FERI researching decentralized identity systems and building AI automation solutions. Currently at Blockchain Lab working on SSI/DID/Verifiable Credentials.",
     url: "https://vitosenic.com",
     siteName: "Vito Senič",
     locale: "en_US",
@@ -31,14 +31,14 @@ export const metadata: Metadata = {
         url: "/images/og-default.jpg", // Create this image in your public folder
         width: 1200,
         height: 630,
-        alt: "Vito Senič",
+        alt: "Vito Senič - CS Student & AI Automation Builder",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Vito Senič | CS Student & Builder",
-    description: "CS student with a builder's mindset — diving deep from code to business strategy to create solutions that actually work in the real world.",
+    title: "Vito Senič | CS Student & AI Automation Builder",
+    description: "CS student at UM FERI researching decentralized identity systems and building AI automation solutions. Currently at Blockchain Lab working on SSI/DID/Verifiable Credentials.",
     creator: "@vitosenic",
     images: ["/images/og-default.jpg"], // Same image as OpenGraph
   },
