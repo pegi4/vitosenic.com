@@ -28,15 +28,18 @@ const formatTimeRemaining = (resetTime: number): string => {
   return `${hours}h ${remainingMinutes}m`;
 };
 
-// Function to parse markdown links and render them as styled links
-const renderMessageWithLinks = (content: string) => {
+// Function to parse markdown links and bold text, rendering them as styled elements
+const renderMessageWithFormatting = (content: string) => {
   // Regex to match markdown links: [text](url)
   const markdownLinkRegex = /\[([^\]]+)\]\(([^)]+)\)/g;
+  // Regex to match bold text: **text**
+  const boldTextRegex = /\*\*([^*]+)\*\*/g;
   
   const parts = [];
   let lastIndex = 0;
   let match;
   
+  // First, handle links
   while ((match = markdownLinkRegex.exec(content)) !== null) {
     // Add text before the link
     if (match.index > lastIndex) {
@@ -48,7 +51,7 @@ const renderMessageWithLinks = (content: string) => {
     const linkUrl = match[2];
     parts.push(
       <a
-        key={match.index}
+        key={`link-${match.index}`}
         href={linkUrl}
         target="_blank"
         rel="noopener noreferrer"
@@ -66,7 +69,43 @@ const renderMessageWithLinks = (content: string) => {
     parts.push(content.slice(lastIndex));
   }
   
-  return parts.length > 0 ? parts : content;
+  // Now process the result for bold text
+  const processedParts = [];
+  
+  for (const part of parts) {
+    if (typeof part === 'string') {
+      // Process bold text in string parts
+      let partLastIndex = 0;
+      let boldMatch;
+      
+      while ((boldMatch = boldTextRegex.exec(part)) !== null) {
+        // Add text before the bold
+        if (boldMatch.index > partLastIndex) {
+          processedParts.push(part.slice(partLastIndex, boldMatch.index));
+        }
+        
+        // Add the bold text
+        const boldText = boldMatch[1];
+        processedParts.push(
+          <strong key={`bold-${partLastIndex}-${boldMatch.index}`} className="font-bold text-gray-900">
+            {boldText}
+          </strong>
+        );
+        
+        partLastIndex = boldMatch.index + boldMatch[0].length;
+      }
+      
+      // Add any remaining text after the last bold
+      if (partLastIndex < part.length) {
+        processedParts.push(part.slice(partLastIndex));
+      }
+    } else {
+      // Keep non-string parts (like links) as-is
+      processedParts.push(part);
+    }
+  }
+  
+  return processedParts.length > 0 ? processedParts : content;
 };
 
 export default function ChatPage() {
@@ -289,7 +328,7 @@ export default function ChatPage() {
                 <div className="font-semibold mb-1">
                   {message.role === 'assistant' ? 'Vito' : 'You'}
                 </div>
-                <div className="whitespace-pre-wrap">{renderMessageWithLinks(message.content)}</div>
+                <div className="whitespace-pre-wrap">{renderMessageWithFormatting(message.content)}</div>
               </div>
             ))}
             {isLoading && (
