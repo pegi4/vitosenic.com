@@ -22,17 +22,15 @@
       "role": "Timeline",
       "dates": "",
       "bullets": [
-        "• Blockchain Lab (Student Researcher) — Jan 2024 – Present — /cv#blocklab",
-        "• SolveX (Frontend Developer, Vue + TypeScript) — Oct 2023 – Feb 2025 — /cv#solvex",
-        "• Divorce My Job Marketing (Marketing Assistant) — Aug 2021 – May 2023 — /cv#marketing-assistant",
-        "• eAvio (Web Developer & E-commerce Manager) — Jul 2021 – May 2022 — /cv#eavio"
+        "Currently active roles: Blockchain Lab (since September 2024) and SolveX (until February 2025).",
+        "Past roles: Marketing Assistant (2021–2023), eAvio Web Developer (2021–2022)."
       ]
     },
     {
       "id": "blocklab",
       "company": "Blockchain Lab (FERI)",
       "role": "Student Researcher",
-      "dates": "Sep 2024 – Present",
+      "dates": "September 2024 – Present",
       "bullets": [
         "Researched and prototyped decentralized identity systems (Self-Sovereign Identity, DID, Verifiable Credentials).",
         "Developed proof-of-concept integrations with Veramo agents for issuing and verifying credentials.",
@@ -44,7 +42,7 @@
       "id": "solvex",
       "company": "SolveX",
       "role": "Frontend Developer (Vue + TypeScript)",
-      "dates": "Oct 2023 – Feb 2025",
+      "dates": "Oct 2023 – Feb 2025 (active, overlapping with Blockchain Lab since Jan 2024)",
       "bullets": [
         "Built and maintained B2B software solutions for Big Bang, a major Slovenian retailer.",
         "Implemented user interfaces using Vue.js 3 and TypeScript, following component-driven development.",
