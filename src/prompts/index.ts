@@ -1,37 +1,16 @@
-import { load } from 'js-yaml';
-import { readFileSync } from 'fs';
-import { join } from 'path';
-import { PromptConfig } from '@/types/prompt';
-
-// Base function to load any prompt config
-function loadPrompt(filename: string): PromptConfig {
-  try {
-    const promptPath = join(process.cwd(), 'src', 'prompts', filename);
-    const promptContent = readFileSync(promptPath, 'utf8');
-    return load(promptContent) as PromptConfig;
-  } catch (error) {
-    console.error(`Error loading prompt config ${filename}:`, error);
-    return {
-      model: 'openai/gpt-4.1-mini',
-      responseFormat: 'text',
-      messages: [
-        {
-          role: 'system',
-          content: 'You are an AI assistant for Vito Senič. Answer questions based on the provided context.'
-        }
-      ]
-    };
-  }
-}
+import { PromptConfig } from "@/types/prompt";
+import { mainPrompt as mainPromptConfig } from "./main.prompt";
+import { queryRewriterPrompt as queryRewriterPromptConfig } from "./query_rewriter.prompt";
 
 // Export individual prompt configs
-export const mainPrompt = () => loadPrompt('main.prompt.yaml');
-export const queryRewriterPrompt = () => loadPrompt('query_rewriter.prompt.yaml');
+export const mainPrompt = (): PromptConfig => mainPromptConfig;
+export const queryRewriterPrompt = (): PromptConfig => queryRewriterPromptConfig;
 
 // Export a general loader function for future prompts
 export const loadPromptConfig = (filename?: string): PromptConfig => {
   if (filename) {
-    return loadPrompt(filename);
+    // For future prompts, you can add more imports here
+    throw new Error(`Prompt config for ${filename} not implemented yet`);
   }
   return mainPrompt();
 };

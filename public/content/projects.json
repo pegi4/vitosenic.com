@@ -32,7 +32,8 @@
     ],
     "links": [
       { "type": "repo", "label": "Code", "url": "https://github.com/pegi4/vitosenic.com" },
-      { "type": "demo", "label": "Live Site", "url": "https://www.vitosenic.com/chat" }
+      { "type": "demo", "label": "Live Site", "url": "https://www.vitosenic.com/chat" },
+      { "type": "case_study", "label": "Blog", "url": "https://www.vitosenic.com/chat" }
     ]
   },
   {
