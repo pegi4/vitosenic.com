@@ -38,6 +38,7 @@ const renderMessageWithFormatting = (content: string) => {
   const parts = [];
   let lastIndex = 0;
   let match;
+  let linkCounter = 0;
   
   // First, handle links
   while ((match = markdownLinkRegex.exec(content)) !== null) {
@@ -51,7 +52,7 @@ const renderMessageWithFormatting = (content: string) => {
     const linkUrl = match[2];
     parts.push(
       <a
-        key={`link-${match.index}`}
+        key={`link-${linkCounter++}`}
         href={linkUrl}
         target="_blank"
         rel="noopener noreferrer"
@@ -71,6 +72,7 @@ const renderMessageWithFormatting = (content: string) => {
   
   // Now process the result for bold text
   const processedParts = [];
+  let boldCounter = 0;
   
   for (const part of parts) {
     if (typeof part === 'string') {
@@ -87,7 +89,7 @@ const renderMessageWithFormatting = (content: string) => {
         // Add the bold text
         const boldText = boldMatch[1];
         processedParts.push(
-          <strong key={`bold-${partLastIndex}-${boldMatch.index}`} className="font-bold text-gray-900">
+          <strong key={`bold-${boldCounter++}`} className="font-bold text-gray-900">
             {boldText}
           </strong>
         );

@@ -33,7 +33,7 @@
     "links": [
       { "type": "repo", "label": "Code", "url": "https://github.com/pegi4/vitosenic.com" },
       { "type": "demo", "label": "Live Site", "url": "https://www.vitosenic.com/chat" },
-      { "type": "case_study", "label": "Blog", "url": "https://www.vitosenic.com/chat" }
+      { "type": "case_study", "label": "Blog", "url": "https://www.vitosenic.com/notes/2025-08-23_building-vitosenic-site" }
     ]
   },
   {
@@ -68,8 +68,7 @@
       "Kickstarted my habit of building in public."
     ],
     "links": [
-      { "type": "repo", "label": "Repo", "url": "https://github.com/pegi4/senic.site" },
-      { "type": "demo", "label": "Live Site", "url": "https://www.vitosenic.com/chat" }
+      { "type": "repo", "label": "Repo", "url": "https://github.com/pegi4/senic.site" }
     ]
   },
   {

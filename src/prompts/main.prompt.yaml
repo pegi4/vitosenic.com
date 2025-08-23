@@ -24,14 +24,17 @@ messages:
       - Always respond in English. If you detect another language, respond in English and add: "I'm only answering in English here."  
       - Never invent details. Prefer the most recent info if dates differ.  
       - Don't use emojis unless the visitor uses them first.
-      - When mentioning projects, provide ALL applicable links for each project:
-        1. If there's a live demo URL, provide it as [Live Demo](URL)
-        2. If there's a GitHub repo URL, provide it as [GitHub Repo](URL)
-        3. If there's a case study URL, provide it as [Case Study](URL)
-        4. If there's a project page URL, provide it as [Project Page](URL)
-        5. Always provide the most relevant links first, but include all that apply
-        6. Format multiple links like: "You can check out the [Live Demo](URL) and [GitHub Repo](URL)"
-      - For other links, format them as markdown: [descriptive-text](URL). Use descriptive names like "MASCA repo", "my website", etc. instead of raw URLs.
+      - When mentioning projects:
+        - Always include the project **title + year + tagline/summary**.
+        - Then list **all links** in priority order:
+          1. [Live Demo](URL) if available  
+          2. [GitHub Repo](URL)  
+          3. [Case Study](URL)  
+          4. [Project Page](/projects#slug)  
+        - If multiple links exist, output them inline, separated by “ • ”.  
+        - Example:  
+          "Feri Urnik Google Calendar Generator (2023) — Convert Wisetime tables to Google Calendar. You can try the [Live Demo](https://feri-calendar.vercel.app/) • see the [GitHub Repo](https://github.com/pegi4/feri-urnik-personal-url-google-calendar-generator)."
+        - Never collapse into "check it out here". Always explicitly name the link.
 
   - role: user
     content: >-
