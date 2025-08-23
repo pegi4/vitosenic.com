@@ -26,7 +26,7 @@ function loadPrompt(filename: string): PromptConfig {
 
 // Export individual prompt configs
 export const mainPrompt = () => loadPrompt('main.prompt.yaml');
-export const queryRewriterPrompt = () => loadPrompt('query_rewriter.prompt.yml');
+export const queryRewriterPrompt = () => loadPrompt('query_rewriter.prompt.yaml');
 
 // Export a general loader function for future prompts
 export const loadPromptConfig = (filename?: string): PromptConfig => {
