@@ -22,7 +22,7 @@
     "title": "Personal Website (Current)",
     "tagline": "My current minimalist portfolio, blog, and project hub.",
     "year": "2025",
-    "stack": ["Next.js", "Supabase", "Tailwind"],
+    "stack": ["Next.js", "Supabase", "GitHub Models"],
     "image": "/images/2025-05-14_hello-world.jpeg",
     "summary": "A minimalist personal site focused on clarity: blog, projects, and AI-powered assistant. Designed to be functional, fast, and serve as the foundation for my personal RAG-powered LLM.",
     "highlights": [
