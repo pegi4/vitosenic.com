@@ -71,13 +71,14 @@ const renderMessageWithLinks = (content: string) => {
 
 export default function ChatPage() {
   const [messages, setMessages] = useState<Message[]>([
-    { role: 'system', content: 'I am an AI assistant that can answer questions about Vito Senič based on his CV, projects, and notes.' },
+    { role: 'system', content: 'I am an AI assistant that can answer questions in Vito Senič\'s name based on his CV, projects, and notes.' },
     { role: 'assistant', content: 'Hej, Vito here! 👋 What do you wanna know about me?' }
   ]);
   const [input, setInput] = useState('');
   const [isLoading, setIsLoading] = useState(false);
   const [rateLimitInfo, setRateLimitInfo] = useState<RateLimitInfo>({ remaining: 10, resetTime: Date.now() + 5 * 60 * 1000 });
   const [showSuggestions, setShowSuggestions] = useState(true);
+  const [showTimeoutMessage, setShowTimeoutMessage] = useState(false);
   const messagesEndRef = useRef<HTMLDivElement>(null);
 
   // Suggested questions for users to click
@@ -154,6 +155,12 @@ export default function ChatPage() {
     const userMessage = { role: 'user' as const, content: question };
     setMessages(prev => [...prev, userMessage]);
     setIsLoading(true);
+    setShowTimeoutMessage(false);
+    
+    // Set timeout for 5 seconds - SUGGESTED QUESTION FUNCTION
+    const timeoutId = setTimeout(() => {
+      setShowTimeoutMessage(true);
+    }, 5000);
 
     try {
       // Call API endpoint
@@ -194,6 +201,8 @@ export default function ChatPage() {
       }]);
     } finally {
       setIsLoading(false);
+      setShowTimeoutMessage(false);
+      clearTimeout(timeoutId);
     }
   };
 
@@ -215,7 +224,12 @@ export default function ChatPage() {
     setMessages(prev => [...prev, userMessage]);
     setInput('');
     setIsLoading(true);
-
+    setShowTimeoutMessage(false);
+    
+    // Set timeout for 5 seconds - HANDLE SUBMIT FUNCTION
+    const timeoutId = setTimeout(() => {
+      setShowTimeoutMessage(true);
+    }, 5000);
     try {
       // Call API endpoint
       const response = await fetch('/api/chat', {
@@ -255,6 +269,8 @@ export default function ChatPage() {
       }]);
     } finally {
       setIsLoading(false);
+      setShowTimeoutMessage(false);
+      clearTimeout(timeoutId);
     }
   };
 
@@ -297,6 +313,19 @@ export default function ChatPage() {
                     100% { transform: translateX(100%); opacity: 0; }
                   }
                 `}</style>
+              </div>
+            )}
+            {showTimeoutMessage && isLoading && (
+              <div className="pl-2 border-l-4 border-amber-500 mb-4">
+                <div className="font-semibold mb-1">Vito</div>
+                <div className="text-amber-700 bg-amber-50 p-3 rounded-lg border border-amber-200">
+                  <p className="font-medium mb-2">🤔 Taking longer than expected...</p>
+                  <p className="text-sm text-amber-600">
+                    This might be due to rate limiting from the free GitHub Models API I&apos;m using. 
+                    I haven&apos;t implemented LLM routing yet, so I&apos;m currently using OpenAI/GPT-4.1-mini 
+                    for query rewriting and message generation. Hang tight!
+                  </p>
+                </div>
               </div>
             )}
             <div ref={messagesEndRef} />

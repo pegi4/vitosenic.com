@@ -33,8 +33,7 @@
     "links": [
       { "type": "repo", "label": "Code", "url": "https://github.com/pegi4/feri-urnik-personal-url-google-calendar-generator" },
       { "type": "demo", "label": "Live Demo", "url": "https://feri-calendar.vercel.app/" }
-    ],
-    "case_study": "/notes/2023-xx-xx_feri-calendar"
+    ]
   },
   {
     "slug": "old-website",
@@ -42,7 +41,7 @@
     "tagline": "My first public personal website, built in plain HTML/CSS/JS.",
     "year": "2021",
     "stack": ["HTML", "CSS", "javaScript"],
-    "image": "/images/old_website.png",
+    "image": "/images/senic-site-old-website.png",
     "summary": "My first attempt at building a personal website. Minimal design but helped me learn web fundamentals, hosting, and version control basics.",
     "highlights": [
       "Learned basics of static web hosting and domain setup.",
@@ -50,7 +49,7 @@
       "Kickstarted my habit of building in public."
     ],
     "links": [
-      { "type": "demo", "label": "Archive", "url": "https://github.com/pegi4/old-website" }
+      { "type": "demo", "label": "Archive", "url": "https://github.com/pegi4/senic.site" }
     ]
   },
   {
@@ -59,7 +58,7 @@
     "tagline": "My current minimalist portfolio, blog, and project hub.",
     "year": "2025",
     "stack": ["Next.js", "Supabase", "Tailwind"],
-    "image": "/images/current_website.png",
+    "image": "/images/2025-05-14_hello-world.jpeg",
     "summary": "A minimalist personal site focused on clarity: blog, projects, and AI-powered assistant. Designed to be functional, fast, and serve as the foundation for my personal RAG-powered LLM.",
     "highlights": [
       "Implemented static + dynamic routes for blog and projects.",
@@ -67,8 +66,8 @@
       "Built foundation for personalized LLM chat with embeddings and vector search."
     ],
     "links": [
-      { "type": "repo", "label": "Code", "url": "https://github.com/vitosenic/vitosenic.com" },
-      { "type": "demo", "label": "Live Site", "url": "https://vitosenic.com" }
+      { "type": "repo", "label": "Code", "url": "https://github.com/pegi4/vitosenic.com" },
+      { "type": "demo", "label": "Live Site", "url": "https://www.vitosenic.com/chat" }
     ]
   },
   {
@@ -85,8 +84,7 @@
       "Learned project management, new tech adoption, and technical leadership."
     ],
     "links": [
-      { "type": "repo", "label": "Code", "url": "https://github.com/vitosenic/delivery-box" }
-    ],
-    "case_study": "/notes/2025-07-xx_delivery-box"
+      { "type": "repo", "label": "Code", "url": "https://github.com/orgs/Pametnik-Paketnik/repositories" }
+    ]
   }
 ]
