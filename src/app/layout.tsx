@@ -18,29 +18,20 @@ export const metadata: Metadata = {
     template: "%s | Vito Senič",
     default: "Vito Senič | CS Student & AI Automation Builder",
   },
-  description: "CS student at UM FERI researching decentralized identity systems and building AI automation solutions. Currently at Blockchain Lab working on SSI/DID/Verifiable Credentials.",
+  description: "I’m a Computer Science student at UM FERI, currently combining my studies with hands-on work in research and development.",
   openGraph: {
     title: "Vito Senič | CS Student & AI Automation Builder",
-    description: "CS student at UM FERI researching decentralized identity systems and building AI automation solutions. Currently at Blockchain Lab working on SSI/DID/Verifiable Credentials.",
+    description: "I’m a Computer Science student at UM FERI, currently combining my studies with hands-on work in research and development.",
     url: "https://vitosenic.com",
     siteName: "Vito Senič",
     locale: "en_US",
-    type: "website",
-    images: [
-      {
-        url: "/images/og-default.jpg", // Create this image in your public folder
-        width: 1200,
-        height: 630,
-        alt: "Vito Senič - CS Student & AI Automation Builder",
-      },
-    ],
+    type: "website"
   },
   twitter: {
     card: "summary_large_image",
     title: "Vito Senič | CS Student & AI Automation Builder",
-    description: "CS student at UM FERI researching decentralized identity systems and building AI automation solutions. Currently at Blockchain Lab working on SSI/DID/Verifiable Credentials.",
+    description: "I’m a Computer Science student at UM FERI, currently combining my studies with hands-on work in research and development.",
     creator: "@vitosenic",
-    images: ["/images/og-default.jpg"], // Same image as OpenGraph
   },
   robots: {
     index: true,
