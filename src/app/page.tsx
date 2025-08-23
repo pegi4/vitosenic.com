@@ -11,7 +11,7 @@ export default function Home() {
           </h1>
 
           <p className="mb-6 sm:mb-8 leading-relaxed">
-            I’m a CS student at FERI, exploring the space between code and business.
+            I’m a CS student at FERI, building projects that solve real problems.
           </p>
 
           <p className="mb-6 sm:mb-8 leading-relaxed">
