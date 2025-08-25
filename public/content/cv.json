@@ -133,5 +133,4 @@
     "source": "cv-faq",
     "text": "Who am I?\nI’m a CS student at UM FERI focused on practical web apps, AI automation, and scalable backends.\n\nWhat am I focused on now?\nFinishing CS at FERI and building an AI-first automation agency (LLMs + automation).\n\nHow to contact me?\nEmail: vito.senic@gmail.com • GitHub/LinkedIn/X links are on /cv#socials.\n\nWhat stacks do I use?\nWeb: Next.js • Backend: NestJS/FastAPI • db: Supabase • AI: RAG, embeddings, LangChain, LLMs • DevOps: Docker, CI/CD • Languages: TS/JS/Python.\n\nBlockchain background?\nAt FERI Blockchain Lab I worked on SSI/DID/Verifiable Credentials and contributed to EduCTX Issuer Platform and MASCA."
   }
-  
 }
