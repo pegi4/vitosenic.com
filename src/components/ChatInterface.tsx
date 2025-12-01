@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useRef, useEffect } from 'react';
-import Container from '@/components/Container';
+import { motion, AnimatePresence } from 'framer-motion';
 
 type Message = {
   role: 'user' | 'assistant' | 'system';
@@ -28,13 +28,10 @@ const formatTimeRemaining = (resetTime: number): string => {
   return `${hours}h ${remainingMinutes}m`;
 };
 
-// Function to parse markdown links and bold text, rendering them as styled elements
+// Function to parse markdown links and bold text
 const renderMessageWithFormatting = (content: string) => {
-  // Regex to match markdown links: [text](url)
   const markdownLinkRegex = /\[([^\]]+)\]\(([^)]+)\)/g;
-  // Regex to match bold text: **text**
   const boldTextRegex = /\*\*([^*]+)\*\*/g;
-  
   const parts = [];
   let lastIndex = 0;
   let match;
@@ -42,12 +39,10 @@ const renderMessageWithFormatting = (content: string) => {
   
   // First, handle links
   while ((match = markdownLinkRegex.exec(content)) !== null) {
-    // Add text before the link
     if (match.index > lastIndex) {
       parts.push(content.slice(lastIndex, match.index));
     }
     
-    // Add the styled link
     const linkText = match[1];
     const linkUrl = match[2];
     parts.push(
@@ -56,7 +51,7 @@ const renderMessageWithFormatting = (content: string) => {
         href={linkUrl}
         target="_blank"
         rel="noopener noreferrer"
-        className="text-blue-600 font-semibold underline hover:text-blue-800 transition-colors"
+        className="text-rose-400 font-medium underline hover:text-rose-300 transition-colors"
       >
         {linkText}
       </a>
@@ -65,7 +60,6 @@ const renderMessageWithFormatting = (content: string) => {
     lastIndex = match.index + match[0].length;
   }
   
-  // Add any remaining text after the last link
   if (lastIndex < content.length) {
     parts.push(content.slice(lastIndex));
   }
@@ -89,7 +83,7 @@ const renderMessageWithFormatting = (content: string) => {
         // Add the bold text
         const boldText = boldMatch[1];
         processedParts.push(
-          <strong key={`bold-${boldCounter++}`} className="font-bold text-gray-900">
+          <strong key={`bold-${boldCounter++}`} className="font-semibold text-gray-100">
             {boldText}
           </strong>
         );
@@ -110,7 +104,7 @@ const renderMessageWithFormatting = (content: string) => {
   return processedParts.length > 0 ? processedParts : content;
 };
 
-export default function ChatPage() {
+export default function ChatInterface() {
   const [messages, setMessages] = useState<Message[]>([
     { role: 'system', content: 'I am an AI assistant that can answer questions in Vito Senič\'s name based on his CV, projects, and notes.' },
     { role: 'assistant', content: 'Hej, Vito here! 👋 What do you wanna know about me?' }
@@ -122,14 +116,12 @@ export default function ChatPage() {
   const [showTimeoutMessage, setShowTimeoutMessage] = useState(false);
   const messagesEndRef = useRef<HTMLDivElement>(null);
 
-  // Suggested questions for users to click
   const suggestedQuestions = [
     "Tell me more about your projects",
-    "Tell more more about who you are...",
+    "Tell me more about who you are...",
     "What are you currently working on?"
   ];
 
-  // Fetch current rate limit status on page load
   useEffect(() => {
     const fetchRateLimitStatus = async () => {
       try {
@@ -149,13 +141,11 @@ export default function ChatPage() {
     fetchRateLimitStatus();
   }, []);
 
-  // Update countdown timer every minute
   useEffect(() => {
     const timer = setInterval(() => {
       setRateLimitInfo(prev => {
         const now = Date.now();
         if (now >= prev.resetTime) {
-          // Reset time has passed, fetch new status
           fetch('/api/chat/rate-limit', { method: 'GET' })
             .then(response => response.json())
             .then(data => {
@@ -170,48 +160,37 @@ export default function ChatPage() {
         }
         return prev;
       });
-    }, 60000); // Update every minute
+    }, 60000);
 
     return () => clearInterval(timer);
   }, []);
 
-  // Scroll to bottom of messages
-  useEffect(() => {
-    messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
-  }, [messages]);
 
   const handleSuggestedQuestion = async (question: string) => {
     if (isLoading || rateLimitInfo.remaining === 0) return;
     
-    // Hide suggestions after clicking
     setShowSuggestions(false);
-    
-    // Update rate limit immediately when user sends message
     setRateLimitInfo(prev => ({
       ...prev,
       remaining: prev.remaining - 1
     }));
 
-    // Add user message
     const userMessage = { role: 'user' as const, content: question };
     setMessages(prev => [...prev, userMessage]);
     setIsLoading(true);
     setShowTimeoutMessage(false);
     
-    // Set timeout for 5 seconds - SUGGESTED QUESTION FUNCTION
     const timeoutId = setTimeout(() => {
       setShowTimeoutMessage(true);
     }, 5000);
 
     try {
-      // Call API endpoint
       const response = await fetch('/api/chat', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ messages: [...messages, userMessage] })
       });
 
-      // Update rate limit info from headers
       const remaining = response.headers.get('X-RateLimit-Remaining');
       const resetTime = response.headers.get('X-RateLimit-Reset');
       if (remaining && resetTime) {
@@ -223,7 +202,6 @@ export default function ChatPage() {
 
       if (!response.ok) {
         if (response.status === 429) {
-          // Rate limit exceeded
           const errorData = await response.json();
           throw new Error(errorData.message || 'Rate limit exceeded');
         }
@@ -231,8 +209,6 @@ export default function ChatPage() {
       }
 
       const data = await response.json();
-      
-      // Add assistant response
       setMessages(prev => [...prev, { role: 'assistant', content: data.content }]);
     } catch (error) {
       console.error('Error:', error);
@@ -251,35 +227,29 @@ export default function ChatPage() {
     e.preventDefault();
     if (!input.trim() || isLoading || rateLimitInfo.remaining === 0) return;
     
-    // Hide suggestions after user types
     setShowSuggestions(false);
-
-    // Update rate limit immediately when user sends message
     setRateLimitInfo(prev => ({
       ...prev,
       remaining: prev.remaining - 1
     }));
 
-    // Add user message
     const userMessage = { role: 'user' as const, content: input };
     setMessages(prev => [...prev, userMessage]);
     setInput('');
     setIsLoading(true);
     setShowTimeoutMessage(false);
     
-    // Set timeout for 5 seconds - HANDLE SUBMIT FUNCTION
     const timeoutId = setTimeout(() => {
       setShowTimeoutMessage(true);
     }, 5000);
+
     try {
-      // Call API endpoint
       const response = await fetch('/api/chat', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ messages: [...messages, userMessage] })
       });
 
-      // Update rate limit info from headers
       const remaining = response.headers.get('X-RateLimit-Remaining');
       const resetTime = response.headers.get('X-RateLimit-Reset');
       if (remaining && resetTime) {
@@ -291,7 +261,6 @@ export default function ChatPage() {
 
       if (!response.ok) {
         if (response.status === 429) {
-          // Rate limit exceeded
           const errorData = await response.json();
           throw new Error(errorData.message || 'Rate limit exceeded');
         }
@@ -299,8 +268,6 @@ export default function ChatPage() {
       }
 
       const data = await response.json();
-      
-      // Add assistant response
       setMessages(prev => [...prev, { role: 'assistant', content: data.content }]);
     } catch (error) {
       console.error('Error:', error);
@@ -316,97 +283,131 @@ export default function ChatPage() {
   };
 
   return (
-    <Container>
-      <div className="flex flex-col py-8 md:py-14 h-screen">
+    <div className="relative w-full max-w-4xl mx-auto">
+      {/* Background glow effect */}
+      <div className="absolute inset-0 -z-10 bg-gradient-to-br from-rose-500/20 via-pink-500/10 to-transparent blur-3xl rounded-3xl opacity-50" />
+      
+      {/* Glassmorphism container */}
+      <div className="relative backdrop-blur-xl bg-gray-900/50 border border-gray-800/50 rounded-3xl shadow-2xl overflow-hidden">
         {/* Messages container */}
-        <div className="h-screen md:h-[900px] border border-gray-200 rounded-lg bg-gray-50 flex flex-col">
-          {/* Scrollable messages area */}
-          <div className="flex-1 overflow-y-auto p-4">
+        <div className="h-[600px] overflow-y-auto p-6 space-y-4 custom-scrollbar">
+          <AnimatePresence>
             {messages.filter(m => m.role !== 'system').map((message, index) => (
-              <div 
-                key={index} 
-                className={`mb-4 ${message.role === 'assistant' ? 'pl-2 border-l-4 border-rose-500' : 'pl-2 border-l-4 border-gray-300'}`}
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 10 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.3, delay: index * 0.05 }}
+                className={`flex ${message.role === 'user' ? 'justify-end' : 'justify-start'}`}
               >
-                <div className="font-semibold mb-1">
-                  {message.role === 'assistant' ? 'Vito' : 'You'}
-                </div>
-                <div className="whitespace-pre-wrap">{renderMessageWithFormatting(message.content)}</div>
-              </div>
-            ))}
-            {isLoading && (
-              <div className="pl-2 border-l-4 border-rose-500 mb-4">
-                <div className="font-semibold mb-1">Vito</div>
-                <div className="relative">
-                  <div className="bg-gradient-to-r from-gray-400 via-gray-600 to-gray-400 bg-clip-text text-transparent font-semibold animate-pulse">
-                    Thinking...
+                <div
+                  className={`max-w-[80%] rounded-2xl px-4 py-3 ${
+                    message.role === 'user'
+                      ? 'bg-gradient-to-br from-rose-500 to-pink-600 text-white'
+                      : 'bg-gray-800/80 text-gray-100 border border-gray-700/50'
+                  }`}
+                >
+                  <div className="text-sm font-medium mb-1 opacity-80">
+                    {message.role === 'assistant' ? 'Vito' : 'You'}
+                  </div>
+                  <div className="whitespace-pre-wrap text-sm leading-relaxed">
+                    {renderMessageWithFormatting(message.content)}
                   </div>
                 </div>
-              </div>
-            )}
-            {showTimeoutMessage && isLoading && (
-              <div className="pl-2 border-l-4 border-amber-500 mb-4">
-                <div className="font-semibold mb-1">Vito</div>
-                <div className="text-amber-700 bg-amber-50 p-3 rounded-lg border border-amber-200">
-                  <p className="font-medium mb-2">🤔 Taking longer than expected...</p>
-                  <p className="text-sm text-amber-600">
-                    This might be due to rate limiting from the free GitHub Models API I&apos;m using. 
-                    I haven&apos;t implemented LLM routing yet, so I&apos;m currently using OpenAI/GPT-4.1-mini 
-                    for query rewriting and message generation. Hang tight!
-                  </p>
-                </div>
-              </div>
-            )}
-            <div ref={messagesEndRef} />
-            
-            {/* Suggested questions */}
-            {showSuggestions && (
-              <div className="mb-6">
-                <p className="text-sm text-gray-600 mb-3">Try asking me:</p>
-                <div className="flex flex-wrap gap-2">
-                  {suggestedQuestions.map((question, index) => (
-                    <button
-                      key={index}
-                      onClick={() => handleSuggestedQuestion(question)}
-                      disabled={isLoading || rateLimitInfo.remaining === 0}
-                      className="px-4 py-2 bg-rose-500 hover:bg-rose-600 text-white text-sm rounded-lg transition-colors duration-200 disabled:opacity-50 disabled:cursor-not-allowed cursor-pointer"
-                    >
-                      {question}
-                    </button>
-                  ))}
-                </div>
-              </div>
-            )}
-          </div>
+              </motion.div>
+            ))}
+          </AnimatePresence>
           
-          {/* Input form - always at bottom */}
-          <div className="p-4 border-t border-gray-200 bg-gray-50">
-            <form onSubmit={handleSubmit} className="flex gap-3 items-center">
-              <input
-                type="text"
-                value={input}
-                onChange={(e) => setInput(e.target.value)}
-                placeholder={rateLimitInfo.remaining > 0 ? "Ask me about my projects, studies, or ideas…" : "Rate limit exceeded"}
-                className="flex-1 p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-rose-500 disabled:bg-gray-100"
-                disabled={isLoading || rateLimitInfo.remaining === 0}
-              />
-              <button
-                type="submit"
-                disabled={isLoading || rateLimitInfo.remaining === 0}
-                className="w-12 h-12 bg-rose-500 hover:bg-rose-600 text-white rounded-full flex items-center justify-center transition-colors disabled:opacity-50 disabled:cursor-not-allowed shadow-sm hover:shadow-md cursor-pointer"
-              >
-                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M9.91158 12H7.45579H4L2.02268 4.13539C2.0111 4.0893 2.00193 4.04246 2.00046 3.99497C1.97811 3.27397 2.77209 2.77366 3.46029 3.10388L22 12L3.46029 20.8961C2.77983 21.2226 1.99597 20.7372 2.00002 20.0293C2.00038 19.9658 2.01455 19.9032 2.03296 19.8425L3.5 15" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                </svg>
-              </button>
-            </form>
-            
-            {/* Rate limit indicator below input */}
-            <div className="text-center text-xs text-gray-500 mt-2">
-              {rateLimitInfo.remaining}/10 questions • resets in {formatTimeRemaining(rateLimitInfo.resetTime)}
-            </div>
+          {isLoading && (
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              className="flex justify-start"
+            >
+              <div className="bg-gray-800/80 text-gray-100 border border-gray-700/50 rounded-2xl px-4 py-3 max-w-[80%]">
+                <div className="text-sm font-medium mb-1 opacity-80">Vito</div>
+                <div className="flex items-center gap-2">
+                  <div className="flex gap-1">
+                    <div className="w-2 h-2 bg-rose-400 rounded-full animate-bounce" style={{ animationDelay: '0ms' }} />
+                    <div className="w-2 h-2 bg-rose-400 rounded-full animate-bounce" style={{ animationDelay: '150ms' }} />
+                    <div className="w-2 h-2 bg-rose-400 rounded-full animate-bounce" style={{ animationDelay: '300ms' }} />
+                  </div>
+                  <span className="text-sm text-gray-400">Thinking...</span>
+                </div>
+              </div>
+            </motion.div>
+          )}
+          
+          {showTimeoutMessage && isLoading && (
+            <motion.div
+              initial={{ opacity: 0, scale: 0.95 }}
+              animate={{ opacity: 1, scale: 1 }}
+              className="bg-amber-900/30 border border-amber-700/50 rounded-2xl px-4 py-3 text-amber-200 text-sm"
+            >
+              <p className="font-medium mb-1">🤔 Taking longer than expected...</p>
+              <p className="text-xs text-amber-300/80">
+                This might be due to rate limiting. Hang tight!
+              </p>
+            </motion.div>
+          )}
+          
+          <div ref={messagesEndRef} />
+          
+          {showSuggestions && (
+            <motion.div
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              className="pt-4"
+            >
+              <p className="text-sm text-gray-400 mb-3">Try asking me:</p>
+              <div className="flex flex-wrap gap-2">
+                {suggestedQuestions.map((question, index) => (
+                  <motion.button
+                    key={index}
+                    onClick={() => handleSuggestedQuestion(question)}
+                    disabled={isLoading || rateLimitInfo.remaining === 0}
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.95 }}
+                    className="px-4 py-2 bg-gray-800/80 hover:bg-gray-700/80 text-gray-200 text-sm rounded-lg border border-gray-700/50 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+                  >
+                    {question}
+                  </motion.button>
+                ))}
+              </div>
+            </motion.div>
+          )}
+        </div>
+        
+        {/* Input form */}
+        <div className="p-6 border-t border-gray-800/50 bg-gray-900/30 backdrop-blur-sm">
+          <form onSubmit={handleSubmit} className="flex gap-3 items-center">
+            <input
+              type="text"
+              value={input}
+              onChange={(e) => setInput(e.target.value)}
+              placeholder={rateLimitInfo.remaining > 0 ? "Ask me about my projects, studies, or ideas…" : "Rate limit exceeded"}
+              className="flex-1 px-4 py-3 bg-gray-800/50 border border-gray-700/50 rounded-xl text-gray-100 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-rose-500/50 focus:border-rose-500/50 transition-all"
+              disabled={isLoading || rateLimitInfo.remaining === 0}
+            />
+            <motion.button
+              type="submit"
+              disabled={isLoading || rateLimitInfo.remaining === 0}
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="w-12 h-12 bg-gradient-to-br from-rose-500 to-pink-600 hover:from-rose-400 hover:to-pink-500 text-white rounded-xl flex items-center justify-center transition-all disabled:opacity-50 disabled:cursor-not-allowed shadow-lg shadow-rose-500/20"
+            >
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path d="M9.91158 12H7.45579H4L2.02268 4.13539C2.0111 4.0893 2.00193 4.04246 2.00046 3.99497C1.97811 3.27397 2.77209 2.77366 3.46029 3.10388L22 12L3.46029 20.8961C2.77983 21.2226 1.99597 20.7372 2.00002 20.0293C2.00038 19.9658 2.01455 19.9032 2.03296 19.8425L3.5 15" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+              </svg>
+            </motion.button>
+          </form>
+          
+          <div className="text-center text-xs text-gray-500 mt-3">
+            {rateLimitInfo.remaining}/10 questions • resets in {formatTimeRemaining(rateLimitInfo.resetTime)}
           </div>
         </div>
       </div>
-    </Container>
+    </div>
   );
 }
+

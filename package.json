@@ -12,14 +12,17 @@
     "format-content": "tsx scripts/format-content.ts"
   },
   "dependencies": {
+    "@ai-sdk/google": "^2.0.44",
     "@azure-rest/ai-inference": "latest",
     "@azure/core-auth": "latest",
     "@azure/core-sse": "latest",
     "@langchain/community": "^0.3.53",
     "@langchain/core": "^0.3.72",
+    "ai": "^5.0.105",
     "apify-client": "^2.20.0",
     "date-fns": "^3.0.0",
     "dotenv": "^17.2.1",
+    "framer-motion": "^12.23.25",
     "gray-matter": "^4.0.3",
     "langchain": "^0.3.31",
     "next": "15.4.6",
