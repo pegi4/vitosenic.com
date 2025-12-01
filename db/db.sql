@@ -3,6 +3,9 @@
 -- Requirements: pgvector enabled (you already did this)
 -- =========================================================
 
+-- Enable pgvector extension if not already enabled
+create extension if not exists vector;
+
 -- ---------- PUBLIC DOCUMENTS (citable) ----------
 create table if not exists public.documents (
   id          uuid primary key default gen_random_uuid(),
@@ -25,8 +28,26 @@ create index if not exists documents_embedding_ivfflat_idx
 create index if not exists documents_tsv_gin_idx
   on public.documents using gin (tsv);
 
--- RLS: public can read (your content is public); writes come from server (service role)
+-- RLS: Enable RLS but allow all operations for authenticated users
+-- For self-hosted PostgreSQL, you can either:
+-- 1. Disable RLS completely (remove these lines)
+-- 2. Create policies that allow your application user
+-- 3. Use a superuser role that bypasses RLS
 alter table public.documents enable row level security;
+
+-- Policy: Allow all operations for authenticated users
+-- Replace 'your_app_user' with your actual database user, or remove RLS entirely
+-- Option 1: Allow all (if you trust your connection security)
+create policy "Allow all for application" on public.documents
+  for all using (true) with check (true);
+
+-- Option 2: If you want to keep RLS strict, uncomment and adjust:
+-- create policy "Allow read for all" on public.documents
+--   for select using (true);
+-- create policy "Allow write for application user" on public.documents
+--   for insert with check (current_user = 'your_app_user');
+-- create policy "Allow update for application user" on public.documents
+--   for update using (current_user = 'your_app_user');
 
 -- ---------- RPC: pure vector top-k ----------
 -- Uses cosine distance operator `<=>`. Similarity = 1 - distance.
@@ -130,9 +151,16 @@ create index if not exists chat_logs_timestamp_idx
 create index if not exists chat_logs_user_fingerprint_idx
   on public.chat_logs (user_fingerprint);
 
--- RLS: Only server can write, no public access
+-- RLS: Enable RLS but allow all operations for application user
 alter table public.chat_logs enable row level security;
-create policy "Only server can insert chat logs" on public.chat_logs
-  for insert with check (false);
-create policy "Only server can select chat logs" on public.chat_logs
-  for select using (false);
+
+-- Policy: Allow all operations for application
+-- Replace with your specific user if needed, or remove RLS entirely
+create policy "Allow all for application" on public.chat_logs
+  for all using (true) with check (true);
+
+-- Alternative: If you want stricter control, uncomment and adjust:
+-- create policy "Allow insert for application user" on public.chat_logs
+--   for insert with check (current_user = 'your_app_user');
+-- create policy "Allow select for application user" on public.chat_logs
+--   for select using (current_user = 'your_app_user');

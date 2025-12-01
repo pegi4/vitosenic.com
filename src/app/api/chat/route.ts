@@ -1,7 +1,7 @@
 import { NextRequest } from 'next/server';
-import { supabaseAdmin, logChatInteraction } from '@/utils/supabase';
+import { logChatInteraction, pgPool } from '@/utils/database';
 import { chat, embeddings } from '@/utils/githubModels';
-import { SupabaseVectorStore } from '@langchain/community/vectorstores/supabase';
+import { PGVectorStore } from '@langchain/community/vectorstores/pgvector';
 import { mainPrompt, queryRewriterPrompt } from '@/prompts';
 import { PromptMessage } from '@/types/prompt';
 import { RateLimiter } from '@/lib/rate-limit';
@@ -100,11 +100,16 @@ export async function POST(req: NextRequest) {
     console.log('Rewritten query:', rewrittenQuery);
     
     // Initialize vector store with our embeddings
-    const vectorStore = new SupabaseVectorStore(embeddings, {
-      client: supabaseAdmin,
+    const vectorStore = await PGVectorStore.initialize(embeddings, {
+      pool: pgPool,
       tableName: 'documents',
-      queryName: 'match_docs',
-      filter: {} // Empty filter to match the function signature
+      columns: {
+        idColumnName: 'id',
+        vectorColumnName: 'embedding',
+        contentColumnName: 'content',
+        metadataColumnName: 'metadata',
+      },
+      distanceStrategy: "cosine",
     });
 
     // Search for relevant documents based on the rewritten query

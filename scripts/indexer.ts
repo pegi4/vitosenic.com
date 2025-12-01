@@ -1,7 +1,7 @@
 import { RecursiveCharacterTextSplitter } from "langchain/text_splitter";
-import { SupabaseVectorStore } from "@langchain/community/vectorstores/supabase";
+import { PGVectorStore } from "@langchain/community/vectorstores/pgvector";
 import { Document } from "@langchain/core/documents";
-import { supabaseAdmin } from "../src/utils/supabase";
+import { pgPool } from "../src/utils/database";
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
@@ -32,24 +32,17 @@ const NOTES_DIR = "public/content/notes";
 const CV_JSON = "public/content/cv.json";
 const PROJECTS_JSON = "public/content/projects.json";
 
-// Parse the connection string to extract components
-const connectionString = process.env.POSTGRES_URL_NON_POOLING!;
-const url = new URL(connectionString);
-
-// Initialize record manager with parsed connection options
+// Initialize record manager with direct PostgreSQL connection
 const recordManager = new PostgresRecordManager("vitosenic_content", {
   postgresConnectionOptions: {
-    host: url.hostname,
-    port: parseInt(url.port),
-    user: url.username,
-    password: url.password,
-    database: url.pathname.slice(1), // Remove leading '/'
-    // Proper SSL configuration
-    ssl: {
-      rejectUnauthorized: true,
-      ca: process.env.SUPABASE_CA_CERT,
-      servername: url.hostname,
-    }
+    host: process.env.POSTGRES_HOST!,
+    port: parseInt(process.env.POSTGRES_PORT || '5432'),
+    user: process.env.POSTGRES_USER!,
+    password: process.env.POSTGRES_PASSWORD!,
+    database: process.env.POSTGRES_DATABASE!,
+    ssl: process.env.POSTGRES_SSL === 'true' ? {
+      rejectUnauthorized: false
+    } : false,
   },
   tableName: "upsertion_records",
 });
@@ -524,11 +517,17 @@ async function indexContent() {
   console.log("Setting up record manager...");
   await recordManager.createSchema();
   
-  // Initialize vector store
-  const vectorStore = new SupabaseVectorStore(embeddings, {
-    client: supabaseAdmin,
+  // Initialize vector store with PGVectorStore
+  const vectorStore = await PGVectorStore.initialize(embeddings, {
+    pool: pgPool,
     tableName: "documents",
-    queryName: "match_docs"
+    columns: {
+      idColumnName: 'id',
+      vectorColumnName: 'embedding',
+      contentColumnName: 'content',
+      metadataColumnName: 'metadata',
+    },
+    distanceStrategy: "cosine",
   });
   
   console.log("\n==== Preparing documents for indexing ====");
@@ -592,8 +591,8 @@ async function indexContent() {
   const allDocs = [...cvDocs, ...projectsDocs, ...notesDocs];
   console.log(`\nTotal documents: ${allDocs.length}`);
   
-  // 5. Store in Supabase using LangChain's incremental indexing
-  console.log("\n==== Storing documents in Supabase with incremental indexing ====");
+  // 5. Store in PostgreSQL using LangChain's incremental indexing
+  console.log("\n==== Storing documents in PostgreSQL with incremental indexing ====");
   
   try {
     // Use LangChain's index function for intelligent, incremental indexing
@@ -642,7 +641,8 @@ async function indexContent() {
     } catch {
       // Catch-all to ensure we never throw during cleanup
     }
-    // No need to close vectorStore as it uses Supabase client
+    // Close pgPool connections
+    await pgPool.end();
   }
 }
 

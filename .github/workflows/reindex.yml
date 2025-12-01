@@ -37,15 +37,12 @@ jobs:
         run: npx tsx scripts/indexer.ts
         env:
           TOKEN_GITHUB: ${{ secrets.TOKEN_GITHUB }}
-          NEXT_PUBLIC_SUPABASE_URL: ${{ secrets.NEXT_PUBLIC_SUPABASE_URL }}
-          NEXT_PUBLIC_SUPABASE_ANON_KEY: ${{ secrets.NEXT_PUBLIC_SUPABASE_ANON_KEY }}
-          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
-          POSTGRES_URL_NON_POOLING: ${{ secrets.POSTGRES_URL_NON_POOLING }}
           POSTGRES_HOST: ${{ secrets.POSTGRES_HOST }}
+          POSTGRES_PORT: ${{ secrets.POSTGRES_PORT }}
           POSTGRES_USER: ${{ secrets.POSTGRES_USER }}
           POSTGRES_PASSWORD: ${{ secrets.POSTGRES_PASSWORD }}
           POSTGRES_DATABASE: ${{ secrets.POSTGRES_DATABASE }}
-          SUPABASE_CA_CERT: ${{ secrets.SUPABASE_CA_CERT }}
+          POSTGRES_SSL: ${{ secrets.POSTGRES_SSL }}
           
       - name: Notify success
         if: success()
