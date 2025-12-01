@@ -1,0 +1,186 @@
+{
+  "basic_info": {
+    "fullname": "Vito S.",
+    "first_name": "Vito",
+    "last_name": "S.",
+    "headline": "AI Systems Architect | I connect business goals into working solutions.",
+    "public_identifier": "vitosenic",
+    "profile_url": "https://linkedin.com/in/vitosenic",
+    "profile_picture_url": "https://media.licdn.com/dms/image/v2/D4D03AQGzE8OeAjbN_g/profile-displayphoto-crop_800_800/B4DZlWzMOPIcAI-/0/1758097886043?e=1766016000&v=beta&t=PJ0kr2zymjWr4mQGeRTNF75Ej_ZEU-oHCUiYrs_98kQ",
+    "about": "🏗️ AI Systems Architect & Integrator\n⚡ Focused on delivering real-world value\n🚀 My work lives here: vitosenic.com",
+    "location": {
+      "country": "Slovenia",
+      "city": "",
+      "full": "Slovenia",
+      "country_code": "SI"
+    },
+    "creator_hashtags": [],
+    "is_creator": false,
+    "is_influencer": false,
+    "is_premium": false,
+    "open_to_work": false,
+    "created_timestamp": 1566908062777,
+    "show_follower_count": false,
+    "background_picture_url": "https://media.licdn.com/dms/image/v2/D4D16AQHrz1J7TO41BQ/profile-displaybackgroundimage-shrink_350_1400/B4DZlbZJibHYAY-/0/1758174947355?e=1766016000&v=beta&t=zvB9J15lXwPyELdN5NizrX5cwlp4JbH7N25JiXK691k",
+    "urn": "ACoAAC1DBZkBQnfKe7LhZ0ynHTAyFWxNNO-A4KA",
+    "follower_count": 581,
+    "connection_count": 580,
+    "current_company": "Asteras.ai",
+    "current_company_urn": "109465167",
+    "current_company_url": "https://www.linkedin.com/company/asterasai",
+    "top_skills": [],
+    "email": null
+  },
+  "experience": [
+    {
+      "title": "CTO & founder",
+      "company": "Asteras.ai",
+      "location": "Maribor, Slovenia",
+      "description": "Building Asteras.ai, an AI systems company focused on developing intelligent automation infrastructure for real-world operations.\nWe design and deploy custom AI platforms that integrate directly with existing business systems to enhance visibility, automate decision flows, and optimize performance across complex operations.\n\nOur work includes:\n• Architecting secure, modular AI backends and automation pipelines from scratch for enterprise environments.\n• Developing multi-agent systems capable of analyzing data, identifying inefficiencies, and executing improvements autonomously.\n• Delivering end-to-end infrastructure setups, from data ingestion and monitoring to deployment and integration.\n• Partnering with clients to transform insights into scalable, measurable business outcomes.\n\nWe’re building towards a long-term vision of a unified AI platform that connects real-world operations with intelligent decision-making — enabling companies to move faster, smarter, and more autonomously.",
+      "duration": "Jul 2025 - Present · 6 mos",
+      "start_date": {
+        "year": 2025,
+        "month": "Jul"
+      },
+      "is_current": true,
+      "company_linkedin_url": "https://www.linkedin.com/company/109465167/",
+      "company_logo_url": "https://media.licdn.com/dms/image/v2/D4D0BAQEUf1nJ0t3aFQ/company-logo_400_400/B4DZpBaw0uGgAY-/0/1762034126837/asterasai_logo?e=1766016000&v=beta&t=QV8hnJA-1zaoV9oQAMH6OmdALWSPDIP6RUMLRJulrLM",
+      "employment_type": "Self-employed",
+      "location_type": "Hybrid",
+      "skills": [
+        "AI Systems Architecture",
+        "Automation Engineering"
+      ],
+      "company_id": "109465167",
+      "skills_url": "https://www.linkedin.com/in/vitosenic/overlay/urn:li:fsd_profilePosition:(ACoAAC1DBZkBQnfKe7LhZ0ynHTAyFWxNNO-A4KA,2786290808)/skill-associations-details?profileUrn=urn%3Ali%3Afsd_profile%3AACoAAC1DBZkBQnfKe7LhZ0ynHTAyFWxNNO-A4KA"
+    },
+    {
+      "title": "R&D Blockchain Engineer",
+      "company": "Blockchain Lab:UM",
+      "location": "Maribor, Slovenia",
+      "description": "Working on decentralized Web3 applications focusing on self-sovereign identities (SSI), decentralized identifiers (DID), and verifiable credentials (VC). Gained hands-on experience with Web3 protocols, blockchain-based authentication, cryptographic identity management, and secure communication flows.",
+      "duration": "Aug 2024 - Present · 1 yr 5 mos",
+      "start_date": {
+        "year": 2024,
+        "month": "Aug"
+      },
+      "is_current": true,
+      "company_linkedin_url": "https://www.linkedin.com/company/33191617/",
+      "company_logo_url": "https://media.licdn.com/dms/image/v2/C4E0BAQE4xXkBP9CD9w/company-logo_400_400/company-logo_400_400/0/1631374889905/blockchain_lab_um_logo?e=1766016000&v=beta&t=_vicQEgnjiNb2lrmyPZ-HmNexh8PB2IjyFu_D7piWJs",
+      "employment_type": "Part-time",
+      "location_type": "Hybrid",
+      "skills": [
+        "Node.js",
+        "Next.js"
+      ],
+      "company_id": "33191617",
+      "skills_url": "https://www.linkedin.com/in/vitosenic/overlay/urn:li:fsd_profilePosition:(ACoAAC1DBZkBQnfKe7LhZ0ynHTAyFWxNNO-A4KA,2500414716)/skill-associations-details?profileUrn=urn%3Ali%3Afsd_profile%3AACoAAC1DBZkBQnfKe7LhZ0ynHTAyFWxNNO-A4KA"
+    },
+    {
+      "title": "Frontend Web Developer",
+      "company": "Solve-X",
+      "location": "Maribor, Slovenia",
+      "description": "Designed and implemented user interfaces using Vue.js and TypeScript. Integrated frontend with backend APIs, optimized UI performance, and participated in project planning to improve user experience.",
+      "duration": "Oct 2023 - Feb 2025 · 1 yr 5 mos",
+      "start_date": {
+        "year": 2023,
+        "month": "Oct"
+      },
+      "end_date": {
+        "year": 2025,
+        "month": "Feb"
+      },
+      "is_current": false,
+      "company_linkedin_url": "https://www.linkedin.com/company/18085377/",
+      "company_logo_url": "https://media.licdn.com/dms/image/v2/C4E0BAQFatGU0VT4w3A/company-logo_400_400/company-logo_400_400/0/1630635921079/solviksdoo_logo?e=1766016000&v=beta&t=75RMNkZ-M3jb_8EJoTkHlrXz4NSU5IeLUMagPTww0v8",
+      "employment_type": "Part-time",
+      "location_type": "Hybrid",
+      "skills": [
+        "TypeScript",
+        "Node.js"
+      ],
+      "company_id": "18085377",
+      "skills_url": "https://www.linkedin.com/in/vitosenic/overlay/urn:li:fsd_profilePosition:(ACoAAC1DBZkBQnfKe7LhZ0ynHTAyFWxNNO-A4KA,2472845936)/skill-associations-details?profileUrn=urn%3Ali%3Afsd_profile%3AACoAAC1DBZkBQnfKe7LhZ0ynHTAyFWxNNO-A4KA"
+    },
+    {
+      "title": "Independent Entrepreneur — E-commerce & Digital Projects",
+      "company": "Self-employed",
+      "location": "Slovenia",
+      "description": "Launched and managed multiple online ventures, including e-commerce stores and digital music distribution. Built, tested, and scaled several business models — some gained real traction and generated consistent revenue.\n\nFocused on:\n• Building and running Shopify & WooCommerce stores end-to-end.\n• Managing digital distribution and content monetization across streaming platforms.\n• Executing marketing campaigns and optimizing conversion performance.\n• Handling operations, suppliers, and automation workflows to improve margins.\n• Rapidly validating ideas and scaling what worked.\n\nGained strong hands-on experience in growth, execution, and product-market fit — turning ideas into functioning digital businesses.",
+      "duration": "Jun 2020 - Jan 2024 · 3 yrs 8 mos",
+      "start_date": {
+        "year": 2020,
+        "month": "Jun"
+      },
+      "end_date": {
+        "year": 2024,
+        "month": "Jan"
+      },
+      "is_current": false,
+      "company_linkedin_url": "https://www.linkedin.com/search/results/all/?keywords=Self-employed",
+      "employment_type": "Self-employed",
+      "location_type": "Remote",
+      "skills": [
+        "E-Commerce",
+        "Digital Marketing"
+      ],
+      "skills_url": "https://www.linkedin.com/in/vitosenic/overlay/urn:li:fsd_profilePosition:(ACoAAC1DBZkBQnfKe7LhZ0ynHTAyFWxNNO-A4KA,2786251019)/skill-associations-details?profileUrn=urn%3Ali%3Afsd_profile%3AACoAAC1DBZkBQnfKe7LhZ0ynHTAyFWxNNO-A4KA"
+    },
+    {
+      "title": "E-commerce Web Developer & Technical Assistant",
+      "company": "Divorce My Job Marketing",
+      "location": "Maribor, Slovenia",
+      "description": "I specialized in developing e-commerce solutions that streamlined online sales processes and improved customer engagement.  \n\n• Maintained and enhanced e-commerce stores, including dropshipping and print-on-demand integrations.  \n• Designed and implemented membership portals and landing pages to boost user experience.  \n• Set up technical frameworks for blogs and social media, driving traffic and sales.",
+      "duration": "Aug 2021 - Aug 2023 · 2 yrs 1 mo",
+      "start_date": {
+        "year": 2021,
+        "month": "Aug"
+      },
+      "end_date": {
+        "year": 2023,
+        "month": "Aug"
+      },
+      "is_current": false,
+      "company_linkedin_url": "https://www.linkedin.com/search/results/all/?keywords=Divorce+My+Job+Marketing",
+      "employment_type": "Part-time",
+      "location_type": "Hybrid"
+    }
+  ],
+  "education": [
+    {
+      "school": "Faculty of Electrical Engineering and Computer Science, University of Maribor",
+      "degree": "Bachelor's, Computer Science",
+      "degree_name": "Bachelor's",
+      "field_of_study": "Computer Science",
+      "duration": "Oct 2023 - Jun 2026",
+      "school_linkedin_url": "https://www.linkedin.com/company/70429235/",
+      "activities": "Hackathons · Startup Weekends · Competitive Programming Workshops · additional elective courses (Machine Learning & Blockchain) · Research Projects · Developer Communities",
+      "skills": "Learning How to Learn, Machine Learning and +5 skills",
+      "school_logo_url": "https://media.licdn.com/dms/image/v2/C4D0BAQF4nujCeXK4pw/company-logo_400_400/company-logo_400_400/0/1630487242933?e=1766016000&v=beta&t=Q3pq4wbCSoUBzkkcbYLBb5sBH8Hk8XjEpXXTxMRUV-U",
+      "start_date": {
+        "year": 2023,
+        "month": "Oct"
+      },
+      "end_date": {
+        "year": 2026,
+        "month": "Jun"
+      },
+      "school_id": "70429235"
+    },
+    {
+      "school": "Srednja elektro-računalniška šola Maribor",
+      "degree": "High School Diploma, Computer Science",
+      "degree_name": "High School Diploma",
+      "field_of_study": "Computer Science",
+      "duration": "2019 - 2023",
+      "school_linkedin_url": "https://www.linkedin.com/search/results/all/?keywords=Srednja+elektro-ra%C4%8Dunalni%C5%A1ka+%C5%A1ola+Maribor",
+      "skills": "Next.js, Node.js and +4 skills",
+      "start_date": {
+        "year": 2019
+      },
+      "end_date": {
+        "year": 2023
+      }
+    }
+  ]
+}

@@ -1,13 +1,10 @@
 import { NextRequest } from 'next/server';
-import { logChatInteraction, pgPool } from '@/utils/database';
-import { chat, embeddings } from '@/utils/githubModels';
-import { PGVectorStore } from '@langchain/community/vectorstores/pgvector';
-import { mainPrompt, queryRewriterPrompt } from '@/prompts';
+import { logChatInteraction } from '@/utils/database';
+import { chat } from '@/utils/githubModels';
+import { mainPrompt } from '@/prompts';
 import { PromptMessage } from '@/types/prompt';
 import { RateLimiter } from '@/lib/rate-limit';
-
-// Number of relevant documents to retrieve
-const RETRIEVE_K = 5;
+import { loadAllContent } from '@/utils/content';
 
 // Helper function to extract IP address from request
 function getClientIP(req: NextRequest): string {
@@ -67,66 +64,8 @@ export async function POST(req: NextRequest) {
 
     console.log('latestMessage:', latestMessage);
 
-    // Format chat history for the query rewriter
-    const historyMessages = messages
-      .filter((m, index) => index !== messages.length - 1) // Exclude the latest message which we're currently processing
-      .map(m => `${m.role}: ${m.content}`)
-      .join('\n');
-
-    // Rewrite the query for better context retrieval
-    const queryRewriterConfig = queryRewriterPrompt();
-    const rewriterSystemMessage = queryRewriterConfig.messages.find((msg: PromptMessage) => msg.role === 'system');
-    const rewriterUserMessage = queryRewriterConfig.messages.find((msg: PromptMessage) => msg.role === 'user');
-    
-    // Format the rewriter prompt
-    let rewriterContent = rewriterUserMessage?.content || '';
-    rewriterContent = rewriterContent.replace('{{QUESTION}}', latestMessage.content);
-    rewriterContent = rewriterContent.replace('{{HISTORY}}', historyMessages);
-    
-    // Create messages for the query rewriter
-    const rewriterMessages = [
-      { role: 'system', content: rewriterSystemMessage?.content || '' },
-      { role: 'user', content: rewriterContent }
-    ];
-    
-    // Get the rewritten query
-    const rewrittenQuery = await chat.chat(queryRewriterConfig.model, rewriterMessages, {
-      temperature: queryRewriterConfig.modelParameters?.temperature || 0.2,
-      maxTokens: queryRewriterConfig.modelParameters?.max_completion_tokens || 200,
-      top_p: queryRewriterConfig.modelParameters?.top_p || 0.9
-    });
-    
-    console.log('Original query:', latestMessage.content);
-    console.log('Rewritten query:', rewrittenQuery);
-    
-    // Initialize vector store with our embeddings
-    const vectorStore = await PGVectorStore.initialize(embeddings, {
-      pool: pgPool,
-      tableName: 'documents',
-      columns: {
-        idColumnName: 'id',
-        vectorColumnName: 'embedding',
-        contentColumnName: 'content',
-        metadataColumnName: 'metadata',
-      },
-      distanceStrategy: "cosine",
-    });
-
-    // Search for relevant documents based on the rewritten query
-    const vectorResults = await vectorStore.similaritySearch(
-      rewrittenQuery, // Use the rewritten query instead of the original
-      RETRIEVE_K
-    );
-
-    // Format the context from retrieved documents
-    const context = vectorResults
-      .map(doc => {
-        const metadata = doc.metadata;
-        return `[Content type: ${metadata.type || 'Content'}, url: ${metadata.url || '#'}]\n${doc.pageContent}`;
-      })
-      .join('\n\n');
-
-    console.log('getting CONTEXT:', context);
+    // Load all formatted content (using Gemini's 1M context window)
+    const context = loadAllContent();
 
     // Load the main prompt configuration
     const promptConfig = mainPrompt();

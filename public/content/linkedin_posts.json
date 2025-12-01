@@ -1,0 +1,1633 @@
+[
+  {
+    "urn": {
+      "activity_urn": "7399409591727489024",
+      "share_urn": "7397338654139912192",
+      "ugcPost_urn": null
+    },
+    "full_urn": "urn:li:activity:7399409591727489024",
+    "posted_at": {
+      "date": "2025-11-26 12:32:01",
+      "relative": "4 days ago • Visible to anyone on or off LinkedIn",
+      "timestamp": 1764156721050
+    },
+    "text": "Over the past few months, I've been focused on implementing SD-JWT standards within the EduCTX platform here at Blockchain Lab:UM.\n\nThe goal? To make educational credentials truly privacy-preserving. Users can now selectively disclose specific data (like a degree) without revealing everything (like grades or personal info).\n\nProud to contribute to the future of Self-Sovereign Identity (SSI). 🔐",
+    "url": "https://www.linkedin.com/posts/vitosenic_integrating-sd-jwt-into-eductx-bringing-activity-7399409591727489024-RVAP?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAGCab3oBLBle-FA2VeA-gq8iejcsNhSNsUs",
+    "post_type": "quote",
+    "author": {
+      "first_name": "Vito",
+      "last_name": "S.",
+      "headline": "AI Systems Architect | I connect business goals into working solutions.",
+      "username": "vitosenic",
+      "profile_url": "https://www.linkedin.com/in/vitosenic?miniProfileUrn=urn%3Ali%3Afsd_profile%3AACoAAC1DBZkBQnfKe7LhZ0ynHTAyFWxNNO-A4KA",
+      "profile_picture": "https://media.licdn.com/dms/image/v2/D4D03AQGzE8OeAjbN_g/profile-displayphoto-crop_800_800/B4DZlWzMOPIcAI-/0/1758097886043?e=1766016000&v=beta&t=PJ0kr2zymjWr4mQGeRTNF75Ej_ZEU-oHCUiYrs_98kQ"
+    },
+    "stats": {
+      "total_reactions": 5,
+      "like": 5,
+      "support": 0,
+      "love": 0,
+      "insight": 0,
+      "celebrate": 0,
+      "funny": 0,
+      "comments": 0,
+      "reposts": 1
+    },
+    "reshared_post": {
+      "urn": {
+        "activity_urn": "7397285989532020736",
+        "share_urn": "7397285988689018880",
+        "ugcPost_urn": null
+      },
+      "posted_at": {
+        "date": "2025-11-20 15:53:34",
+        "relative": "1 week ago • Visible to anyone on or off LinkedIn",
+        "timestamp": 1763650414832
+      },
+      "text": "🔐 Bringing Selective Disclosure to Educational Credentials\n\nExcited to share that we’ve integrated SD-JWT into the EduCTX ecosystem — enabling students to share only the information they choose, while keeping the rest private.\n\nWith SD-JWT:\n • 🎓 Institutions issue verifiable, ELM-aligned credentials\n • 🔍 Students disclose only what’s required (degree, status, etc.)\n • 🤝 Verifiers get trustworthy, privacy-preserving information\n • 🔒 Sensitive personal data stays protected\n\nThis upgrade moves EduCTX closer to the emerging European Digital Identity standards and opens the door to even more privacy-enhancing tech like ZK proofs and EU Digital Identity Wallet interoperability.\n\nProud of this step toward a more secure and user-centric future for digital education credentials!\n\n👉 Read the full article: https://lnkd.in/dV6bThpB",
+      "url": "https://www.linkedin.com/posts/blockchain-lab-um_integrating-sd-jwt-into-eductx-bringing-activity-7397285989532020736-ZhVE?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAGCab3oBLBle-FA2VeA-gq8iejcsNhSNsUs",
+      "post_type": "regular",
+      "author": {
+        "first_name": "Blockchain",
+        "last_name": "Lab:UM",
+        "headline": "411 followers",
+        "profile_url": "https://www.linkedin.com/company/blockchain-lab-um/posts"
+      },
+      "stats": {
+        "total_reactions": 0,
+        "like": 0,
+        "support": 0,
+        "love": 0,
+        "insight": 0,
+        "celebrate": 0,
+        "funny": 0,
+        "comments": 0,
+        "reposts": 0
+      },
+      "media": {
+        "type": "image",
+        "url": "https://media.licdn.com/dms/image/sync/v2/D4D27AQHeHbfXSph07w/articleshare-shrink_800/B4DZqhwHFsGsAM-/0/1763650335516?e=1765184400&v=beta&t=7Y8WNw8nlH2tgco9Kkm61yyP-e6NQPco8EzayBheuuA"
+      },
+      "article": {
+        "url": "https://medium.com/@blockchainlabum/integrating-sd-jwt-into-eductx-bringing-selective-disclosure-to-educational-credentials-593990e95731",
+        "title": "Integrating SD-JWT into EduCTX: Bringing Selective Disclosure to Educational Credentials",
+        "subtitle": "medium.com",
+        "thumbnail": "https://media.licdn.com/dms/image/sync/v2/D4D27AQHeHbfXSph07w/articleshare-shrink_800/B4DZqhwHFsGsAM-/0/1763650335516?e=1765184400&v=beta&t=7Y8WNw8nlH2tgco9Kkm61yyP-e6NQPco8EzayBheuuA"
+      }
+    },
+    "pagination_token": "dXJuOmxpOmFjdGl2aXR5OjczNjA2ODgxOTY2ODAwNjkxMjAtMTc1NDkyNDgyMTAzOQ=="
+  },
+  {
+    "urn": {
+      "activity_urn": "7398416298977701888",
+      "share_urn": "7397273260993900545",
+      "ugcPost_urn": null
+    },
+    "full_urn": "urn:li:activity:7398416298977701888",
+    "posted_at": {
+      "date": "2025-11-23 18:45:01",
+      "relative": "1 week ago • Visible to anyone on or off LinkedIn",
+      "timestamp": 1763919901604
+    },
+    "text": "The biggest poison in the Slovenian mindset is the belief that the \"State\" will provide. It’s a hangover from the past—a safety net that has made us mentally soft.\n\nWe look at the US and ask why they dominate. It’s simple: Their DNA is built on risk. Our DNA is built on safety. We have stayed in the same spot for a thousand years, waiting for handouts, while they crossed oceans to build something from nothing.\n\nWe need to stop acting like victims and start acting like Spartans.\n\nWe are a small nation. We cannot win on volume (like China). We cannot win on mass production. We must win on Elite Quality.\n\nLook at our athletes. They are the proof. A nation of 2 million people dominating the world stage. Why? Because in sports, you can’t fake it. You either perform, or you lose.\n\nWe need to transfer that \"Spartan\" DNA into business and technology.\n\nThe Goal: The Taiwan Strategy. We don’t need to be big.We need to be indispensable. We need to identify a niche, dominate it completely, and make the world dependent on us. That is true security. That is true power.\n\nStop waiting for the government to give you \"free AI\" or better policies. The State is just a reflection of the people. If you want a better State, become a better operator.\n\nLife is not about comfort. Comfort is stagnation. Life is about the glory of overcoming the impossible.\n\nDream bigger. Risk more.",
+    "url": "https://www.linkedin.com/posts/vitosenic_the-biggest-poison-in-the-slovenian-mindset-activity-7398416298977701888-wX7q?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAGCab3oBLBle-FA2VeA-gq8iejcsNhSNsUs",
+    "post_type": "regular",
+    "author": {
+      "first_name": "Vito",
+      "last_name": "S.",
+      "headline": "AI Systems Architect | I connect business goals into working solutions.",
+      "username": "vitosenic",
+      "profile_url": "https://www.linkedin.com/in/vitosenic?miniProfileUrn=urn%3Ali%3Afsd_profile%3AACoAAC1DBZkBQnfKe7LhZ0ynHTAyFWxNNO-A4KA",
+      "profile_picture": "https://media.licdn.com/dms/image/v2/D4D03AQGzE8OeAjbN_g/profile-displayphoto-crop_800_800/B4DZlWzMOPIcAI-/0/1758097886043?e=1766016000&v=beta&t=PJ0kr2zymjWr4mQGeRTNF75Ej_ZEU-oHCUiYrs_98kQ"
+    },
+    "stats": {
+      "total_reactions": 34,
+      "like": 30,
+      "support": 1,
+      "love": 0,
+      "insight": 1,
+      "celebrate": 2,
+      "funny": 0,
+      "comments": 3,
+      "reposts": 1
+    },
+    "pagination_token": "dXJuOmxpOmFjdGl2aXR5OjczNjA2ODgxOTY2ODAwNjkxMjAtMTc1NDkyNDgyMTAzOQ=="
+  },
+  {
+    "urn": {
+      "activity_urn": "7397270328197943296",
+      "share_urn": "7397270326637756416",
+      "ugcPost_urn": null
+    },
+    "full_urn": "urn:li:activity:7397270328197943296",
+    "posted_at": {
+      "date": "2025-11-20 14:51:20",
+      "relative": "1 week ago • Visible to anyone on or off LinkedIn",
+      "timestamp": 1763646680879
+    },
+    "text": "If you are paying for an \"AI Automation Workshop,\" you are failing the IQ test.\n\nMy feed is infested with parasites selling n8n and Make dot com courses to terrified CEOs and incompetent CTOs paralyzed by FOMO.\n\nLet’s be clear: These \"influencers\" are selling you snake oil. They don’t understand engineering. They don’t understand architecture. They are just capitalizing on your laziness and your fear of falling behind.\n\nIf you are a \"CTO\" and you are buying these courses, turn in your badge. You are asleep at the wheel. You don’t need a guru to hold your hand.\n\nYou want a reality check?\n\nMy grandmother is using ChatGPT. She didn't even own a smartphone 3 years ago. Now she is prompting LLMs.\n\nAnd I know what the \"experts\" will say: \"Oh, but be careful! AI hallucinates! What if your granny asks for a recipe and it tells her to cook poison?\"\n\nI don't care.\n\nYou want to talk about hallucinations? Books hallucinate. Who do you think wrote the books? People. And people hallucinate their own reality every single day. Authors have egos. Experts have biases. We are all hallucinating in our own worlds.\n\nIf my grandmother can figure this out without a $2,000 \"Masterclass,\" what is your excuse?\n\nYou don’t need a \"certification.\" You need a spine and an internet connection.\n\nWe have the most powerful intelligence in human history available for $20/month. Stop funding the mediocrity industrial complex. Kill the FOMO.\n\nBuild it yourself or get out of the way.",
+    "url": "https://www.linkedin.com/posts/vitosenic_if-you-are-paying-for-an-ai-automation-workshop-activity-7397270328197943296-YcXm?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAGCab3oBLBle-FA2VeA-gq8iejcsNhSNsUs",
+    "post_type": "regular",
+    "author": {
+      "first_name": "Vito",
+      "last_name": "S.",
+      "headline": "AI Systems Architect | I connect business goals into working solutions.",
+      "username": "vitosenic",
+      "profile_url": "https://www.linkedin.com/in/vitosenic?miniProfileUrn=urn%3Ali%3Afsd_profile%3AACoAAC1DBZkBQnfKe7LhZ0ynHTAyFWxNNO-A4KA",
+      "profile_picture": "https://media.licdn.com/dms/image/v2/D4D03AQGzE8OeAjbN_g/profile-displayphoto-crop_800_800/B4DZlWzMOPIcAI-/0/1758097886043?e=1766016000&v=beta&t=PJ0kr2zymjWr4mQGeRTNF75Ej_ZEU-oHCUiYrs_98kQ"
+    },
+    "stats": {
+      "total_reactions": 10,
+      "like": 9,
+      "support": 0,
+      "love": 0,
+      "insight": 1,
+      "celebrate": 0,
+      "funny": 0,
+      "comments": 1,
+      "reposts": 0
+    },
+    "pagination_token": "dXJuOmxpOmFjdGl2aXR5OjczNjA2ODgxOTY2ODAwNjkxMjAtMTc1NDkyNDgyMTAzOQ=="
+  },
+  {
+    "urn": {
+      "activity_urn": "7394835532737937408",
+      "share_urn": null,
+      "ugcPost_urn": "7394835532217913346"
+    },
+    "full_urn": "urn:li:ugcPost:7394835532217913346",
+    "posted_at": {
+      "date": "2025-11-13 21:36:20",
+      "relative": "2 weeks ago • Visible to anyone on or off LinkedIn",
+      "timestamp": 1763066180405
+    },
+    "text": "Mission Mode > Founder Mode. This piece from Palantir captures what I will build someday—companies organized around work that actually matters, not just growth metrics. Worth the read. 👇",
+    "url": "https://www.linkedin.com/posts/vitosenic_mission-mode-founder-mode-this-piece-from-activity-7394835532737937408-7AIP?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAGCab3oBLBle-FA2VeA-gq8iejcsNhSNsUs",
+    "post_type": "regular",
+    "author": {
+      "first_name": "Vito",
+      "last_name": "S.",
+      "headline": "AI Systems Architect | I connect business goals into working solutions.",
+      "username": "vitosenic",
+      "profile_url": "https://www.linkedin.com/in/vitosenic?miniProfileUrn=urn%3Ali%3Afsd_profile%3AACoAAC1DBZkBQnfKe7LhZ0ynHTAyFWxNNO-A4KA",
+      "profile_picture": "https://media.licdn.com/dms/image/v2/D4D03AQGzE8OeAjbN_g/profile-displayphoto-crop_800_800/B4DZlWzMOPIcAI-/0/1758097886043?e=1766016000&v=beta&t=PJ0kr2zymjWr4mQGeRTNF75Ej_ZEU-oHCUiYrs_98kQ"
+    },
+    "stats": {
+      "total_reactions": 5,
+      "like": 4,
+      "support": 1,
+      "love": 0,
+      "insight": 0,
+      "celebrate": 0,
+      "funny": 0,
+      "comments": 0,
+      "reposts": 0
+    },
+    "article": {
+      "url": "https://www.linkedin.com/pulse/beyond-founder-mode-mission-palantir-technologies-7e3ve?trackingId=IVFTpMMRgyRxG0dHks2Gsw%3D%3D",
+      "title": "Beyond Founder Mode: Mission Mode",
+      "subtitle": "Palantir Technologies",
+      "thumbnail": "https://media.licdn.com/dms/image/v2/D4E12AQFaYP-Yv194kg/article-cover_image-shrink_720_1280/B4EZnyS.lUKYAI-/0/1760706689942?e=1766016000&v=beta&t=GtTZnSTk5P9u0zA6wHWt745fi3Kv98rdGRgXoLQmA7A"
+    },
+    "pagination_token": "dXJuOmxpOmFjdGl2aXR5OjczNjA2ODgxOTY2ODAwNjkxMjAtMTc1NDkyNDgyMTAzOQ=="
+  },
+  {
+    "urn": {
+      "activity_urn": "7393342111644897280",
+      "share_urn": null,
+      "ugcPost_urn": "7392921359061950465"
+    },
+    "full_urn": "urn:li:ugcPost:7392921359061950465",
+    "posted_at": {
+      "date": "2025-11-09 18:42:01",
+      "relative": "3 weeks ago • Visible to anyone on or off LinkedIn",
+      "timestamp": 1762710121070
+    },
+    "text": "Following my last post, I want to share what we actually built at the Hack the Future hackathon.\n\n​We competed in the AI & Insurtech challenge, tackling a problem we believe is universal.\n\nCompanies are struggling to make internal AI assistants (like Copilot) work.\n\n​The Problem:\nMany companies try to dump their entire knowledge base (all documents, all policies) into a single, massive LLM.\n\nThe result? Constant halucinations, \"context bleeding\" (e.g., a car insurance query getting answers from a life insurance policy), and zero traceability. \n\nThis approach fails.\n​\nOur Solution:\nWe didn't build a single \"all-knowing\" bot. We built an AI Agentic System based on a hierarchy of specialists.\n\n• ​Orchestrator Agent: The \"manager\" that first analyzes a user's query.\n\n• ​Specialist Agents: The Orchestrator then routes the query to a specialist (e.g., \"Auto Insurance Agent,\" \"Internal Process Agent\").\n\n• ​Specialized Knowledge: Critically, each agent has its own, isolated vector database. The auto agent cannot see the life insurance docs. This is the key to eliminating hallucinations.\n\n• ​Supervisor Agent: A final \"compliance\" agent that validates the answer before it's shown to the user.\n\n​\"But isn't a multi-agent system expensive and slow?\"\n\n​This is the most exciting part. It's not. This architecture is more efficient by using smaller, powerful open-source models. \n\nSpecialist agents built on models like DeepSeek-R1 or the new Kimi K2 (K2) are designed for this.\n\nThey can outperform giant, proprietary models on narrow tasks—delivering faster, cheaper, and more accurate results.\n\n​We believe this—a system of specialists, not a \"one-model-to-rule-them-all\" approach—is the real key to unlocking reliable enterprise AI.",
+    "url": "https://www.linkedin.com/posts/vitosenic_my-team-asterasai-and-i-didnt-win-the-hackathon-activity-7393342111644897280-4Oee?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAGCab3oBLBle-FA2VeA-gq8iejcsNhSNsUs",
+    "post_type": "quote",
+    "author": {
+      "first_name": "Vito",
+      "last_name": "S.",
+      "headline": "AI Systems Architect | I connect business goals into working solutions.",
+      "username": "vitosenic",
+      "profile_url": "https://www.linkedin.com/in/vitosenic?miniProfileUrn=urn%3Ali%3Afsd_profile%3AACoAAC1DBZkBQnfKe7LhZ0ynHTAyFWxNNO-A4KA",
+      "profile_picture": "https://media.licdn.com/dms/image/v2/D4D03AQGzE8OeAjbN_g/profile-displayphoto-crop_800_800/B4DZlWzMOPIcAI-/0/1758097886043?e=1766016000&v=beta&t=PJ0kr2zymjWr4mQGeRTNF75Ej_ZEU-oHCUiYrs_98kQ"
+    },
+    "stats": {
+      "total_reactions": 4,
+      "like": 4,
+      "support": 0,
+      "love": 0,
+      "insight": 0,
+      "celebrate": 0,
+      "funny": 0,
+      "comments": 0,
+      "reposts": 0
+    },
+    "reshared_post": {
+      "urn": {
+        "activity_urn": "7392914103528329216",
+        "share_urn": null,
+        "ugcPost_urn": "7392914102471434240"
+      },
+      "posted_at": {
+        "date": "2025-11-08 14:21:15",
+        "relative": "3 weeks ago • Edited • Visible to anyone on or off LinkedIn",
+        "timestamp": 1762608075983
+      },
+      "text": "My team Asteras.ai and I didn't win the hackathon and it was a necessary cold shower.\n\n​We were 100% focused on building a robust, functional MVP, but we completely overlooked one of the most critical parts: the pitch.\n\n​It's a tough, but invaluable, lesson.\n\nWe learned that the best product doesn't win; the best story about the product does.\n\n​We gained a ton of experience, new respect for the art of storytelling, and a laser focus on what to master next.\n\nHuge respect for my team, Anže Skralovnik and Žan Lah.\n\nI'm extremely proud of what we built under pressure. We’ll get the next one.",
+      "url": "https://www.linkedin.com/posts/vitosenic_my-team-asterasai-and-i-didnt-win-the-hackathon-activity-7392914103528329216-s8UZ?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAGCab3oBLBle-FA2VeA-gq8iejcsNhSNsUs",
+      "post_type": "regular",
+      "author": {
+        "first_name": "Vito",
+        "last_name": "S.",
+        "headline": "AI Systems Architect | I connect business goals into working solutions.",
+        "username": "vitosenic",
+        "profile_url": "https://www.linkedin.com/in/vitosenic?miniProfileUrn=urn%3Ali%3Afsd_profile%3AACoAAC1DBZkBQnfKe7LhZ0ynHTAyFWxNNO-A4KA",
+        "profile_picture": "https://media.licdn.com/dms/image/v2/D4D03AQGzE8OeAjbN_g/profile-displayphoto-crop_800_800/B4DZlWzMOPIcAI-/0/1758097886043?e=1766016000&v=beta&t=PJ0kr2zymjWr4mQGeRTNF75Ej_ZEU-oHCUiYrs_98kQ"
+      },
+      "stats": {
+        "total_reactions": 0,
+        "like": 0,
+        "support": 0,
+        "love": 0,
+        "insight": 0,
+        "celebrate": 0,
+        "funny": 0,
+        "comments": 0,
+        "reposts": 0
+      },
+      "media": {
+        "type": "images",
+        "url": "https://media.licdn.com/dms/image/v2/D4D22AQFvwpN5M6VyrA/feedshare-shrink_2048_1536/B4DZpjoB6eKUAw-/0/1762608037203?e=1766016000&v=beta&t=kAlfPt5FXQavnC0HYUkCW1855g8xHG6sm7w7R000yAM",
+        "images": [
+          {
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQFvwpN5M6VyrA/feedshare-shrink_2048_1536/B4DZpjoB6eKUAw-/0/1762608037203?e=1766016000&v=beta&t=kAlfPt5FXQavnC0HYUkCW1855g8xHG6sm7w7R000yAM",
+            "width": 1080,
+            "height": 734
+          },
+          {
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQH0mE7zbsFCqw/feedshare-shrink_1280/B4DZpjoB5zGkAs-/0/1762608062856?e=1766016000&v=beta&t=RibWpSfZ884rnt5MfTP4A2dbdW_82sXHPWnhanFqgbY",
+            "width": 1080,
+            "height": 707
+          }
+        ]
+      }
+    },
+    "pagination_token": "dXJuOmxpOmFjdGl2aXR5OjczNjA2ODgxOTY2ODAwNjkxMjAtMTc1NDkyNDgyMTAzOQ=="
+  },
+  {
+    "urn": {
+      "activity_urn": "7392914103528329216",
+      "share_urn": null,
+      "ugcPost_urn": "7392914102471434240"
+    },
+    "full_urn": "urn:li:ugcPost:7392914102471434240",
+    "posted_at": {
+      "date": "2025-11-08 14:21:15",
+      "relative": "3 weeks ago • Edited • Visible to anyone on or off LinkedIn",
+      "timestamp": 1762608075983
+    },
+    "text": "My team Asteras.ai and I didn't win the hackathon and it was a necessary cold shower.\n\n​We were 100% focused on building a robust, functional MVP, but we completely overlooked one of the most critical parts: the pitch.\n\n​It's a tough, but invaluable, lesson.\n\nWe learned that the best product doesn't win; the best story about the product does.\n\n​We gained a ton of experience, new respect for the art of storytelling, and a laser focus on what to master next.\n\nHuge respect for my team, Anže Skralovnik and Žan Lah.\n\nI'm extremely proud of what we built under pressure. We’ll get the next one.",
+    "url": "https://www.linkedin.com/posts/vitosenic_my-team-asterasai-and-i-didnt-win-the-hackathon-activity-7392914103528329216-s8UZ?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAGCab3oBLBle-FA2VeA-gq8iejcsNhSNsUs",
+    "post_type": "regular",
+    "author": {
+      "first_name": "Vito",
+      "last_name": "S.",
+      "headline": "AI Systems Architect | I connect business goals into working solutions.",
+      "username": "vitosenic",
+      "profile_url": "https://www.linkedin.com/in/vitosenic?miniProfileUrn=urn%3Ali%3Afsd_profile%3AACoAAC1DBZkBQnfKe7LhZ0ynHTAyFWxNNO-A4KA",
+      "profile_picture": "https://media.licdn.com/dms/image/v2/D4D03AQGzE8OeAjbN_g/profile-displayphoto-crop_800_800/B4DZlWzMOPIcAI-/0/1758097886043?e=1766016000&v=beta&t=PJ0kr2zymjWr4mQGeRTNF75Ej_ZEU-oHCUiYrs_98kQ"
+    },
+    "stats": {
+      "total_reactions": 15,
+      "like": 14,
+      "support": 0,
+      "love": 1,
+      "insight": 0,
+      "celebrate": 0,
+      "funny": 0,
+      "comments": 1,
+      "reposts": 2
+    },
+    "media": {
+      "type": "images",
+      "url": "https://media.licdn.com/dms/image/v2/D4D22AQFvwpN5M6VyrA/feedshare-shrink_2048_1536/B4DZpjoB6eKUAw-/0/1762608037203?e=1766016000&v=beta&t=kAlfPt5FXQavnC0HYUkCW1855g8xHG6sm7w7R000yAM",
+      "images": [
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQFvwpN5M6VyrA/feedshare-shrink_2048_1536/B4DZpjoB6eKUAw-/0/1762608037203?e=1766016000&v=beta&t=kAlfPt5FXQavnC0HYUkCW1855g8xHG6sm7w7R000yAM",
+          "width": 1080,
+          "height": 734
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQH0mE7zbsFCqw/feedshare-shrink_1280/B4DZpjoB5zGkAs-/0/1762608062856?e=1766016000&v=beta&t=RibWpSfZ884rnt5MfTP4A2dbdW_82sXHPWnhanFqgbY",
+          "width": 1080,
+          "height": 707
+        }
+      ]
+    },
+    "pagination_token": "dXJuOmxpOmFjdGl2aXR5OjczNjA2ODgxOTY2ODAwNjkxMjAtMTc1NDkyNDgyMTAzOQ=="
+  },
+  {
+    "urn": {
+      "activity_urn": "7389800599690698752",
+      "share_urn": null,
+      "ugcPost_urn": "7389704624066301952"
+    },
+    "full_urn": "urn:li:ugcPost:7389704624066301952",
+    "posted_at": {
+      "date": "2025-10-31 00:09:18",
+      "relative": "1 month ago • Visible to anyone on or off LinkedIn",
+      "timestamp": 1761865758822
+    },
+    "text": "this is Tossinger 🎯\n\na little apple native app i'm working on. save (\"toss\") links and short notes for later. syncs across iCloud devices, no account required, no third-party servers or other bullshit.\n\ntoss now, think later.\n\npublic testflight coming soon.\n\nif you want early access to the closed beta, you can DM here or on telegram: https://t.me/pseudobun\n\nwhy?\nwhen i'm scrolling and find something interesting, i want to quickly save it for later. then when i'm actually at my laptop, i can organize it properly. no ai bullshit and no bloated features.\n\nTossinger solves this. that's it.\n\nno bullshit, just toss now and organize later.\n\nopen sourced too: https://lnkd.in/dmqkDiti",
+    "url": "https://www.linkedin.com/posts/urbanvidovic_this-is-tossinger-a-little-apple-native-ugcPost-7389704624066301952-yJe3?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAGCab3oBLBle-FA2VeA-gq8iejcsNhSNsUs",
+    "post_type": "repost",
+    "author": {
+      "first_name": "Urban",
+      "last_name": "V.",
+      "headline": "R&D Engineer at Blockchain Lab:UM",
+      "username": "urbanvidovic",
+      "profile_url": "https://www.linkedin.com/in/urbanvidovic?miniProfileUrn=urn%3Ali%3Afsd_profile%3AACoAAC1Dgv8BTmhuqHYBtSr2YK7NHTm8Xgh6zlo",
+      "profile_picture": "https://media.licdn.com/dms/image/v2/D4E03AQEdOwZDXQgBog/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1730065520181?e=1766016000&v=beta&t=9KUhHujGZOGezRIMFX4tSWsQ0pgDdfaWUI69fW50IsQ"
+    },
+    "stats": {
+      "total_reactions": 29,
+      "like": 25,
+      "support": 0,
+      "love": 3,
+      "insight": 0,
+      "celebrate": 1,
+      "funny": 0,
+      "comments": 0,
+      "reposts": 2
+    },
+    "media": {
+      "type": "video",
+      "url": "https://dms.licdn.com/playlist/vid/v2/D4D05AQEgWIQrqGAXIQ/mp4-720p-30fp-crf28/B4DZo2BM5vGQBw-/0/1761842879812?e=1765184400&v=beta&t=0XnUAw_6y_Br7Y_9IIf_mgeKYlA2w5oEDEqfm0xteKg",
+      "thumbnail": "https://media.licdn.com/dms/image/v2/D4D05AQEgWIQrqGAXIQ/videocover-high/B4DZo2BM5vGQCI-/0/1761842879657?e=1765184400&v=beta&t=VzDevcIAg2MF9TKYoXn1UR_yxLb4yQakPDV233mH3KA"
+    },
+    "pagination_token": "dXJuOmxpOmFjdGl2aXR5OjczNjA2ODgxOTY2ODAwNjkxMjAtMTc1NDkyNDgyMTAzOQ=="
+  },
+  {
+    "urn": {
+      "activity_urn": "7387061478471786496",
+      "share_urn": "7377264904531038208",
+      "ugcPost_urn": null
+    },
+    "full_urn": "urn:li:activity:7387061478471786496",
+    "posted_at": {
+      "date": "2025-10-23 11:45:01",
+      "relative": "1 month ago • Visible to anyone on or off LinkedIn",
+      "timestamp": 1761212701433
+    },
+    "text": "Everyone’s chasing “hard skills.”\nBut the real skill nobody teaches? Speed. ⚡\n\nNot typing speed but... Decision speed. Execution speed.\nDo → learn → adjust → repeat.\n\nNat Friedman said it best:\n“Slow is fake. A week is 2% of the year. Time is the denominator.”\n\nSchool trains us to overthink. The world rewards those who move.\nI fight it daily — cutting social media, setting brutal deadlines, hitting the hardest task first.\n\nBecause speed isn’t talent. It’s trainable. And it’s the ultimate edge in a world moving this fast.\n\n👉 What’s your way of getting faster?",
+    "url": "https://www.linkedin.com/posts/vitosenic_everyones-chasing-hard-skills-but-the-activity-7387061478471786496-4cdH?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAGCab3oBLBle-FA2VeA-gq8iejcsNhSNsUs",
+    "post_type": "regular",
+    "author": {
+      "first_name": "Vito",
+      "last_name": "S.",
+      "headline": "AI Systems Architect | I connect business goals into working solutions.",
+      "username": "vitosenic",
+      "profile_url": "https://www.linkedin.com/in/vitosenic?miniProfileUrn=urn%3Ali%3Afsd_profile%3AACoAAC1DBZkBQnfKe7LhZ0ynHTAyFWxNNO-A4KA",
+      "profile_picture": "https://media.licdn.com/dms/image/v2/D4D03AQGzE8OeAjbN_g/profile-displayphoto-crop_800_800/B4DZlWzMOPIcAI-/0/1758097886043?e=1766016000&v=beta&t=PJ0kr2zymjWr4mQGeRTNF75Ej_ZEU-oHCUiYrs_98kQ"
+    },
+    "stats": {
+      "total_reactions": 4,
+      "like": 4,
+      "support": 0,
+      "love": 0,
+      "insight": 0,
+      "celebrate": 0,
+      "funny": 0,
+      "comments": 0,
+      "reposts": 0
+    },
+    "media": {
+      "type": "image",
+      "url": "https://media.licdn.com/dms/image/v2/D5622AQFLp7D_yEKVVA/feedshare-shrink_1280/B56ZmFPVluJ4As-/0/1758877014917?e=1766016000&v=beta&t=Lr43p3g5cb7mPWQHjsL9xNSefC70obK3pkvdM0Gxasc",
+      "images": [
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D5622AQFLp7D_yEKVVA/feedshare-shrink_1280/B56ZmFPVluJ4As-/0/1758877014917?e=1766016000&v=beta&t=Lr43p3g5cb7mPWQHjsL9xNSefC70obK3pkvdM0Gxasc",
+          "width": 640,
+          "height": 640
+        }
+      ]
+    },
+    "pagination_token": "dXJuOmxpOmFjdGl2aXR5OjczNjA2ODgxOTY2ODAwNjkxMjAtMTc1NDkyNDgyMTAzOQ=="
+  },
+  {
+    "urn": {
+      "activity_urn": "7386699112496300032",
+      "share_urn": "7374132606675628032",
+      "ugcPost_urn": null
+    },
+    "full_urn": "urn:li:activity:7386699112496300032",
+    "posted_at": {
+      "date": "2025-10-22 11:45:06",
+      "relative": "1 month ago • Visible to anyone on or off LinkedIn",
+      "timestamp": 1761126306652
+    },
+    "text": "Most people are still hyping LLMs and RAG.\n\nCool — but that’s entry level.\n\nHere’s the real hierarchy of AI 👇\n1️⃣ LLM Workflow → basic text prediction. Good for email drafts and chatbots.\n2️⃣ RAG → better Q&A because you add external data. Still brittle.\n3️⃣ AI Agent → planning + reasoning + tools. Now you’re automating workflows.\n4️⃣ Agentic AI → multi-agent swarms. Specialized roles, memory, collaboration. \n\nThis is where scale and real disruption happens.\n\nNotice the pattern?\nEvery step adds structure and autonomy.\nEvery step pushes humans further out of the loop.\n\n👉 That’s why \"just RAG\" shops won’t survive. They’ll be leapfrogged by agentic systems that don’t just answer — they act.\n\nYour move:\nAre you still wiring prompts into RAG pipelines… or are you already building swarms?",
+    "url": "https://www.linkedin.com/posts/vitosenic_most-people-are-still-hyping-llms-and-rag-activity-7386699112496300032-HJM0?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAGCab3oBLBle-FA2VeA-gq8iejcsNhSNsUs",
+    "post_type": "regular",
+    "author": {
+      "first_name": "Vito",
+      "last_name": "S.",
+      "headline": "AI Systems Architect | I connect business goals into working solutions.",
+      "username": "vitosenic",
+      "profile_url": "https://www.linkedin.com/in/vitosenic?miniProfileUrn=urn%3Ali%3Afsd_profile%3AACoAAC1DBZkBQnfKe7LhZ0ynHTAyFWxNNO-A4KA",
+      "profile_picture": "https://media.licdn.com/dms/image/v2/D4D03AQGzE8OeAjbN_g/profile-displayphoto-crop_800_800/B4DZlWzMOPIcAI-/0/1758097886043?e=1766016000&v=beta&t=PJ0kr2zymjWr4mQGeRTNF75Ej_ZEU-oHCUiYrs_98kQ"
+    },
+    "stats": {
+      "total_reactions": 7,
+      "like": 6,
+      "support": 1,
+      "love": 0,
+      "insight": 0,
+      "celebrate": 0,
+      "funny": 0,
+      "comments": 0,
+      "reposts": 0
+    },
+    "media": {
+      "type": "image",
+      "url": "https://media.licdn.com/dms/image/v2/D4D22AQGbRkdYWq-Mmg/feedshare-shrink_2048_1536/B4DZlYuh3pJMAw-/0/1758130216977?e=1766016000&v=beta&t=yBCkQmnuoqtNosMoYcWjH9RgsLwwe_YareKEDJWvWwI",
+      "images": [
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQGbRkdYWq-Mmg/feedshare-shrink_2048_1536/B4DZlYuh3pJMAw-/0/1758130216977?e=1766016000&v=beta&t=yBCkQmnuoqtNosMoYcWjH9RgsLwwe_YareKEDJWvWwI",
+          "width": 818,
+          "height": 1023
+        }
+      ]
+    },
+    "pagination_token": "dXJuOmxpOmFjdGl2aXR5OjczNjA2ODgxOTY2ODAwNjkxMjAtMTc1NDkyNDgyMTAzOQ=="
+  },
+  {
+    "urn": {
+      "activity_urn": "7386340565874900993",
+      "share_urn": "7374132170979893248",
+      "ugcPost_urn": null
+    },
+    "full_urn": "urn:li:activity:7386340565874900993",
+    "posted_at": {
+      "date": "2025-10-21 12:00:22",
+      "relative": "1 month ago • Visible to anyone on or off LinkedIn",
+      "timestamp": 1761040822476
+    },
+    "text": "This place worships kind leadership.\n\n🤝 Empathy. Soft skills. Being nice.\n\nBut here’s the uncomfortable truth⚡\n\nEvery legendary founder I’ve studied looked nothing like that.\n🏹 Larry Ellison (Oracle) – combative, fearless.\n🍏 Steve Jobs (Apple) – perfectionist, demanding.\n📦 Jeff Bezos (Amazon) – relentless, feared.\n🍔 Ray Kroc (McDonald’s) – ruthless scaler.\n🚗 Elon Musk (Tesla/SpaceX) – relentless, uncompromising.\n\nThey’re brutal. 🔥 Screaming. Demanding. Obsessive.\n\nAnd when you dig into the real stories — it’s true. They didn’t succeed because they were polite.\n\nThey succeeded because they refused to accept anything less than their vision. 🚀\n\nSo here’s the paradox:\n👉 Does greatness in building come because of that tyrant energy… or despite it?\n\nI don’t have the final answer. But I do know this: the fire, the obsession, the refusal to compromise — it’s in every story.\n\n❓What do you think — are we romanticizing toxic leadership, or is this just the reality of building something world-changing?",
+    "url": "https://www.linkedin.com/posts/vitosenic_this-place-worships-kind-leadership-activity-7386340565874900993-wTCH?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAGCab3oBLBle-FA2VeA-gq8iejcsNhSNsUs",
+    "post_type": "regular",
+    "author": {
+      "first_name": "Vito",
+      "last_name": "S.",
+      "headline": "AI Systems Architect | I connect business goals into working solutions.",
+      "username": "vitosenic",
+      "profile_url": "https://www.linkedin.com/in/vitosenic?miniProfileUrn=urn%3Ali%3Afsd_profile%3AACoAAC1DBZkBQnfKe7LhZ0ynHTAyFWxNNO-A4KA",
+      "profile_picture": "https://media.licdn.com/dms/image/v2/D4D03AQGzE8OeAjbN_g/profile-displayphoto-crop_800_800/B4DZlWzMOPIcAI-/0/1758097886043?e=1766016000&v=beta&t=PJ0kr2zymjWr4mQGeRTNF75Ej_ZEU-oHCUiYrs_98kQ"
+    },
+    "stats": {
+      "total_reactions": 4,
+      "like": 3,
+      "support": 0,
+      "love": 1,
+      "insight": 0,
+      "celebrate": 0,
+      "funny": 0,
+      "comments": 0,
+      "reposts": 0
+    },
+    "media": {
+      "type": "image",
+      "url": "https://media.licdn.com/dms/image/v2/D4D22AQF2_uon5dgYKg/feedshare-shrink_2048_1536/B4DZlYuIgqJUA0-/0/1758130113077?e=1766016000&v=beta&t=4pgogDNEwLinqx9C2AlBWu-EavEV0y_GGrnOHNbbTNA",
+      "images": [
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQF2_uon5dgYKg/feedshare-shrink_2048_1536/B4DZlYuIgqJUA0-/0/1758130113077?e=1766016000&v=beta&t=4pgogDNEwLinqx9C2AlBWu-EavEV0y_GGrnOHNbbTNA",
+          "width": 426,
+          "height": 351
+        }
+      ]
+    },
+    "pagination_token": "dXJuOmxpOmFjdGl2aXR5OjczNjA2ODgxOTY2ODAwNjkxMjAtMTc1NDkyNDgyMTAzOQ=="
+  },
+  {
+    "urn": {
+      "activity_urn": "7384532344885460993",
+      "share_urn": "7374130280988753920",
+      "ugcPost_urn": null
+    },
+    "full_urn": "urn:li:activity:7384532344885460993",
+    "posted_at": {
+      "date": "2025-10-16 12:15:08",
+      "relative": "1 month ago • Visible to anyone on or off LinkedIn",
+      "timestamp": 1760609708997
+    },
+    "text": "The first “business movie” I ever watched was The Social Network.\nI was in 6th grade — and it flipped a switch in me.\n\nIt wasn’t just “coding is cool.”\n\nIt was the fire, the obsession, the raw ambition of building something from nothing.\n\nThat’s what pulled me into computers and business.\n\nSince then, I’ve stacked up a list of movies that left the same kind of mark:\n🎬 The Social Network (the one that started it all for me)\n 💸 The Big Short (insane soundtrack + brutal system lessons)\n 🐺 Wolf of Wall Street & 💣 War Dogs (yeah, cliché, but fun and raw)\n 🍔 The Founder → brutal, direct vision can shape an entire industry\n 🍏 Steve Jobs (2015) → brutal, direct vision can shape an entire industry\n 📱 BlackBerry (2023) → that MVP scene shows you can sell the dream before the product is ready\n\nThese movies aren’t just entertainment. They spark that “aha” moment, they make you rethink ambition, risk, and what it takes to build.\n\n👉 Which one’s your favorite?\n Or what should I add to this list?",
+    "url": "https://www.linkedin.com/posts/vitosenic_the-first-business-movie-i-ever-watched-activity-7384532344885460993-9bHH?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAGCab3oBLBle-FA2VeA-gq8iejcsNhSNsUs",
+    "post_type": "regular",
+    "author": {
+      "first_name": "Vito",
+      "last_name": "S.",
+      "headline": "AI Systems Architect | I connect business goals into working solutions.",
+      "username": "vitosenic",
+      "profile_url": "https://www.linkedin.com/in/vitosenic?miniProfileUrn=urn%3Ali%3Afsd_profile%3AACoAAC1DBZkBQnfKe7LhZ0ynHTAyFWxNNO-A4KA",
+      "profile_picture": "https://media.licdn.com/dms/image/v2/D4D03AQGzE8OeAjbN_g/profile-displayphoto-crop_800_800/B4DZlWzMOPIcAI-/0/1758097886043?e=1766016000&v=beta&t=PJ0kr2zymjWr4mQGeRTNF75Ej_ZEU-oHCUiYrs_98kQ"
+    },
+    "stats": {
+      "total_reactions": 5,
+      "like": 5,
+      "support": 0,
+      "love": 0,
+      "insight": 0,
+      "celebrate": 0,
+      "funny": 0,
+      "comments": 0,
+      "reposts": 0
+    },
+    "media": {
+      "type": "image",
+      "url": "https://media.licdn.com/dms/image/v2/D4D22AQHh_yBGU6_M-g/feedshare-shrink_2048_1536/B4DZlYsaYxHYAw-/0/1758129662567?e=1766016000&v=beta&t=BOiMEJ51rjrm-9gFifst_g_F1qCxg7E2YDeuOAnbC1k",
+      "images": [
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQHh_yBGU6_M-g/feedshare-shrink_2048_1536/B4DZlYsaYxHYAw-/0/1758129662567?e=1766016000&v=beta&t=BOiMEJ51rjrm-9gFifst_g_F1qCxg7E2YDeuOAnbC1k",
+          "width": 1024,
+          "height": 1024
+        }
+      ]
+    },
+    "pagination_token": "dXJuOmxpOmFjdGl2aXR5OjczNjA2ODgxOTY2ODAwNjkxMjAtMTc1NDkyNDgyMTAzOQ=="
+  },
+  {
+    "urn": {
+      "activity_urn": "7384162381142249472",
+      "share_urn": null,
+      "ugcPost_urn": "7374129620411060225"
+    },
+    "full_urn": "urn:li:ugcPost:7374129620411060225",
+    "posted_at": {
+      "date": "2025-10-15 11:45:02",
+      "relative": "1 month ago • Visible to anyone on or off LinkedIn",
+      "timestamp": 1760521502767
+    },
+    "text": "Most websites are still built for humans. 👤\n\nBut the next traffic wave isn’t human. It’s agents. 🤖\n\nNLWeb flips your site from “pages” to natural-language endpoints.\nThink: HTML for the agentic web. 🌐⚡\n\nI dug into the repo. It’s not hype — it’s practical:\n💬 ask endpoint → query your site in plain language\n 🔄 Schema.org / RSS / JSON Feed → reuse what you already have\n 🗄️ Slots right into vector DBs (Qdrant, Milvus, Azure AI Search, Postgres, etc.)\n 🔗 Works with OpenAI, Gemini, Anthropic, DeepSeek, local models\n 🤝 Natively speaks MCP, A2A — humans and agents use the same interface\n\nWhat this means for you:\n🗣️ Your catalog, listings, docs → conversational\n 🎯 Agents can find, understand, and act on your data without custom APIs\n 🚀 You stop fighting SEO checkboxes and start building AIO — Agent Input Optimization\n\nStop thinking “chatbot on top.” Start thinking natural language as a first-class API. 🧩\n\nAnd yes — NLWeb plays with MCP/A2A, not against them:\n🔧 MCP wires your tools/prompts/resources\n 🤜🤛 A2A lets agents collaborate\n 🌍 NLWeb makes your website agent-ready\n\nSo… do you want to be invisible to AI traffic 👻 or become agent-ready by design? ⚡",
+    "url": "https://www.linkedin.com/posts/vitosenic_most-websites-are-still-built-for-humans-activity-7384162381142249472-60KA?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAGCab3oBLBle-FA2VeA-gq8iejcsNhSNsUs",
+    "post_type": "regular",
+    "author": {
+      "first_name": "Vito",
+      "last_name": "S.",
+      "headline": "AI Systems Architect | I connect business goals into working solutions.",
+      "username": "vitosenic",
+      "profile_url": "https://www.linkedin.com/in/vitosenic?miniProfileUrn=urn%3Ali%3Afsd_profile%3AACoAAC1DBZkBQnfKe7LhZ0ynHTAyFWxNNO-A4KA",
+      "profile_picture": "https://media.licdn.com/dms/image/v2/D4D03AQGzE8OeAjbN_g/profile-displayphoto-crop_800_800/B4DZlWzMOPIcAI-/0/1758097886043?e=1766016000&v=beta&t=PJ0kr2zymjWr4mQGeRTNF75Ej_ZEU-oHCUiYrs_98kQ"
+    },
+    "stats": {
+      "total_reactions": 3,
+      "like": 3,
+      "support": 0,
+      "love": 0,
+      "insight": 0,
+      "celebrate": 0,
+      "funny": 0,
+      "comments": 0,
+      "reposts": 0
+    },
+    "media": {
+      "type": "images",
+      "url": "https://media.licdn.com/dms/image/v2/D4D22AQGl2tPNUpEn8w/feedshare-shrink_1280/B4DZlYr0DGG8Aw-/0/1758129505329?e=1766016000&v=beta&t=xCRvpDJGCCajCZ7wn9EOatZwL5GihGrtKMHtpaWXsqA",
+      "images": [
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQGl2tPNUpEn8w/feedshare-shrink_1280/B4DZlYr0DGG8Aw-/0/1758129505329?e=1766016000&v=beta&t=xCRvpDJGCCajCZ7wn9EOatZwL5GihGrtKMHtpaWXsqA",
+          "width": 1280,
+          "height": 720
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQGnrUnZE7yY9w/feedshare-shrink_800/B4DZlYr0DJJkAg-/0/1758129505118?e=1766016000&v=beta&t=2o_fy1qOq9sFRgk3aWig8BshQntIY1Z24HVKT9BVuZc",
+          "width": 673,
+          "height": 321
+        }
+      ]
+    },
+    "pagination_token": "dXJuOmxpOmFjdGl2aXR5OjczNjA2ODgxOTY2ODAwNjkxMjAtMTc1NDkyNDgyMTAzOQ=="
+  },
+  {
+    "urn": {
+      "activity_urn": "7383807542885527553",
+      "share_urn": "7374128813061947392",
+      "ugcPost_urn": null
+    },
+    "full_urn": "urn:li:activity:7383807542885527553",
+    "posted_at": {
+      "date": "2025-10-14 12:15:02",
+      "relative": "1 month ago • Visible to anyone on or off LinkedIn",
+      "timestamp": 1760436902734
+    },
+    "text": "Most teams still wire “one big agent” to a pile of tools.\n\nCute. But the real game? Agents talking to agents.\n\nThat’s A2A (Agent-to-Agent Protocol https://lnkd.in/dNhNv82E) — an open spec (Google + 50+ partners) for interoperability. Not another wrapper. A common language so your sourcing agent briefs your CRM agent, which syncs with your scheduling agent, while compliance oversees it all.\n\nWhat A2A standardizes:\n👉 Agent Cards → agents advertise skills, auth, endpoints.\n👉 Tasks → Artifacts → workflows with state + outputs, not one-shots.\n👉 Collaboration Messages → context exchange, not duct-taped webhooks.\n👉 UX Negotiation → text, forms, files, audio, video.\n👉 Enterprise rails → HTTP, JSON-RPC, SSE.\n👉 Opaque by design → no secret-sauce leaks.\n\nHow it fits with MCP:\nMCP = connect agents to tools/resources (inside).\nA2A = connect agents to each other (outside).\n\nWinners won’t build “super agents.” They’ll orchestrate specialists via A2A — measurable, swappable, secure.\n\nSo… are you still shipping solo agents, or designing for multi-agent markets?\nDrop your first A2A use-case. If it’s “later,” you’re already late. 🚀",
+    "url": "https://www.linkedin.com/posts/vitosenic_announcing-the-agent2agent-protocol-a2a-activity-7383807542885527553-3iNH?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAGCab3oBLBle-FA2VeA-gq8iejcsNhSNsUs",
+    "post_type": "regular",
+    "author": {
+      "first_name": "Vito",
+      "last_name": "S.",
+      "headline": "AI Systems Architect | I connect business goals into working solutions.",
+      "username": "vitosenic",
+      "profile_url": "https://www.linkedin.com/in/vitosenic?miniProfileUrn=urn%3Ali%3Afsd_profile%3AACoAAC1DBZkBQnfKe7LhZ0ynHTAyFWxNNO-A4KA",
+      "profile_picture": "https://media.licdn.com/dms/image/v2/D4D03AQGzE8OeAjbN_g/profile-displayphoto-crop_800_800/B4DZlWzMOPIcAI-/0/1758097886043?e=1766016000&v=beta&t=PJ0kr2zymjWr4mQGeRTNF75Ej_ZEU-oHCUiYrs_98kQ"
+    },
+    "stats": {
+      "total_reactions": 1,
+      "like": 1,
+      "support": 0,
+      "love": 0,
+      "insight": 0,
+      "celebrate": 0,
+      "funny": 0,
+      "comments": 0,
+      "reposts": 0
+    },
+    "media": {
+      "type": "image",
+      "url": "https://media.licdn.com/dms/image/sync/v2/D4D27AQGnuI20Mquwxg/articleshare-shrink_1280_800/B4DZYafqEXHsAU-/0/1744201228985?e=1765184400&v=beta&t=-xfdRdSamtos7hEWH2CPlP-4sLGjtQ6ijEt4_nueoGo"
+    },
+    "article": {
+      "url": "https://lnkd.in/dNhNv82E)",
+      "title": "Announcing the Agent2Agent Protocol (A2A)- Google Developers Blog",
+      "subtitle": "developers.googleblog.com",
+      "thumbnail": "https://media.licdn.com/dms/image/sync/v2/D4D27AQGnuI20Mquwxg/articleshare-shrink_1280_800/B4DZYafqEXHsAU-/0/1744201228985?e=1765184400&v=beta&t=-xfdRdSamtos7hEWH2CPlP-4sLGjtQ6ijEt4_nueoGo"
+    },
+    "pagination_token": "dXJuOmxpOmFjdGl2aXR5OjczNjA2ODgxOTY2ODAwNjkxMjAtMTc1NDkyNDgyMTAzOQ=="
+  },
+  {
+    "urn": {
+      "activity_urn": "7381984349044436992",
+      "share_urn": "7374126349445337089",
+      "ugcPost_urn": null
+    },
+    "full_urn": "urn:li:activity:7381984349044436992",
+    "posted_at": {
+      "date": "2025-10-09 11:30:19",
+      "relative": "1 month ago • Visible to anyone on or off LinkedIn",
+      "timestamp": 1760002219449
+    },
+    "text": "Everyone talks about MCP like it’s just a tool connector.\nWrong. That’s only the surface. ⚡\n\nWhen I first looked into MCP, I went straight to the official docs (https://lnkd.in/dKwnKx9G). And that’s where it hit me. 💡\n\nMCP isn’t just about plugging APIs into your LLM.\nIt’s a protocol with layers:\n  - Resources → structured context injection\n  - Prompts → reusable prompt libraries, standard across clients\n  - Tools → yes, the obvious one, but only part of the puzzle\n  - Discovery → how agents actually find what they can use\n  - Sampling → steering how responses get generated\n  - Roots → defining what’s possible in the environment\n  - Elicitation → shaping how agents extract data from humans\n\nMost current clients only bother with Tools. That’s why people think MCP = tool calling.\n\nBut the real power? When all these components come together — a shared language for how AI agents access, use, and expand their world.\n\nThis is bigger than “LLM wrappers.”\nIt’s an operating system for agents. 🖥️ 🤖\n\nQuestion is:\nDo you see MCP evolving into the TCP/IP of the AI era — invisible but everywhere?\nOr will it stay a niche toy for the builders paying attention right now?\nI know where I’m placing my bet. What about you?",
+    "url": "https://www.linkedin.com/posts/vitosenic_everyone-talks-about-mcp-like-its-just-a-activity-7381984349044436992-XWw5?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAGCab3oBLBle-FA2VeA-gq8iejcsNhSNsUs",
+    "post_type": "regular",
+    "author": {
+      "first_name": "Vito",
+      "last_name": "S.",
+      "headline": "AI Systems Architect | I connect business goals into working solutions.",
+      "username": "vitosenic",
+      "profile_url": "https://www.linkedin.com/in/vitosenic?miniProfileUrn=urn%3Ali%3Afsd_profile%3AACoAAC1DBZkBQnfKe7LhZ0ynHTAyFWxNNO-A4KA",
+      "profile_picture": "https://media.licdn.com/dms/image/v2/D4D03AQGzE8OeAjbN_g/profile-displayphoto-crop_800_800/B4DZlWzMOPIcAI-/0/1758097886043?e=1766016000&v=beta&t=PJ0kr2zymjWr4mQGeRTNF75Ej_ZEU-oHCUiYrs_98kQ"
+    },
+    "stats": {
+      "total_reactions": 4,
+      "like": 4,
+      "support": 0,
+      "love": 0,
+      "insight": 0,
+      "celebrate": 0,
+      "funny": 0,
+      "comments": 0,
+      "reposts": 0
+    },
+    "media": {
+      "type": "image",
+      "url": "https://media.licdn.com/dms/image/v2/D4D22AQHfGIVLRQeGTQ/feedshare-shrink_800/B4DZlYo1yTJQAg-/0/1758128725905?e=1766016000&v=beta&t=zkYxifUIrm0why3QkaeO0m-o6u1G0LtloYneWqezPCA",
+      "images": [
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQHfGIVLRQeGTQ/feedshare-shrink_800/B4DZlYo1yTJQAg-/0/1758128725905?e=1766016000&v=beta&t=zkYxifUIrm0why3QkaeO0m-o6u1G0LtloYneWqezPCA",
+          "width": 586,
+          "height": 674
+        }
+      ]
+    },
+    "pagination_token": "dXJuOmxpOmFjdGl2aXR5OjczNjA2ODgxOTY2ODAwNjkxMjAtMTc1NDkyNDgyMTAzOQ=="
+  },
+  {
+    "urn": {
+      "activity_urn": "7381633209421185024",
+      "share_urn": "7374125577676423168",
+      "ugcPost_urn": null
+    },
+    "full_urn": "urn:li:activity:7381633209421185024",
+    "posted_at": {
+      "date": "2025-10-08 12:15:01",
+      "relative": "1 month ago • Visible to anyone on or off LinkedIn",
+      "timestamp": 1759918501239
+    },
+    "text": "Everyone screams “AI agents.”\n 99% have no clue how they actually work.\n\nReality check:\nIf you’re just prompting ChatGPT — you’re babysitting a chatbot, not building an agent.\n\nThe 5 real design patterns:\n 1️⃣ Reflection → Checks its own work, iterates.\n 2️⃣ Tool Use → Calls APIs, databases, code.\n 3️⃣ ReAct → Think → Act → Observe → Repeat.\n 4️⃣ Planning → Breaks problems into steps, executes.\n 5️⃣ Multi-agent → A team of specialists working in sync.\n\nThis is the playbook.\nMiss it, and you’re building toys while others build systems that take markets.\n\n👉 Still hacking prompts? Or building scalable agents?",
+    "url": "https://www.linkedin.com/posts/vitosenic_everyone-screams-ai-agents-99-have-no-activity-7381633209421185024-EhN3?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAGCab3oBLBle-FA2VeA-gq8iejcsNhSNsUs",
+    "post_type": "regular",
+    "author": {
+      "first_name": "Vito",
+      "last_name": "S.",
+      "headline": "AI Systems Architect | I connect business goals into working solutions.",
+      "username": "vitosenic",
+      "profile_url": "https://www.linkedin.com/in/vitosenic?miniProfileUrn=urn%3Ali%3Afsd_profile%3AACoAAC1DBZkBQnfKe7LhZ0ynHTAyFWxNNO-A4KA",
+      "profile_picture": "https://media.licdn.com/dms/image/v2/D4D03AQGzE8OeAjbN_g/profile-displayphoto-crop_800_800/B4DZlWzMOPIcAI-/0/1758097886043?e=1766016000&v=beta&t=PJ0kr2zymjWr4mQGeRTNF75Ej_ZEU-oHCUiYrs_98kQ"
+    },
+    "stats": {
+      "total_reactions": 3,
+      "like": 3,
+      "support": 0,
+      "love": 0,
+      "insight": 0,
+      "celebrate": 0,
+      "funny": 0,
+      "comments": 0,
+      "reposts": 0
+    },
+    "media": {
+      "type": "image",
+      "url": "https://media.licdn.com/dms/image/v2/D4D22AQFM6IryPu-D3g/feedshare-shrink_2048_1536/B4DZlYoIoPGsAw-/0/1758128541755?e=1766016000&v=beta&t=prromv_3x7Pu73hlZoFVWRcHeghzy_UKrOGWsQCqWG8",
+      "images": [
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQFM6IryPu-D3g/feedshare-shrink_2048_1536/B4DZlYoIoPGsAw-/0/1758128541755?e=1766016000&v=beta&t=prromv_3x7Pu73hlZoFVWRcHeghzy_UKrOGWsQCqWG8",
+          "width": 962,
+          "height": 1024
+        }
+      ]
+    },
+    "pagination_token": "dXJuOmxpOmFjdGl2aXR5OjczNjA2ODgxOTY2ODAwNjkxMjAtMTc1NDkyNDgyMTAzOQ=="
+  },
+  {
+    "urn": {
+      "activity_urn": "7381263281325424640",
+      "share_urn": "7374124212170604544",
+      "ugcPost_urn": null
+    },
+    "full_urn": "urn:li:activity:7381263281325424640",
+    "posted_at": {
+      "date": "2025-10-07 11:45:03",
+      "relative": "1 month ago • Visible to anyone on or off LinkedIn",
+      "timestamp": 1759830303508
+    },
+    "text": "🧭 Planning is the underrated superpower of AI agents.\n\nMost agents answer one question. But drop them in a real task — they collapse.\n\nThe fix? Planning.\n → Set the goal\n → Break it into steps\n → Structure the output\n → Re-plan when things change\n\nThat’s how you turn chatbots into project managers.\n\nScalable. Reliable. Flexible.\nNot sexy — but the difference between toy demos and production.\n\n👉 Do you see planning as the glue for multi-agent systems?",
+    "url": "https://www.linkedin.com/posts/vitosenic_planning-is-the-underrated-superpower-activity-7381263281325424640-GXei?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAGCab3oBLBle-FA2VeA-gq8iejcsNhSNsUs",
+    "post_type": "regular",
+    "author": {
+      "first_name": "Vito",
+      "last_name": "S.",
+      "headline": "AI Systems Architect | I connect business goals into working solutions.",
+      "username": "vitosenic",
+      "profile_url": "https://www.linkedin.com/in/vitosenic?miniProfileUrn=urn%3Ali%3Afsd_profile%3AACoAAC1DBZkBQnfKe7LhZ0ynHTAyFWxNNO-A4KA",
+      "profile_picture": "https://media.licdn.com/dms/image/v2/D4D03AQGzE8OeAjbN_g/profile-displayphoto-crop_800_800/B4DZlWzMOPIcAI-/0/1758097886043?e=1766016000&v=beta&t=PJ0kr2zymjWr4mQGeRTNF75Ej_ZEU-oHCUiYrs_98kQ"
+    },
+    "stats": {
+      "total_reactions": 2,
+      "like": 2,
+      "support": 0,
+      "love": 0,
+      "insight": 0,
+      "celebrate": 0,
+      "funny": 0,
+      "comments": 0,
+      "reposts": 0
+    },
+    "media": {
+      "type": "image",
+      "url": "https://media.licdn.com/dms/image/v2/D4D22AQFnMJCirELfCQ/feedshare-shrink_2048_1536/B4DZlYm5YdJQA4-/0/1758128216309?e=1766016000&v=beta&t=P-_ba2U2gZkHYYLetVMPArfSKWyDcVljsn2F42IlGls",
+      "images": [
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQFnMJCirELfCQ/feedshare-shrink_2048_1536/B4DZlYm5YdJQA4-/0/1758128216309?e=1766016000&v=beta&t=P-_ba2U2gZkHYYLetVMPArfSKWyDcVljsn2F42IlGls",
+          "width": 1920,
+          "height": 1080
+        }
+      ]
+    },
+    "pagination_token": "dXJuOmxpOmFjdGl2aXR5OjczNjA2ODgxOTY2ODAwNjkxMjAtMTc1NDkyNDgyMTAzOQ=="
+  },
+  {
+    "urn": {
+      "activity_urn": "7379458881397293056",
+      "share_urn": "7379433829729632256",
+      "ugcPost_urn": null
+    },
+    "full_urn": "urn:li:activity:7379458881397293056",
+    "posted_at": {
+      "date": "2025-10-02 12:15:01",
+      "relative": "1 month ago • Visible to anyone on or off LinkedIn",
+      "timestamp": 1759400101041
+    },
+    "text": "The old e-commerce playbook is about to get torched.\n\nFor 20 years, merchants obsessed over funnels, landing pages, and checkout hacks. 🚀 Useless once AI agents start buying, not just recommending.\n\nThat’s what the Agentic Commerce Protocol (ACP) does (https://lnkd.in/dgYHZnHE) — an open-source spec (Apache 2.0) backed by OpenAI + Stripe.\n\n ✅ ChatGPT can alrevady check out with merchants inside chat.\n ✅ Shopify + Etsy stores can apply with no extra integration.\n ✅ Works with digital goods, physical, subscriptions, async orders.\n\n👉 Merchant sign-up + details are live here: https://lnkd.in/dc_rdR6g\n\nGame-changer, right? Yes — but with caveats:\n ⚠️ It’s still a draft. Early adopters may need rewrites.\n ⚠️ US-only (for now).\n ⚠️ “Open” spec, but discovery + ranking will still be controlled.\n\nIf ACP sticks, your website won’t be the front door anymore.\nYour customer will just say “buy this” to an AI.\n\nSo: are you ready for commerce without a website? Or do you think this is just hype?\n\nComment below — I want to see who’s bold enough to bet on this.",
+    "url": "https://www.linkedin.com/posts/vitosenic_the-old-e-commerce-playbook-is-about-to-get-activity-7379458881397293056-_wCx?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAGCab3oBLBle-FA2VeA-gq8iejcsNhSNsUs",
+    "post_type": "regular",
+    "author": {
+      "first_name": "Vito",
+      "last_name": "S.",
+      "headline": "AI Systems Architect | I connect business goals into working solutions.",
+      "username": "vitosenic",
+      "profile_url": "https://www.linkedin.com/in/vitosenic?miniProfileUrn=urn%3Ali%3Afsd_profile%3AACoAAC1DBZkBQnfKe7LhZ0ynHTAyFWxNNO-A4KA",
+      "profile_picture": "https://media.licdn.com/dms/image/v2/D4D03AQGzE8OeAjbN_g/profile-displayphoto-crop_800_800/B4DZlWzMOPIcAI-/0/1758097886043?e=1766016000&v=beta&t=PJ0kr2zymjWr4mQGeRTNF75Ej_ZEU-oHCUiYrs_98kQ"
+    },
+    "stats": {
+      "total_reactions": 2,
+      "like": 2,
+      "support": 0,
+      "love": 0,
+      "insight": 0,
+      "celebrate": 0,
+      "funny": 0,
+      "comments": 0,
+      "reposts": 0
+    },
+    "media": {
+      "type": "image",
+      "url": "https://media.licdn.com/dms/image/v2/D4D22AQEv_fZrHVo8ng/feedshare-shrink_1280/B4DZmkD9oSGsAs-/0/1759394127655?e=1766016000&v=beta&t=MjABHbwy0htXNM4ilmQoLQrnDfZZj0oGZpCaqJUMnI0",
+      "images": [
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQEv_fZrHVo8ng/feedshare-shrink_1280/B4DZmkD9oSGsAs-/0/1759394127655?e=1766016000&v=beta&t=MjABHbwy0htXNM4ilmQoLQrnDfZZj0oGZpCaqJUMnI0",
+          "width": 1210,
+          "height": 1466
+        }
+      ]
+    },
+    "pagination_token": "dXJuOmxpOmFjdGl2aXR5OjczNjA2ODgxOTY2ODAwNjkxMjAtMTc1NDkyNDgyMTAzOQ=="
+  },
+  {
+    "urn": {
+      "activity_urn": "7379096500510896128",
+      "share_urn": null,
+      "ugcPost_urn": "7374056256799490048"
+    },
+    "full_urn": "urn:li:ugcPost:7374056256799490048",
+    "posted_at": {
+      "date": "2025-10-01 12:15:02",
+      "relative": "1 month ago • Visible to anyone on or off LinkedIn",
+      "timestamp": 1759313702705
+    },
+    "text": "Most RAG is lazy:\nQuery → Retrieve → Pray.\n\nAgentic RAG changes the game.\nIt doesn’t just fetch context — it plans, tests, and fixes until the answer holds up.\n\nThink loop, not line:\nLLM → Tool → Check → Refine → Repeat.\n\nWhat it adds:\n ⚡ Rewrites bad queries, switches tools.\n ⚡ Maker–checker loop (generate → verify → fix).\n ⚡ Multi-tool (vector, SQL, APIs, web).\n ⚡ Memory (learns mid-run).\n ⚡ Safe fails + human hand-off.\n\nWhere it shines:\n- Compliance, legal, medical.\n- NL2SQL without hallucinations.\n- Long workflows that can’t afford mistakes.\n\nIf your “RAG” can’t ask for more info, change its plan, and prove its sources…\n It’s not agentic. It’s just a chatbot with a PDF fetish.\n\n👉 Who’s running Agentic RAG in prod — and what did it replace? 🚀",
+    "url": "https://www.linkedin.com/posts/vitosenic_most-rag-is-lazy-query-retrieve-pray-activity-7379096500510896128-MqcJ?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAGCab3oBLBle-FA2VeA-gq8iejcsNhSNsUs",
+    "post_type": "regular",
+    "author": {
+      "first_name": "Vito",
+      "last_name": "S.",
+      "headline": "AI Systems Architect | I connect business goals into working solutions.",
+      "username": "vitosenic",
+      "profile_url": "https://www.linkedin.com/in/vitosenic?miniProfileUrn=urn%3Ali%3Afsd_profile%3AACoAAC1DBZkBQnfKe7LhZ0ynHTAyFWxNNO-A4KA",
+      "profile_picture": "https://media.licdn.com/dms/image/v2/D4D03AQGzE8OeAjbN_g/profile-displayphoto-crop_800_800/B4DZlWzMOPIcAI-/0/1758097886043?e=1766016000&v=beta&t=PJ0kr2zymjWr4mQGeRTNF75Ej_ZEU-oHCUiYrs_98kQ"
+    },
+    "stats": {
+      "total_reactions": 3,
+      "like": 3,
+      "support": 0,
+      "love": 0,
+      "insight": 0,
+      "celebrate": 0,
+      "funny": 0,
+      "comments": 2,
+      "reposts": 0
+    },
+    "media": {
+      "type": "images",
+      "url": "https://media.licdn.com/dms/image/v2/D4D22AQHPJRyGXTkQPQ/feedshare-shrink_2048_1536/B4DZlXpFTYIcAw-/0/1758112012422?e=1766016000&v=beta&t=f65TdCTfGeKnhRUlUnex5fGdvjIO9jKo64dhGiK0C4w",
+      "images": [
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQHPJRyGXTkQPQ/feedshare-shrink_2048_1536/B4DZlXpFTYIcAw-/0/1758112012422?e=1766016000&v=beta&t=f65TdCTfGeKnhRUlUnex5fGdvjIO9jKo64dhGiK0C4w",
+          "width": 1920,
+          "height": 1080
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQF262Hnl-qJRg/feedshare-shrink_2048_1536/B4DZlXpFS0H4A0-/0/1758112012353?e=1766016000&v=beta&t=SOfF3xV8oAAIR0wN-wrr10Y4rBr__qAkff-pkgOULCw",
+          "width": 1920,
+          "height": 1080
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQEtxqG91vNZZA/feedshare-shrink_2048_1536/B4DZlXpFUSJMA0-/0/1758112012456?e=1766016000&v=beta&t=v0RM3gQGq5WPvz4AsQ1lSK5DshOrtjBnA3PWx-T2u5s",
+          "width": 1920,
+          "height": 1080
+        }
+      ]
+    },
+    "pagination_token": "dXJuOmxpOmFjdGl2aXR5OjczNjA2ODgxOTY2ODAwNjkxMjAtMTc1NDkyNDgyMTAzOQ=="
+  },
+  {
+    "urn": {
+      "activity_urn": "7378726580661084161",
+      "share_urn": "7374055505880764416",
+      "ugcPost_urn": null
+    },
+    "full_urn": "urn:li:activity:7378726580661084161",
+    "posted_at": {
+      "date": "2025-09-30 11:45:06",
+      "relative": "2 months ago • Visible to anyone on or off LinkedIn",
+      "timestamp": 1759225506940
+    },
+    "text": "LLMs alone are useless.\nThey can talk, but they can’t do.\n\nThe unlock? Tools.\nThat’s what turns a chatbot into an agent.\n\nTool Use Pattern = backbone of every serious agent:\n ⚡ Fetch data (stocks, weather, DBs)\n ⚡ Execute (code, math, simulations)\n ⚡ Automate (emails, tasks, workflows)\n ⚡ Support (CRMs, tickets, KBs)\n\nBut tools need design:\n- Schemas (so LLM knows what exists)\n- Logic (when to call what)\n- Error handling (because tools fail)\n- State & memory (don’t lose context)\n\nIf your agent doesn’t use tools — it’s just a chatbot in a costume.\n👉 First tool you’d wire in if you had to ship tomorrow?",
+    "url": "https://www.linkedin.com/posts/vitosenic_llms-alone-are-useless-they-can-talk-but-activity-7378726580661084161-Yha_?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAGCab3oBLBle-FA2VeA-gq8iejcsNhSNsUs",
+    "post_type": "regular",
+    "author": {
+      "first_name": "Vito",
+      "last_name": "S.",
+      "headline": "AI Systems Architect | I connect business goals into working solutions.",
+      "username": "vitosenic",
+      "profile_url": "https://www.linkedin.com/in/vitosenic?miniProfileUrn=urn%3Ali%3Afsd_profile%3AACoAAC1DBZkBQnfKe7LhZ0ynHTAyFWxNNO-A4KA",
+      "profile_picture": "https://media.licdn.com/dms/image/v2/D4D03AQGzE8OeAjbN_g/profile-displayphoto-crop_800_800/B4DZlWzMOPIcAI-/0/1758097886043?e=1766016000&v=beta&t=PJ0kr2zymjWr4mQGeRTNF75Ej_ZEU-oHCUiYrs_98kQ"
+    },
+    "stats": {
+      "total_reactions": 6,
+      "like": 6,
+      "support": 0,
+      "love": 0,
+      "insight": 0,
+      "celebrate": 0,
+      "funny": 0,
+      "comments": 1,
+      "reposts": 0
+    },
+    "media": {
+      "type": "image",
+      "url": "https://media.licdn.com/dms/image/v2/D4D22AQF-EWNWSGDI1w/feedshare-shrink_2048_1536/B4DZlXoZsSJEA0-/0/1758111834341?e=1766016000&v=beta&t=8FA5jBJ2R8HOc9b6CZwr0GXezniCbxuiMQZbAfADhZk",
+      "images": [
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQF-EWNWSGDI1w/feedshare-shrink_2048_1536/B4DZlXoZsSJEA0-/0/1758111834341?e=1766016000&v=beta&t=8FA5jBJ2R8HOc9b6CZwr0GXezniCbxuiMQZbAfADhZk",
+          "width": 716,
+          "height": 552
+        }
+      ]
+    },
+    "pagination_token": "dXJuOmxpOmFjdGl2aXR5OjczNjA2ODgxOTY2ODAwNjkxMjAtMTc1NDkyNDgyMTAzOQ=="
+  },
+  {
+    "urn": {
+      "activity_urn": "7376918445839450112",
+      "share_urn": "7374055140783177728",
+      "ugcPost_urn": null
+    },
+    "full_urn": "urn:li:activity:7376918445839450112",
+    "posted_at": {
+      "date": "2025-09-25 12:00:14",
+      "relative": "2 months ago • Visible to anyone on or off LinkedIn",
+      "timestamp": 1758794414005
+    },
+    "text": "Everyone obsesses over frameworks (LangChain, CrewAI, AutoGen).\nNobody talks about design.\n\nBad code slows you down.\nBad design kills trust instantly.\n\nAgentic design = principles:\n ⚡ Transparency → always say it’s AI.\n ⚡ Control → let me shape or erase.\n ⚡ Consistency → don’t confuse with random UX.\n\nExample: even a travel agent should say:\n “I’m AI. Here’s what I can do. Here’s how to edit me. Here’s how to delete my memory.”\n\nMost “agents” today? Spam, pop-ups, zero trust.\n\n👉 Who wins the race — best models, or best design?",
+    "url": "https://www.linkedin.com/posts/vitosenic_everyone-obsesses-over-frameworks-langchain-activity-7376918445839450112-rrBl?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAGCab3oBLBle-FA2VeA-gq8iejcsNhSNsUs",
+    "post_type": "regular",
+    "author": {
+      "first_name": "Vito",
+      "last_name": "S.",
+      "headline": "AI Systems Architect | I connect business goals into working solutions.",
+      "username": "vitosenic",
+      "profile_url": "https://www.linkedin.com/in/vitosenic?miniProfileUrn=urn%3Ali%3Afsd_profile%3AACoAAC1DBZkBQnfKe7LhZ0ynHTAyFWxNNO-A4KA",
+      "profile_picture": "https://media.licdn.com/dms/image/v2/D4D03AQGzE8OeAjbN_g/profile-displayphoto-crop_800_800/B4DZlWzMOPIcAI-/0/1758097886043?e=1766016000&v=beta&t=PJ0kr2zymjWr4mQGeRTNF75Ej_ZEU-oHCUiYrs_98kQ"
+    },
+    "stats": {
+      "total_reactions": 3,
+      "like": 3,
+      "support": 0,
+      "love": 0,
+      "insight": 0,
+      "celebrate": 0,
+      "funny": 0,
+      "comments": 1,
+      "reposts": 0
+    },
+    "media": {
+      "type": "image",
+      "url": "https://media.licdn.com/dms/image/v2/D4D22AQFqTg7QgOcYGA/feedshare-shrink_2048_1536/B4DZlXoEk_H0A0-/0/1758111747461?e=1766016000&v=beta&t=DdWYCkHOY_MmIaFQarjHOIS6tpKSlAtdCeRI0bSknQs",
+      "images": [
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQFqTg7QgOcYGA/feedshare-shrink_2048_1536/B4DZlXoEk_H0A0-/0/1758111747461?e=1766016000&v=beta&t=DdWYCkHOY_MmIaFQarjHOIS6tpKSlAtdCeRI0bSknQs",
+          "width": 1920,
+          "height": 1080
+        }
+      ]
+    },
+    "pagination_token": "dXJuOmxpOmFjdGl2aXR5OjczNjA2ODgxOTY2ODAwNjkxMjAtMTc1NDkyNDgyMTAzOQ=="
+  },
+  {
+    "urn": {
+      "activity_urn": "7376552237935771648",
+      "share_urn": null,
+      "ugcPost_urn": "7374054457141178368"
+    },
+    "full_urn": "urn:li:ugcPost:7374054457141178368",
+    "posted_at": {
+      "date": "2025-09-24 11:45:03",
+      "relative": "2 months ago • Visible to anyone on or off LinkedIn",
+      "timestamp": 1758707103237
+    },
+    "text": "Framework wars are a distraction.\n\nLangChain. AutoGen. CrewAI. Semantic Kernel.\nStop arguing. Start shipping.\n\nTruth: frameworks don’t make agents smart. They just give you scaffolding:\n ⚡ Orchestration\n ⚡ Collaboration\n ⚡ Memory\n ⚡ Prod hygiene\n\nQuick cheat sheet:\n\nPrototype fast → AutoGen, SmolAgents\nComplex orchestration → LangGraph, CrewAI\nEnterprise guardrails → Semantic Kernel, Azure Agent Service\nGeneral-purpose → LangChain\n\nIf you’re still duct-taping scripts, you’re stuck in the tutorial.\nPick one. Ship. Break. Learn.\n\n👉 Which stack are you betting on in 2025?",
+    "url": "https://www.linkedin.com/posts/vitosenic_framework-wars-are-a-distraction-langchain-activity-7376552237935771648-kPcg?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAGCab3oBLBle-FA2VeA-gq8iejcsNhSNsUs",
+    "post_type": "regular",
+    "author": {
+      "first_name": "Vito",
+      "last_name": "S.",
+      "headline": "AI Systems Architect | I connect business goals into working solutions.",
+      "username": "vitosenic",
+      "profile_url": "https://www.linkedin.com/in/vitosenic?miniProfileUrn=urn%3Ali%3Afsd_profile%3AACoAAC1DBZkBQnfKe7LhZ0ynHTAyFWxNNO-A4KA",
+      "profile_picture": "https://media.licdn.com/dms/image/v2/D4D03AQGzE8OeAjbN_g/profile-displayphoto-crop_800_800/B4DZlWzMOPIcAI-/0/1758097886043?e=1766016000&v=beta&t=PJ0kr2zymjWr4mQGeRTNF75Ej_ZEU-oHCUiYrs_98kQ"
+    },
+    "stats": {
+      "total_reactions": 8,
+      "like": 8,
+      "support": 0,
+      "love": 0,
+      "insight": 0,
+      "celebrate": 0,
+      "funny": 0,
+      "comments": 0,
+      "reposts": 0
+    },
+    "media": {
+      "type": "images",
+      "url": "https://media.licdn.com/dms/image/v2/D4D22AQG2hSh4FXX3IA/feedshare-shrink_1280/B4DZlXncsXIEA4-/0/1758111583757?e=1766016000&v=beta&t=F4DtyH_ip2hg37DrKihiDQ56q1u_PiNVAQ37B_8REbY",
+      "images": [
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQG2hSh4FXX3IA/feedshare-shrink_1280/B4DZlXncsXIEA4-/0/1758111583757?e=1766016000&v=beta&t=F4DtyH_ip2hg37DrKihiDQ56q1u_PiNVAQ37B_8REbY",
+          "width": 897,
+          "height": 463
+        },
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQEXDbBN_UUDMQ/feedshare-shrink_1280/B4DZlXncs1HYAs-/0/1758111583761?e=1766016000&v=beta&t=lusLFdNJkcSKSj9WMFqtyfGB0KdTJSGKVzFAzlYdjVA",
+          "width": 1130,
+          "height": 455
+        }
+      ]
+    },
+    "pagination_token": "dXJuOmxpOmFjdGl2aXR5OjczNjA2ODgxOTY2ODAwNjkxMjAtMTc1NDkyNDgyMTAzOQ=="
+  },
+  {
+    "urn": {
+      "activity_urn": "7376197397019979776",
+      "share_urn": "7374053349324652544",
+      "ugcPost_urn": null
+    },
+    "full_urn": "urn:li:activity:7376197397019979776",
+    "posted_at": {
+      "date": "2025-09-23 12:15:02",
+      "relative": "2 months ago • Visible to anyone on or off LinkedIn",
+      "timestamp": 1758622502570
+    },
+    "text": "Everyone screams “AI Agents” like it’s the next revolution.\nBut most people can’t even define what an agent actually is.\nHere’s the truth: an AI Agent isn’t just an LLM with prompts.\n\nIt’s a system. With:\n     - Environment → the world it operates in\n     - Sensors → how it perceives what’s happening\n     - Actuators → how it acts to change that world\n     - Memory + Knowledge → short-term and long-term intelligence\n\nThat’s when LLMs stop being “chatbots with nice answers”…\n…and start actually doing work.\n\nThere are different breeds of agents too:\n     - Reflex agents (just react)\n     - Goal-based agents (plan)\n     - Utility-based agents (optimize tradeoffs)\n     - Learning agents (improve over time)\n     - Multi-agent systems (work together or even compete)\n\nSo when does an agent make sense?\n👉 Open-ended problems (where you can’t hardcode every step)\n👉 Multi-step processes (complex workflows with tools + data)\n👉 Tasks that improve with feedback (real learning, not just parroting)\n\nHere’s the kicker: 95% of “agents” you see online aren’t agents at all. They’re just scripts chained together with marketing.\n\nWant to really understand the difference?\nThis free course breaks it down: AI Agents for Beginners\n\nI’m still connecting the dots myself — but every lesson makes the hype less mysterious, and more buildable.\nAre you willing to dig deeper, or stay on the surface?",
+    "url": "https://www.linkedin.com/posts/vitosenic_everyone-screams-ai-agents-like-its-the-activity-7376197397019979776-Zc_k?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAGCab3oBLBle-FA2VeA-gq8iejcsNhSNsUs",
+    "post_type": "regular",
+    "author": {
+      "first_name": "Vito",
+      "last_name": "S.",
+      "headline": "AI Systems Architect | I connect business goals into working solutions.",
+      "username": "vitosenic",
+      "profile_url": "https://www.linkedin.com/in/vitosenic?miniProfileUrn=urn%3Ali%3Afsd_profile%3AACoAAC1DBZkBQnfKe7LhZ0ynHTAyFWxNNO-A4KA",
+      "profile_picture": "https://media.licdn.com/dms/image/v2/D4D03AQGzE8OeAjbN_g/profile-displayphoto-crop_800_800/B4DZlWzMOPIcAI-/0/1758097886043?e=1766016000&v=beta&t=PJ0kr2zymjWr4mQGeRTNF75Ej_ZEU-oHCUiYrs_98kQ"
+    },
+    "stats": {
+      "total_reactions": 2,
+      "like": 2,
+      "support": 0,
+      "love": 0,
+      "insight": 0,
+      "celebrate": 0,
+      "funny": 0,
+      "comments": 0,
+      "reposts": 0
+    },
+    "media": {
+      "type": "image",
+      "url": "https://media.licdn.com/dms/image/v2/D4D22AQHq7wNLxJUUZQ/feedshare-shrink_2048_1536/B4DZlXmcUrG8Aw-/0/1758111320217?e=1766016000&v=beta&t=jM7jGd2jbuRkgagaC2zCfxDH7uR8CllqBqxXVsiew48",
+      "images": [
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQHq7wNLxJUUZQ/feedshare-shrink_2048_1536/B4DZlXmcUrG8Aw-/0/1758111320217?e=1766016000&v=beta&t=jM7jGd2jbuRkgagaC2zCfxDH7uR8CllqBqxXVsiew48",
+          "width": 1920,
+          "height": 1080
+        }
+      ]
+    },
+    "pagination_token": "dXJuOmxpOmFjdGl2aXR5OjczNjA2ODgxOTY2ODAwNjkxMjAtMTc1NDkyNDgyMTAzOQ=="
+  },
+  {
+    "urn": {
+      "activity_urn": "7374381681522249728",
+      "share_urn": "7374052521667010561",
+      "ugcPost_urn": null
+    },
+    "full_urn": "urn:li:activity:7374381681522249728",
+    "posted_at": {
+      "date": "2025-09-18 12:00:02",
+      "relative": "2 months ago • Visible to anyone on or off LinkedIn",
+      "timestamp": 1758189602261
+    },
+    "text": "Most people today “build AI agents” in n8n or Make.\nAnd that’s fine — they ship fast, they deliver.\n\nBut here’s the truth: almost nobody actually understands what’s happening under the hood.\n\nI didn’t want to just copy workflows. I wanted to know why this agentic hype works at all.\n\nSo I took this 👉 AI Agents for Beginners course by Microsoft (https://lnkd.in/de_ZfTEQ).\nAnd it’s gold:\n      - Clear breakdown of agentic AI architecture & design\n      - How tools, memory, protocols (MCP, A2A, NLWeb), and infra really connect\n      - Practical code examples across multiple languages & frameworks\n      - Theory first → then you spin it up locally and see it run\n\nNow, I get it — these courses are also a way for big cloud providers to push their infra, burn tokens, and lock you in.\n\nBut to be fair, this one felt surprisingly transparent. As an overview of the agentic hype, it actually delivers.\n\nThe wild part? The YouTube vids behind this course barely have 5k views. Almost nobody has touched it.\n\nMost people just want to drive the car. I’m the guy who wants to open the hood, see the gears turning, and know why it runs.\n\nSo here’s my challenge:\nWill you stay on the surface, stacking automations… or will you actually understand how agents really work?\n\nYour move. 🚀",
+    "url": "https://www.linkedin.com/posts/vitosenic_most-people-today-build-ai-agents-in-n8n-activity-7374381681522249728-tqoX?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAGCab3oBLBle-FA2VeA-gq8iejcsNhSNsUs",
+    "post_type": "regular",
+    "author": {
+      "first_name": "Vito",
+      "last_name": "S.",
+      "headline": "AI Systems Architect | I connect business goals into working solutions.",
+      "username": "vitosenic",
+      "profile_url": "https://www.linkedin.com/in/vitosenic?miniProfileUrn=urn%3Ali%3Afsd_profile%3AACoAAC1DBZkBQnfKe7LhZ0ynHTAyFWxNNO-A4KA",
+      "profile_picture": "https://media.licdn.com/dms/image/v2/D4D03AQGzE8OeAjbN_g/profile-displayphoto-crop_800_800/B4DZlWzMOPIcAI-/0/1758097886043?e=1766016000&v=beta&t=PJ0kr2zymjWr4mQGeRTNF75Ej_ZEU-oHCUiYrs_98kQ"
+    },
+    "stats": {
+      "total_reactions": 9,
+      "like": 9,
+      "support": 0,
+      "love": 0,
+      "insight": 0,
+      "celebrate": 0,
+      "funny": 0,
+      "comments": 1,
+      "reposts": 0
+    },
+    "media": {
+      "type": "image",
+      "url": "https://media.licdn.com/dms/image/v2/D4D22AQEFKVsRtPFosg/feedshare-shrink_2048_1536/B4DZlXlsNWGQAw-/0/1758111123880?e=1766016000&v=beta&t=Xuol22aScF8FNuSq842AYkEAG4OOGws5kbEAlxmBLGg",
+      "images": [
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQEFKVsRtPFosg/feedshare-shrink_2048_1536/B4DZlXlsNWGQAw-/0/1758111123880?e=1766016000&v=beta&t=Xuol22aScF8FNuSq842AYkEAG4OOGws5kbEAlxmBLGg",
+          "width": 1024,
+          "height": 585
+        }
+      ]
+    },
+    "pagination_token": "dXJuOmxpOmFjdGl2aXR5OjczNjA2ODgxOTY2ODAwNjkxMjAtMTc1NDkyNDgyMTAzOQ=="
+  },
+  {
+    "urn": {
+      "activity_urn": "7374060812904267776",
+      "share_urn": "7374051755501912064",
+      "ugcPost_urn": null
+    },
+    "full_urn": "urn:li:activity:7374060812904267776",
+    "posted_at": {
+      "date": "2025-09-17 14:45:01",
+      "relative": "2 months ago • Visible to anyone on or off LinkedIn",
+      "timestamp": 1758113101221
+    },
+    "text": "Everyone talks about “AI agents.”\nBut under the hood? It’s just LLMs with a few tricks slapped on top.\n\nLast week I went back to the foundations — the real mechanics behind the hype:\n    - Prompting (the art that separates average outputs from genius ones)\n    - RAG (the hidden engine that makes AI actually useful)\n    - Cloud + infra (the layer everyone ignores, but where the scale happens)\n\nThis free course 👉 Microsoft Generative AI for Beginners (https://lnkd.in/d_vYjgU9) might be a year old, but it’s still absolutely relevant. Updated, practical, and it builds the fundamentals you need before diving into advanced systems like multi-agent architectures.\n\nBonus: Anthropic’s Skilljar courses (https://lnkd.in/ddHq7H9C) — crystal clear structure, perfect for nailing the basics.\n\nNow, I get it. For most people, you don’t need to know how a car engine works if all you want is to drive. Same with AI — tons of “gurus” are building agencies on Make, n8n, and automations. And honestly, I respect that speed and execution.\n\nBut I’m just a curious guy — like many of you here. I want to peek under the hood, see the gears turning, and understand why this stuff works.\n\nMy “aha”? Realizing these are just techniques to make LLMs — and other foundation models (image, video, etc.) — more useful than before. Nothing else. Before, it was just magic. Now, it makes sense.",
+    "url": "https://www.linkedin.com/posts/vitosenic_everyone-talks-about-ai-agents-but-under-activity-7374060812904267776-vLgd?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAGCab3oBLBle-FA2VeA-gq8iejcsNhSNsUs",
+    "post_type": "regular",
+    "author": {
+      "first_name": "Vito",
+      "last_name": "S.",
+      "headline": "AI Systems Architect | I connect business goals into working solutions.",
+      "username": "vitosenic",
+      "profile_url": "https://www.linkedin.com/in/vitosenic?miniProfileUrn=urn%3Ali%3Afsd_profile%3AACoAAC1DBZkBQnfKe7LhZ0ynHTAyFWxNNO-A4KA",
+      "profile_picture": "https://media.licdn.com/dms/image/v2/D4D03AQGzE8OeAjbN_g/profile-displayphoto-crop_800_800/B4DZlWzMOPIcAI-/0/1758097886043?e=1766016000&v=beta&t=PJ0kr2zymjWr4mQGeRTNF75Ej_ZEU-oHCUiYrs_98kQ"
+    },
+    "stats": {
+      "total_reactions": 5,
+      "like": 5,
+      "support": 0,
+      "love": 0,
+      "insight": 0,
+      "celebrate": 0,
+      "funny": 0,
+      "comments": 1,
+      "reposts": 0
+    },
+    "media": {
+      "type": "image",
+      "url": "https://media.licdn.com/dms/image/v2/D4D22AQEM5CSk3jMFOg/feedshare-shrink_1280/B4DZlXk_NuH0As-/0/1758110939869?e=1766016000&v=beta&t=U3gec9v4q022GQf5jiSkFT2hh6urESeFwqUozM2lsCo",
+      "images": [
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQEM5CSk3jMFOg/feedshare-shrink_1280/B4DZlXk_NuH0As-/0/1758110939869?e=1766016000&v=beta&t=U3gec9v4q022GQf5jiSkFT2hh6urESeFwqUozM2lsCo",
+          "width": 1024,
+          "height": 1024
+        }
+      ]
+    },
+    "pagination_token": "dXJuOmxpOmFjdGl2aXR5OjczNjA2ODgxOTY2ODAwNjkxMjAtMTc1NDkyNDgyMTAzOQ=="
+  },
+  {
+    "urn": {
+      "activity_urn": "7373698448883216384",
+      "share_urn": "7373687872673046528",
+      "ugcPost_urn": null
+    },
+    "full_urn": "urn:li:activity:7373698448883216384",
+    "posted_at": {
+      "date": "2025-09-16 14:45:06",
+      "relative": "2 months ago • Visible to anyone on or off LinkedIn",
+      "timestamp": 1758026706906
+    },
+    "text": "Most people hide behind “waiting for the perfect idea.”\nI didn’t. I shipped.\n\nI joined the #nicehack69 Browser Use hackathon — the rule: your project must actually use Browser-Use at its core.\n\nQuick explainer: Browser-Use is an AI browser agent that automates real online tasks — logging in, clicking, scraping, filling forms, comparing data. Basically, it kills repetitive browsing work.\n\nMy submission? Real Estate Agent 🏡\nBasically, a wrapper that lets AI crawl multiple property sites, extract listings, and show them side-by-side.\nNot world-changing. Not polished. But it works.\n👉 Demo: https://lnkd.in/dPbj8gEN\n👉 Repo: https://lnkd.in/dD7ySyHy\n\nHere’s the truth:\n   - Yes, it’s “just a wrapper.”\n   - Yes, Browser-Use itself is doing the heavy lifting.\n   - And yes, real use-cases with Browser-Use can get pricey ($1 per complex task isn’t crazy).\n\nBut none of that matters. What matters is: I stopped overthinking and published. That’s the muscle I’m training.\n\nToo many of us sit on the sidelines waiting for a genius idea. The only way to find it? Ship the not-so-genius ones first.",
+    "url": "https://www.linkedin.com/posts/vitosenic_nicehack69-activity-7373698448883216384-hxXM?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAGCab3oBLBle-FA2VeA-gq8iejcsNhSNsUs",
+    "post_type": "regular",
+    "author": {
+      "first_name": "Vito",
+      "last_name": "S.",
+      "headline": "AI Systems Architect | I connect business goals into working solutions.",
+      "username": "vitosenic",
+      "profile_url": "https://www.linkedin.com/in/vitosenic?miniProfileUrn=urn%3Ali%3Afsd_profile%3AACoAAC1DBZkBQnfKe7LhZ0ynHTAyFWxNNO-A4KA",
+      "profile_picture": "https://media.licdn.com/dms/image/v2/D4D03AQGzE8OeAjbN_g/profile-displayphoto-crop_800_800/B4DZlWzMOPIcAI-/0/1758097886043?e=1766016000&v=beta&t=PJ0kr2zymjWr4mQGeRTNF75Ej_ZEU-oHCUiYrs_98kQ"
+    },
+    "stats": {
+      "total_reactions": 9,
+      "like": 9,
+      "support": 0,
+      "love": 0,
+      "insight": 0,
+      "celebrate": 0,
+      "funny": 0,
+      "comments": 0,
+      "reposts": 0
+    },
+    "pagination_token": "dXJuOmxpOmFjdGl2aXR5OjczNjA2ODgxOTY2ODAwNjkxMjAtMTc1NDkyNDgyMTAzOQ=="
+  },
+  {
+    "urn": {
+      "activity_urn": "7373283192717529088",
+      "share_urn": "7372917163122311168",
+      "ugcPost_urn": null
+    },
+    "full_urn": "urn:li:activity:7373283192717529088",
+    "posted_at": {
+      "date": "2025-09-15 11:15:02",
+      "relative": "2 months ago • Visible to anyone on or off LinkedIn",
+      "timestamp": 1757927702121
+    },
+    "text": "🔄 Quick update to my last post on token efficiency (Slovenian 🇸🇮 vs English 🇬🇧).\n\nThanks to Tomáš Majerčík 🙌 for sharing this great tool 👉 https://lnkd.in/dwq2JKhw\n\nIt lets you compare tokenization not only for GPT models, but also for others (Anthropic, Mistral, LLaMA, etc.). Really useful if you want to see how different languages and models behave.",
+    "url": "https://www.linkedin.com/posts/vitosenic_slovenian-vs-english-how-token-efficient-activity-7373283192717529088-6tKV?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAGCab3oBLBle-FA2VeA-gq8iejcsNhSNsUs",
+    "post_type": "quote",
+    "author": {
+      "first_name": "Vito",
+      "last_name": "S.",
+      "headline": "AI Systems Architect | I connect business goals into working solutions.",
+      "username": "vitosenic",
+      "profile_url": "https://www.linkedin.com/in/vitosenic?miniProfileUrn=urn%3Ali%3Afsd_profile%3AACoAAC1DBZkBQnfKe7LhZ0ynHTAyFWxNNO-A4KA",
+      "profile_picture": "https://media.licdn.com/dms/image/v2/D4D03AQGzE8OeAjbN_g/profile-displayphoto-crop_800_800/B4DZlWzMOPIcAI-/0/1758097886043?e=1766016000&v=beta&t=PJ0kr2zymjWr4mQGeRTNF75Ej_ZEU-oHCUiYrs_98kQ"
+    },
+    "stats": {
+      "total_reactions": 7,
+      "like": 6,
+      "support": 1,
+      "love": 0,
+      "insight": 0,
+      "celebrate": 0,
+      "funny": 0,
+      "comments": 0,
+      "reposts": 0
+    },
+    "reshared_post": {
+      "urn": {
+        "activity_urn": "7366419964771176449",
+        "share_urn": "7365127989346426880",
+        "ugcPost_urn": null
+      },
+      "posted_at": {
+        "date": "2025-08-27 12:43:01",
+        "relative": "3 months ago • Visible to anyone on or off LinkedIn",
+        "timestamp": 1756291381066
+      },
+      "text": "💡 Slovenian vs English: how token-efficient are LLMs really?\n\nI was curious how much more (or less) efficient AI models are when working in Slovenian compared to English. So I tested it with OpenAI’s Tokenizer tool: https://lnkd.in/d9Zqm2XN\n\nHere’s what I found:\n🇸🇮 Slovenian: 304 tokens per 1000 characters\n🇬🇧 English: 181 tokens per 1000 characters\n    👉 That’s ~40% fewer tokens in English.\n\n📊 For comparison:\n    🇬🇧 English:\n       1 token ≈ ~4 characters\n       1 token ≈ ~¾ of a word\n       100 tokens ≈ ~75 words\n       1 paragraph ≈ ~100 tokens\n       1,500 words ≈ ~2,048 tokens\n\n   🇸🇮 Slovenian:\n      1 token ≈ ~3.3 characters\n      1 token ≈ ~½ of a word\n      100 tokens ≈ ~50 words\n      1 paragraph ≈ 120–150 tokens\n      1,500 words ≈ ~3,000 tokens\n\nAt first this looks like a big gap – more tokens mean:\n        - Higher cost → every request in Slovenian consumes more tokens.\n        - Less context space → fewer tokens left for documents / history.\n        - Potentially weaker answers → model runs “tighter” on context window.\n\nBut in practice, Slovenian still works fine for many local use cases (customer support, government services, education). English just gives you more “room” if you need large context or global knowledge.\n\n🔑 Takeaway: Token efficiency matters – but usability in your native language matters too.\n\n👉 What do you think – am I interpreting this right, or missing something? Would love to hear from others...",
+      "url": "https://www.linkedin.com/posts/vitosenic_slovenian-vs-english-how-token-efficient-activity-7366419964771176449-dQqW?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAGCab3oBLBle-FA2VeA-gq8iejcsNhSNsUs",
+      "post_type": "regular",
+      "author": {
+        "first_name": "Vito",
+        "last_name": "S.",
+        "headline": "AI Systems Architect | I connect business goals into working solutions.",
+        "username": "vitosenic",
+        "profile_url": "https://www.linkedin.com/in/vitosenic?miniProfileUrn=urn%3Ali%3Afsd_profile%3AACoAAC1DBZkBQnfKe7LhZ0ynHTAyFWxNNO-A4KA",
+        "profile_picture": "https://media.licdn.com/dms/image/v2/D4D03AQGzE8OeAjbN_g/profile-displayphoto-crop_800_800/B4DZlWzMOPIcAI-/0/1758097886043?e=1766016000&v=beta&t=PJ0kr2zymjWr4mQGeRTNF75Ej_ZEU-oHCUiYrs_98kQ"
+      },
+      "stats": {
+        "total_reactions": 0,
+        "like": 0,
+        "support": 0,
+        "love": 0,
+        "insight": 0,
+        "celebrate": 0,
+        "funny": 0,
+        "comments": 0,
+        "reposts": 0
+      },
+      "media": {
+        "type": "image",
+        "url": "https://media.licdn.com/dms/image/v2/D4D22AQEcBSfGpuLyVg/feedshare-shrink_2048_1536/B4DZjYw4OPGQAw-/0/1755983349859?e=1766016000&v=beta&t=hz5xN69J3D0fWUbB5amrcLTOyMCWp4ja4Zru4pnrkKM",
+        "images": [
+          {
+            "url": "https://media.licdn.com/dms/image/v2/D4D22AQEcBSfGpuLyVg/feedshare-shrink_2048_1536/B4DZjYw4OPGQAw-/0/1755983349859?e=1766016000&v=beta&t=hz5xN69J3D0fWUbB5amrcLTOyMCWp4ja4Zru4pnrkKM",
+            "width": 1963,
+            "height": 903
+          }
+        ]
+      }
+    },
+    "pagination_token": "dXJuOmxpOmFjdGl2aXR5OjczNjA2ODgxOTY2ODAwNjkxMjAtMTc1NDkyNDgyMTAzOQ=="
+  },
+  {
+    "urn": {
+      "activity_urn": "7372192273494732801",
+      "share_urn": "7372179361568845824",
+      "ugcPost_urn": null
+    },
+    "full_urn": "urn:li:activity:7372192273494732801",
+    "posted_at": {
+      "date": "2025-09-12 11:00:06",
+      "relative": "2 months ago • Visible to anyone on or off LinkedIn",
+      "timestamp": 1757667606710
+    },
+    "text": "WhatsApp is built for control.\nTelegram is built for growth.\n\nWhen I hired an online fitness coach, all our chats ran through WhatsApp.\nHe had 100+ clients. His replies were slow. Naturally, I researched automation.\n\nWhat I found?\nWhatsApp Business API is fundamentally broken in Europe.\n\n❌ No coexistence: you can’t use the app + API together (thanks, GDPR).\n❌ Brutal pricing: after 24h, every message = Meta-approved template. Wrong category? You pay more.\n❌ Awful UX: to “go API,” a coach would literally lose WhatsApp on his phone.\n❌ No chat history access: you only get what’s coming in now. Old conversations? Manual export/import hell.\n\nThat’s not a business solution. That’s a nightmare.\n\nThen I looked at Telegram. Different universe:\n✅ Unlimited messaging, no restrictions.\n✅ Bots with full automation: anything you can code, you can run directly inside the business chat.\n✅ Business accounts with bot backend: hook a bot to your account and it replies as you. No “bot” label — clients think they’re talking directly to you.\n✅ Mini-apps: dashboards, portals, even CRMs — all inside Telegram.\n\nTelegram isn’t “just another chat app.”\nIt’s a platform. A business OS.\n\nWhatsApp = legacy.\nTelegram = future.\n\nIf you’re scaling communication, client support, or automation — ask yourself:\n👉 Are you still building on sand, or are you ready to switch before you’re forced?\n\n📖 Full breakdown here: https://lnkd.in/di_eWnM2",
+    "url": "https://www.linkedin.com/posts/vitosenic_whatsapp-is-built-for-control-telegram-is-activity-7372192273494732801-eL5Z?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAGCab3oBLBle-FA2VeA-gq8iejcsNhSNsUs",
+    "post_type": "regular",
+    "author": {
+      "first_name": "Vito",
+      "last_name": "S.",
+      "headline": "AI Systems Architect | I connect business goals into working solutions.",
+      "username": "vitosenic",
+      "profile_url": "https://www.linkedin.com/in/vitosenic?miniProfileUrn=urn%3Ali%3Afsd_profile%3AACoAAC1DBZkBQnfKe7LhZ0ynHTAyFWxNNO-A4KA",
+      "profile_picture": "https://media.licdn.com/dms/image/v2/D4D03AQGzE8OeAjbN_g/profile-displayphoto-crop_800_800/B4DZlWzMOPIcAI-/0/1758097886043?e=1766016000&v=beta&t=PJ0kr2zymjWr4mQGeRTNF75Ej_ZEU-oHCUiYrs_98kQ"
+    },
+    "stats": {
+      "total_reactions": 5,
+      "like": 4,
+      "support": 0,
+      "love": 1,
+      "insight": 0,
+      "celebrate": 0,
+      "funny": 0,
+      "comments": 1,
+      "reposts": 0
+    },
+    "media": {
+      "type": "image",
+      "url": "https://media.licdn.com/dms/image/v2/D4D22AQHS348EVPJj0w/feedshare-shrink_1280/B4DZk8.D46IgAs-/0/1757664527022?e=1766016000&v=beta&t=IHsAthfJsd3xXV1kwZbCS4z4I7xyxjrLtgQtBSG1LHQ",
+      "images": [
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQHS348EVPJj0w/feedshare-shrink_1280/B4DZk8.D46IgAs-/0/1757664527022?e=1766016000&v=beta&t=IHsAthfJsd3xXV1kwZbCS4z4I7xyxjrLtgQtBSG1LHQ",
+          "width": 1024,
+          "height": 1024
+        }
+      ]
+    },
+    "pagination_token": "dXJuOmxpOmFjdGl2aXR5OjczNjA2ODgxOTY2ODAwNjkxMjAtMTc1NDkyNDgyMTAzOQ=="
+  },
+  {
+    "urn": {
+      "activity_urn": "7371535568691892224",
+      "share_urn": "7369420927496859648",
+      "ugcPost_urn": null
+    },
+    "full_urn": "urn:li:activity:7371535568691892224",
+    "posted_at": {
+      "date": "2025-09-10 15:30:36",
+      "relative": "2 months ago • Visible to anyone on or off LinkedIn",
+      "timestamp": 1757511036084
+    },
+    "text": "I thought we nailed it.\nWe didn’t.\n\nThree months ago I hired an online fitness coach.\n100+ clients. Answers came days late. Burnout was obvious.\n\nI pulled in a friend. We built him a solution:\n⚡ A digital twin that talked like him.\n⚡ Auto-generated diet & training plans.\n⚡ Coach only steps in for review — 80% of work gone.\n\nThe ROI? Crystal clear.\nMore time. More clients. More money.\n\nSo we pitched him. Live. In Ljubljana.\n\nHe liked the idea.\nBut then came the price tag.\nHe couldn’t pay. Not because it wasn’t valuable — but because he was a solo freelancer running on thin cash flow.\n\nThat’s when it hit me:\nWe didn’t fail on tech.\nWe failed on customer selection.\n\n👉 The right buyer pays 10x more for the same solution.\n👉 The wrong buyer can’t even start.\n\nOur first big miss. But the lesson will stick forever.\n\nFull story here: https://lnkd.in/drP7mbgK\n\nSo tell me — are you building for the problem… or for the buyer?",
+    "url": "https://www.linkedin.com/posts/vitosenic_the-missed-niche-lesson-why-our-first-big-activity-7371535568691892224-hnET?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAGCab3oBLBle-FA2VeA-gq8iejcsNhSNsUs",
+    "post_type": "regular",
+    "author": {
+      "first_name": "Vito",
+      "last_name": "S.",
+      "headline": "AI Systems Architect | I connect business goals into working solutions.",
+      "username": "vitosenic",
+      "profile_url": "https://www.linkedin.com/in/vitosenic?miniProfileUrn=urn%3Ali%3Afsd_profile%3AACoAAC1DBZkBQnfKe7LhZ0ynHTAyFWxNNO-A4KA",
+      "profile_picture": "https://media.licdn.com/dms/image/v2/D4D03AQGzE8OeAjbN_g/profile-displayphoto-crop_800_800/B4DZlWzMOPIcAI-/0/1758097886043?e=1766016000&v=beta&t=PJ0kr2zymjWr4mQGeRTNF75Ej_ZEU-oHCUiYrs_98kQ"
+    },
+    "stats": {
+      "total_reactions": 6,
+      "like": 5,
+      "support": 0,
+      "love": 0,
+      "insight": 1,
+      "celebrate": 0,
+      "funny": 0,
+      "comments": 0,
+      "reposts": 0
+    },
+    "article": {
+      "url": "https://www.vitosenic.com/notes/2025-09-02_business-lesson",
+      "title": "The Missed Niche Lesson: Why Our First Big Pitch Failed",
+      "subtitle": "vitosenic.com"
+    },
+    "pagination_token": "dXJuOmxpOmFjdGl2aXR5OjczNjA2ODgxOTY2ODAwNjkxMjAtMTc1NDkyNDgyMTAzOQ=="
+  },
+  {
+    "urn": {
+      "activity_urn": "7370746481835716608",
+      "share_urn": "7369296878506569730",
+      "ugcPost_urn": null
+    },
+    "full_urn": "urn:li:activity:7370746481835716608",
+    "posted_at": {
+      "date": "2025-09-08 11:15:03",
+      "relative": "2 months ago • Visible to anyone on or off LinkedIn",
+      "timestamp": 1757322903117
+    },
+    "text": "Napoleon Hill said every great leader has a “mastermind group.”\nAdvisors. Mentors. Giants in their corner.\n\nSo I built mine.\nNot with humans. With AI.\n\nElon Musk. Larry Ellison. Jeff Bezos.\nPersonalities living inside ChatGPT.\nBrutally honest feedback, different lenses, zero sugarcoating.\n\nWhen I’m stuck, I don’t journal.\nI sit down with my “council” and ask:\nWhat would Musk do? What would Bezos cut? What would Larry kill?\n\nIt’s not about accuracy — it’s about perspective.\nForcing my brain to think bigger. Sharper. Ruthless.\n\nCall it delusional. Call it genius.\nBut I’d rather spar with billion-dollar mindsets than my own excuses.\n\n👉 Who would you add to your AI mastermind group?",
+    "url": "https://www.linkedin.com/posts/vitosenic_napoleon-hill-said-every-great-leader-has-activity-7370746481835716608-B9-I?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAGCab3oBLBle-FA2VeA-gq8iejcsNhSNsUs",
+    "post_type": "regular",
+    "author": {
+      "first_name": "Vito",
+      "last_name": "S.",
+      "headline": "AI Systems Architect | I connect business goals into working solutions.",
+      "username": "vitosenic",
+      "profile_url": "https://www.linkedin.com/in/vitosenic?miniProfileUrn=urn%3Ali%3Afsd_profile%3AACoAAC1DBZkBQnfKe7LhZ0ynHTAyFWxNNO-A4KA",
+      "profile_picture": "https://media.licdn.com/dms/image/v2/D4D03AQGzE8OeAjbN_g/profile-displayphoto-crop_800_800/B4DZlWzMOPIcAI-/0/1758097886043?e=1766016000&v=beta&t=PJ0kr2zymjWr4mQGeRTNF75Ej_ZEU-oHCUiYrs_98kQ"
+    },
+    "stats": {
+      "total_reactions": 7,
+      "like": 6,
+      "support": 0,
+      "love": 1,
+      "insight": 0,
+      "celebrate": 0,
+      "funny": 0,
+      "comments": 1,
+      "reposts": 0
+    },
+    "pagination_token": "dXJuOmxpOmFjdGl2aXR5OjczNjA2ODgxOTY2ODAwNjkxMjAtMTc1NDkyNDgyMTAzOQ=="
+  },
+  {
+    "urn": {
+      "activity_urn": "7369659309544103936",
+      "share_urn": "7369294311965822978",
+      "ugcPost_urn": null
+    },
+    "full_urn": "urn:li:activity:7369659309544103936",
+    "posted_at": {
+      "date": "2025-09-05 11:15:01",
+      "relative": "2 months ago • Visible to anyone on or off LinkedIn",
+      "timestamp": 1757063701044
+    },
+    "text": "Portfolios are boring.\nThat’s why I killed mine.\n\nInstead, I built vitosenic.com — a site that talks back.\nMinimal design. Lightning fast. And powered by an AI that actually answers as me.\n\nStack? Next.js. Supabase. GitHub Models.\nPlus a RAG pipeline that auto-feeds new content — notes, projects, CV — straight into the chat. No manual updates. No stale pages.\n\nThis isn’t a portfolio.\nIt’s a living system.\n\nNow imagine this at scale: a digital self that knows everything about you, sells for you, and solves problems while you sleep.\n\n👉 Full write-up of how I pulled it off: https://lnkd.in/dUmhWvsH\n👉 Or try it yourself: https://www.vitosenic.com/\n\nQuestion is… do you still want a portfolio, or do you want something that works while you sleep?",
+    "url": "https://www.linkedin.com/posts/vitosenic_vito-seni%C4%8D-cs-student-ai-automation-builder-activity-7369659309544103936-1cXD?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAGCab3oBLBle-FA2VeA-gq8iejcsNhSNsUs",
+    "post_type": "regular",
+    "author": {
+      "first_name": "Vito",
+      "last_name": "S.",
+      "headline": "AI Systems Architect | I connect business goals into working solutions.",
+      "username": "vitosenic",
+      "profile_url": "https://www.linkedin.com/in/vitosenic?miniProfileUrn=urn%3Ali%3Afsd_profile%3AACoAAC1DBZkBQnfKe7LhZ0ynHTAyFWxNNO-A4KA",
+      "profile_picture": "https://media.licdn.com/dms/image/v2/D4D03AQGzE8OeAjbN_g/profile-displayphoto-crop_800_800/B4DZlWzMOPIcAI-/0/1758097886043?e=1766016000&v=beta&t=PJ0kr2zymjWr4mQGeRTNF75Ej_ZEU-oHCUiYrs_98kQ"
+    },
+    "stats": {
+      "total_reactions": 3,
+      "like": 3,
+      "support": 0,
+      "love": 0,
+      "insight": 0,
+      "celebrate": 0,
+      "funny": 0,
+      "comments": 0,
+      "reposts": 0
+    },
+    "article": {
+      "url": "https://www.vitosenic.com/",
+      "title": "Vito Senič | CS Student & AI Automation Builder",
+      "subtitle": "vitosenic.com"
+    },
+    "pagination_token": "dXJuOmxpOmFjdGl2aXR5OjczNjA2ODgxOTY2ODAwNjkxMjAtMTc1NDkyNDgyMTAzOQ=="
+  },
+  {
+    "urn": {
+      "activity_urn": "7366419964771176449",
+      "share_urn": "7365127989346426880",
+      "ugcPost_urn": null
+    },
+    "full_urn": "urn:li:activity:7366419964771176449",
+    "posted_at": {
+      "date": "2025-08-27 12:43:01",
+      "relative": "3 months ago • Visible to anyone on or off LinkedIn",
+      "timestamp": 1756291381066
+    },
+    "text": "💡 Slovenian vs English: how token-efficient are LLMs really?\n\nI was curious how much more (or less) efficient AI models are when working in Slovenian compared to English. So I tested it with OpenAI’s Tokenizer tool: https://lnkd.in/d9Zqm2XN\n\nHere’s what I found:\n🇸🇮 Slovenian: 304 tokens per 1000 characters\n🇬🇧 English: 181 tokens per 1000 characters\n    👉 That’s ~40% fewer tokens in English.\n\n📊 For comparison:\n    🇬🇧 English:\n       1 token ≈ ~4 characters\n       1 token ≈ ~¾ of a word\n       100 tokens ≈ ~75 words\n       1 paragraph ≈ ~100 tokens\n       1,500 words ≈ ~2,048 tokens\n\n   🇸🇮 Slovenian:\n      1 token ≈ ~3.3 characters\n      1 token ≈ ~½ of a word\n      100 tokens ≈ ~50 words\n      1 paragraph ≈ 120–150 tokens\n      1,500 words ≈ ~3,000 tokens\n\nAt first this looks like a big gap – more tokens mean:\n        - Higher cost → every request in Slovenian consumes more tokens.\n        - Less context space → fewer tokens left for documents / history.\n        - Potentially weaker answers → model runs “tighter” on context window.\n\nBut in practice, Slovenian still works fine for many local use cases (customer support, government services, education). English just gives you more “room” if you need large context or global knowledge.\n\n🔑 Takeaway: Token efficiency matters – but usability in your native language matters too.\n\n👉 What do you think – am I interpreting this right, or missing something? Would love to hear from others...",
+    "url": "https://www.linkedin.com/posts/vitosenic_slovenian-vs-english-how-token-efficient-activity-7366419964771176449-dQqW?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAGCab3oBLBle-FA2VeA-gq8iejcsNhSNsUs",
+    "post_type": "regular",
+    "author": {
+      "first_name": "Vito",
+      "last_name": "S.",
+      "headline": "AI Systems Architect | I connect business goals into working solutions.",
+      "username": "vitosenic",
+      "profile_url": "https://www.linkedin.com/in/vitosenic?miniProfileUrn=urn%3Ali%3Afsd_profile%3AACoAAC1DBZkBQnfKe7LhZ0ynHTAyFWxNNO-A4KA",
+      "profile_picture": "https://media.licdn.com/dms/image/v2/D4D03AQGzE8OeAjbN_g/profile-displayphoto-crop_800_800/B4DZlWzMOPIcAI-/0/1758097886043?e=1766016000&v=beta&t=PJ0kr2zymjWr4mQGeRTNF75Ej_ZEU-oHCUiYrs_98kQ"
+    },
+    "stats": {
+      "total_reactions": 11,
+      "like": 11,
+      "support": 0,
+      "love": 0,
+      "insight": 0,
+      "celebrate": 0,
+      "funny": 0,
+      "comments": 8,
+      "reposts": 1
+    },
+    "media": {
+      "type": "image",
+      "url": "https://media.licdn.com/dms/image/v2/D4D22AQEcBSfGpuLyVg/feedshare-shrink_2048_1536/B4DZjYw4OPGQAw-/0/1755983349859?e=1766016000&v=beta&t=hz5xN69J3D0fWUbB5amrcLTOyMCWp4ja4Zru4pnrkKM",
+      "images": [
+        {
+          "url": "https://media.licdn.com/dms/image/v2/D4D22AQEcBSfGpuLyVg/feedshare-shrink_2048_1536/B4DZjYw4OPGQAw-/0/1755983349859?e=1766016000&v=beta&t=hz5xN69J3D0fWUbB5amrcLTOyMCWp4ja4Zru4pnrkKM",
+          "width": 1963,
+          "height": 903
+        }
+      ]
+    },
+    "pagination_token": "dXJuOmxpOmFjdGl2aXR5OjczNjA2ODgxOTY2ODAwNjkxMjAtMTc1NDkyNDgyMTAzOQ=="
+  },
+  {
+    "urn": {
+      "activity_urn": "7366068398264324096",
+      "share_urn": "7365011287900045313",
+      "ugcPost_urn": null
+    },
+    "full_urn": "urn:li:activity:7366068398264324096",
+    "posted_at": {
+      "date": "2025-08-26 13:26:01",
+      "relative": "3 months ago • Visible to anyone on or off LinkedIn",
+      "timestamp": 1756207561079
+    },
+    "text": "🚀 Just launched my personal website: vitosenic.com\n\nI wanted something minimal, fast, and truly mine — not just another template portfolio.\n\nAlong the way, I experimented with Next.js, Supabase, and GitHub Models to integrate a RAG-powered AI chat that represents me in first person.\n\nI also wrote a short blog post about the journey, where I share:\n- Why I chose a minimal one-pager inspired by Michael Truell\n- What I learned from Microsoft’s Generative AI for Beginners course\n- How I built the pipeline so new content (notes, projects, CV) automatically    updates the chat context\n\n👉 Read the full write-up here: https://lnkd.in/djkQpPyb\n👉 Or just explore the site itself: vitosenic.com",
+    "url": "https://www.linkedin.com/posts/vitosenic_vito-seni%C4%8D-cs-student-builder-activity-7366068398264324096-EuIc?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAGCab3oBLBle-FA2VeA-gq8iejcsNhSNsUs",
+    "post_type": "regular",
+    "author": {
+      "first_name": "Vito",
+      "last_name": "S.",
+      "headline": "AI Systems Architect | I connect business goals into working solutions.",
+      "username": "vitosenic",
+      "profile_url": "https://www.linkedin.com/in/vitosenic?miniProfileUrn=urn%3Ali%3Afsd_profile%3AACoAAC1DBZkBQnfKe7LhZ0ynHTAyFWxNNO-A4KA",
+      "profile_picture": "https://media.licdn.com/dms/image/v2/D4D03AQGzE8OeAjbN_g/profile-displayphoto-crop_800_800/B4DZlWzMOPIcAI-/0/1758097886043?e=1766016000&v=beta&t=PJ0kr2zymjWr4mQGeRTNF75Ej_ZEU-oHCUiYrs_98kQ"
+    },
+    "stats": {
+      "total_reactions": 6,
+      "like": 5,
+      "support": 0,
+      "love": 1,
+      "insight": 0,
+      "celebrate": 0,
+      "funny": 0,
+      "comments": 1,
+      "reposts": 0
+    },
+    "article": {
+      "url": "https://www.vitosenic.com/",
+      "title": "Vito Senič | CS Student & Builder",
+      "subtitle": "vitosenic.com"
+    },
+    "pagination_token": "dXJuOmxpOmFjdGl2aXR5OjczNjA2ODgxOTY2ODAwNjkxMjAtMTc1NDkyNDgyMTAzOQ=="
+  },
+  {
+    "urn": {
+      "activity_urn": "7365113799202213888",
+      "share_urn": "7363706226620170240",
+      "ugcPost_urn": null
+    },
+    "full_urn": "urn:li:activity:7363706227391913984",
+    "posted_at": {
+      "date": "2025-08-23 22:12:46",
+      "relative": "3 months ago • Visible to anyone on or off LinkedIn",
+      "timestamp": 1755979966927
+    },
+    "text": "Programming with AI is insanely fun. Process is:\n1. generate code\n2. read & understand code that was generated\n3. make small changes \"manually\" (still with great autocomplete)\n4. test & debug\n5. make big changes with new prompt\n6. go back to step 1\n\nPure vibe coding skips step 2 & 3. And I think we'll need human expertise & experience for steps 2, 3 (and 4) for quite a while.\n\nBut holy shit, I'm learning much faster, being way more productive, and having more fun.\n\nNot sure we're close to \"AGI/ASI\", but the software engineering world is definitely getting transformed very rapidly. It feels surreal to be experiencing it directly on a daily basis. Of course, there are both scary (jobs, security) & exciting (productivity, access) consequences to this transformation, as with all powerful technology.\n\nThis post was fully written by human in one-shot without spellcheck, it's 100% organic human writing 🤣",
+    "url": "https://www.linkedin.com/posts/lexfridman_programming-with-ai-is-insanely-fun-process-activity-7363706227391913984-iPJa?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAGCab3oBLBle-FA2VeA-gq8iejcsNhSNsUs",
+    "post_type": "repost",
+    "author": {
+      "first_name": "Lex",
+      "last_name": "Fridman",
+      "headline": "Research Scientist, MIT",
+      "username": "lexfridman",
+      "profile_url": "https://www.linkedin.com/in/lexfridman?miniProfileUrn=urn%3Ali%3Afsd_profile%3AACoAAAB0ur4B2dLbFAHKCLO0VHtal_ilBhaBFxM",
+      "profile_picture": "https://media.licdn.com/dms/image/v2/C4E03AQHLCrHhGZ0xMg/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1519486751887?e=1766016000&v=beta&t=qCK082YdtFo8sbUw-My7JbyzRsa_Fra5o6EskNhbIbU"
+    },
+    "stats": {
+      "total_reactions": 13864,
+      "like": 11857,
+      "support": 82,
+      "love": 577,
+      "insight": 191,
+      "celebrate": 174,
+      "funny": 983,
+      "comments": 831,
+      "reposts": 495
+    },
+    "pagination_token": "dXJuOmxpOmFjdGl2aXR5OjczNjA2ODgxOTY2ODAwNjkxMjAtMTc1NDkyNDgyMTAzOQ=="
+  },
+  {
+    "urn": {
+      "activity_urn": "7360688196680069120",
+      "share_urn": "7360616366485254144",
+      "ugcPost_urn": null
+    },
+    "full_urn": "urn:li:activity:7360688196680069120",
+    "posted_at": {
+      "date": "2025-08-11 17:07:01",
+      "relative": "3 months ago • Visible to anyone on or off LinkedIn",
+      "timestamp": 1754924821062
+    },
+    "text": "🚀 Out of my comfort zone — hitting publish.\n\nI just finished reading Digital Fluency — and it’s not the tech overviews that stuck with me, but the last chapter: “Your Digital Action Plan.” 📘\n\n💡 3 takeaways I’ll actually use:\nTools ≠ outcomes. Results come from org design, iteration cadence, and KPIs (buying an AI SaaS without process/KPIs = shelfware).\n\nEnterprise vs small teams. Big firms need governance & change management; small teams win on speed—borrow just enough playbook to scale without chaos.\n\nTech-fit, quick map: repetitive knowledge work → AI/copilots/agents 🤖 (e.g., first-pass email drafts) · many parties needing shared truth → blockchain ⛓️ (e.g., supplier ledger) · quantum ✨ → exciting, but early for most.\n\n🔍 What stood out: \nMany companies want to adopt AI or blockchain but quickly realise they lack the basic infrastructure — clean, centralised data, integrated systems, and scalable cloud setups.\n\nWithout this foundation, these technologies become little more than fancy buzzwords for sales pitches.\n\n💰 The real opportunity? Helping companies build that foundation — and then unlocking the real value of advanced tech.\n\nEven though the book was written in 2021 and the tech examples are dated, the decision-making frameworks are still timeless.\n\nFor the curious: 📘 Digital Fluency… (2021). Amazon: https://lnkd.in/dfRjMFcD",
+    "url": "https://www.linkedin.com/posts/vitosenic_out-of-my-comfort-zone-hitting-publish-activity-7360688196680069120-kJD3?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAGCab3oBLBle-FA2VeA-gq8iejcsNhSNsUs",
+    "post_type": "regular",
+    "author": {
+      "first_name": "Vito",
+      "last_name": "S.",
+      "headline": "AI Systems Architect | I connect business goals into working solutions.",
+      "username": "vitosenic",
+      "profile_url": "https://www.linkedin.com/in/vitosenic?miniProfileUrn=urn%3Ali%3Afsd_profile%3AACoAAC1DBZkBQnfKe7LhZ0ynHTAyFWxNNO-A4KA",
+      "profile_picture": "https://media.licdn.com/dms/image/v2/D4D03AQGzE8OeAjbN_g/profile-displayphoto-crop_800_800/B4DZlWzMOPIcAI-/0/1758097886043?e=1766016000&v=beta&t=PJ0kr2zymjWr4mQGeRTNF75Ej_ZEU-oHCUiYrs_98kQ"
+    },
+    "stats": {
+      "total_reactions": 10,
+      "like": 9,
+      "support": 0,
+      "love": 0,
+      "insight": 1,
+      "celebrate": 0,
+      "funny": 0,
+      "comments": 2,
+      "reposts": 0
+    },
+    "pagination_token": "dXJuOmxpOmFjdGl2aXR5OjczNjA2ODgxOTY2ODAwNjkxMjAtMTc1NDkyNDgyMTAzOQ=="
+  }
+]

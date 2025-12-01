@@ -1,0 +1,79 @@
+=== LINKEDIN PROFILE ===
+Name: Vito S.
+Headline: AI Systems Architect | I connect business goals into working solutions.
+Location: Slovenia
+
+About:
+🏗️ AI Systems Architect & Integrator
+⚡ Focused on delivering real-world value
+🚀 My work lives here: vitosenic.com
+
+Current Company: Asteras.ai
+
+=== EXPERIENCE ===
+
+1. CTO & founder at Asteras.ai
+   Duration: Jul 2025 - Present · 6 mos
+   Location: Maribor, Slovenia
+   Description: Building Asteras.ai, an AI systems company focused on developing intelligent automation infrastructure for real-world operations.
+We design and deploy custom AI platforms that integrate directly with existing business systems to enhance visibility, automate decision flows, and optimize performance across complex operations.
+
+Our work includes:
+• Architecting secure, modular AI backends and automation pipelines from scratch for enterprise environments.
+• Developing multi-agent systems capable of analyzing data, identifying inefficiencies, and executing improvements autonomously.
+• Delivering end-to-end infrastructure setups, from data ingestion and monitoring to deployment and integration.
+• Partnering with clients to transform insights into scalable, measurable business outcomes.
+
+We’re building towards a long-term vision of a unified AI platform that connects real-world operations with intelligent decision-making — enabling companies to move faster, smarter, and more autonomously.
+   Skills: AI Systems Architecture, Automation Engineering
+
+2. R&D Blockchain Engineer at Blockchain Lab:UM
+   Duration: Aug 2024 - Present · 1 yr 5 mos
+   Location: Maribor, Slovenia
+   Description: Working on decentralized Web3 applications focusing on self-sovereign identities (SSI), decentralized identifiers (DID), and verifiable credentials (VC). Gained hands-on experience with Web3 protocols, blockchain-based authentication, cryptographic identity management, and secure communication flows.
+   Skills: Node.js, Next.js
+
+3. Frontend Web Developer at Solve-X
+   Duration: Oct 2023 - Feb 2025 · 1 yr 5 mos
+   Location: Maribor, Slovenia
+   Description: Designed and implemented user interfaces using Vue.js and TypeScript. Integrated frontend with backend APIs, optimized UI performance, and participated in project planning to improve user experience.
+   Skills: TypeScript, Node.js
+
+4. Independent Entrepreneur — E-commerce & Digital Projects at Self-employed
+   Duration: Jun 2020 - Jan 2024 · 3 yrs 8 mos
+   Location: Slovenia
+   Description: Launched and managed multiple online ventures, including e-commerce stores and digital music distribution. Built, tested, and scaled several business models — some gained real traction and generated consistent revenue.
+
+Focused on:
+• Building and running Shopify & WooCommerce stores end-to-end.
+• Managing digital distribution and content monetization across streaming platforms.
+• Executing marketing campaigns and optimizing conversion performance.
+• Handling operations, suppliers, and automation workflows to improve margins.
+• Rapidly validating ideas and scaling what worked.
+
+Gained strong hands-on experience in growth, execution, and product-market fit — turning ideas into functioning digital businesses.
+   Skills: E-Commerce, Digital Marketing
+
+5. E-commerce Web Developer & Technical Assistant at Divorce My Job Marketing
+   Duration: Aug 2021 - Aug 2023 · 2 yrs 1 mo
+   Location: Maribor, Slovenia
+   Description: I specialized in developing e-commerce solutions that streamlined online sales processes and improved customer engagement.  
+
+• Maintained and enhanced e-commerce stores, including dropshipping and print-on-demand integrations.  
+• Designed and implemented membership portals and landing pages to boost user experience.  
+• Set up technical frameworks for blogs and social media, driving traffic and sales.
+
+=== EDUCATION ===
+
+1. Faculty of Electrical Engineering and Computer Science, University of Maribor
+   Degree: Bachelor's, Computer Science
+   Field: Computer Science
+   Duration: Oct 2023 - Jun 2026
+   Activities: Hackathons · Startup Weekends · Competitive Programming Workshops · additional elective courses (Machine Learning & Blockchain) · Research Projects · Developer Communities
+   Skills: Learning How to Learn, Machine Learning and +5 skills
+
+2. Srednja elektro-računalniška šola Maribor
+   Degree: High School Diploma, Computer Science
+   Field: Computer Science
+   Duration: 2019 - 2023
+   Skills: Next.js, Node.js and +4 skills

@@ -1,4 +1,4 @@
-name: Reindex Content
+name: Format Content
 
 on:
   push:
@@ -6,13 +6,12 @@ on:
       - main
     paths:
       - 'public/content/**'
-      - 'scripts/indexer.ts'
-      - 'src/utils/**'
-      - 'db/**'
+      - 'scripts/formatters.ts'
+      - 'scripts/format-content.ts'
   workflow_dispatch: # Allow manual triggering
 
 jobs:
-  reindex:
+  format-content:
     runs-on: ubuntu-latest
     
     steps:
@@ -29,29 +28,26 @@ jobs:
         with:
           version: 8
           
-      - name: Install only required dependencies
-        run: |
-          pnpm add langchain @langchain/community @langchain/core gray-matter tsx
+      - name: Install dependencies
+        run: pnpm install
         
-      - name: Run content indexing
-        run: npx tsx scripts/indexer.ts
-        env:
-          TOKEN_GITHUB: ${{ secrets.TOKEN_GITHUB }}
-          POSTGRES_HOST: ${{ secrets.POSTGRES_HOST }}
-          POSTGRES_PORT: ${{ secrets.POSTGRES_PORT }}
-          POSTGRES_USER: ${{ secrets.POSTGRES_USER }}
-          POSTGRES_PASSWORD: ${{ secrets.POSTGRES_PASSWORD }}
-          POSTGRES_DATABASE: ${{ secrets.POSTGRES_DATABASE }}
-          POSTGRES_SSL: ${{ secrets.POSTGRES_SSL }}
+      - name: Format content files
+        run: npx tsx scripts/format-content.ts
+          
+      - name: Commit and push formatted files
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add public/content/*.txt
+          git diff --staged --quiet || (git commit -m "chore: update formatted content files [skip ci]" && git push)
           
       - name: Notify success
         if: success()
         run: |
-          echo "✅ Content indexing completed successfully!"
-          echo "RAG database updated with latest content changes."
+          echo "✅ Content formatting completed successfully!"
           
       - name: Notify failure
         if: failure()
         run: |
-          echo "❌ Content indexing failed!"
+          echo "❌ Content formatting failed!"
           echo "Check the logs for more details."

@@ -1,0 +1,975 @@
+=== LINKEDIN POSTS (34 total) ===
+
+--- Post #1 (2025-11-26 12:32:01) ---
+Engagement: 5 reactions, 0 comments, 1 reposts
+
+Over the past few months, I've been focused on implementing SD-JWT standards within the EduCTX platform here at Blockchain Lab:UM.
+
+The goal? To make educational credentials truly privacy-preserving. Users can now selectively disclose specific data (like a degree) without revealing everything (like grades or personal info).
+
+Proud to contribute to the future of Self-Sovereign Identity (SSI). 🔐
+
+[Reshared Post]
+🔐 Bringing Selective Disclosure to Educational Credentials
+
+Excited to share that we’ve integrated SD-JWT into the EduCTX ecosystem — enabling students to share only the information they choose, while keeping the rest private.
+
+With SD-JWT:
+ • 🎓 Institutions issue verifiable, ELM-aligned credentials
+ • 🔍 Students disclose only what’s required (degree, status, etc.)
+ • 🤝 Verifiers get trustworthy, privacy-preserving information
+ • 🔒 Sensitive personal data stays protected
+
+This upgrade moves EduCTX closer to the emerging European Digital Identity standards and opens the door to even more privacy-enhancing tech like ZK proofs and EU Digital Identity Wallet interoperability.
+
+Proud of this step toward a more secure and user-centric future for digital education credentials!
+
+👉 Read the full article: https://lnkd.in/dV6bThpB
+
+Article: Integrating SD-JWT into EduCTX: Bringing Selective Disclosure to Educational Credentials
+URL: https://medium.com/@blockchainlabum/integrating-sd-jwt-into-eductx-bringing-selective-disclosure-to-educational-credentials-593990e95731
+
+LinkedIn URL: https://www.linkedin.com/posts/vitosenic_integrating-sd-jwt-into-eductx-bringing-activity-7399409591727489024-RVAP?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAGCab3oBLBle-FA2VeA-gq8iejcsNhSNsUs
+
+
+--- Post #2 (2025-11-23 18:45:01) ---
+Engagement: 34 reactions, 3 comments, 1 reposts
+
+The biggest poison in the Slovenian mindset is the belief that the "State" will provide. It’s a hangover from the past—a safety net that has made us mentally soft.
+
+We look at the US and ask why they dominate. It’s simple: Their DNA is built on risk. Our DNA is built on safety. We have stayed in the same spot for a thousand years, waiting for handouts, while they crossed oceans to build something from nothing.
+
+We need to stop acting like victims and start acting like Spartans.
+
+We are a small nation. We cannot win on volume (like China). We cannot win on mass production. We must win on Elite Quality.
+
+Look at our athletes. They are the proof. A nation of 2 million people dominating the world stage. Why? Because in sports, you can’t fake it. You either perform, or you lose.
+
+We need to transfer that "Spartan" DNA into business and technology.
+
+The Goal: The Taiwan Strategy. We don’t need to be big.We need to be indispensable. We need to identify a niche, dominate it completely, and make the world dependent on us. That is true security. That is true power.
+
+Stop waiting for the government to give you "free AI" or better policies. The State is just a reflection of the people. If you want a better State, become a better operator.
+
+Life is not about comfort. Comfort is stagnation. Life is about the glory of overcoming the impossible.
+
+Dream bigger. Risk more.
+
+LinkedIn URL: https://www.linkedin.com/posts/vitosenic_the-biggest-poison-in-the-slovenian-mindset-activity-7398416298977701888-wX7q?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAGCab3oBLBle-FA2VeA-gq8iejcsNhSNsUs
+
+
+--- Post #3 (2025-11-20 14:51:20) ---
+Engagement: 10 reactions, 1 comments, 0 reposts
+
+If you are paying for an "AI Automation Workshop," you are failing the IQ test.
+
+My feed is infested with parasites selling n8n and Make dot com courses to terrified CEOs and incompetent CTOs paralyzed by FOMO.
+
+Let’s be clear: These "influencers" are selling you snake oil. They don’t understand engineering. They don’t understand architecture. They are just capitalizing on your laziness and your fear of falling behind.
+
+If you are a "CTO" and you are buying these courses, turn in your badge. You are asleep at the wheel. You don’t need a guru to hold your hand.
+
+You want a reality check?
+
+My grandmother is using ChatGPT. She didn't even own a smartphone 3 years ago. Now she is prompting LLMs.
+
+And I know what the "experts" will say: "Oh, but be careful! AI hallucinates! What if your granny asks for a recipe and it tells her to cook poison?"
+
+I don't care.
+
+You want to talk about hallucinations? Books hallucinate. Who do you think wrote the books? People. And people hallucinate their own reality every single day. Authors have egos. Experts have biases. We are all hallucinating in our own worlds.
+
+If my grandmother can figure this out without a $2,000 "Masterclass," what is your excuse?
+
+You don’t need a "certification." You need a spine and an internet connection.
+
+We have the most powerful intelligence in human history available for $20/month. Stop funding the mediocrity industrial complex. Kill the FOMO.
+
+Build it yourself or get out of the way.
+
+LinkedIn URL: https://www.linkedin.com/posts/vitosenic_if-you-are-paying-for-an-ai-automation-workshop-activity-7397270328197943296-YcXm?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAGCab3oBLBle-FA2VeA-gq8iejcsNhSNsUs
+
+
+--- Post #4 (2025-11-13 21:36:20) ---
+Engagement: 5 reactions, 0 comments, 0 reposts
+
+Mission Mode > Founder Mode. This piece from Palantir captures what I will build someday—companies organized around work that actually matters, not just growth metrics. Worth the read. 👇
+
+[Article] Beyond Founder Mode: Mission Mode
+URL: https://www.linkedin.com/pulse/beyond-founder-mode-mission-palantir-technologies-7e3ve?trackingId=IVFTpMMRgyRxG0dHks2Gsw%3D%3D
+
+LinkedIn URL: https://www.linkedin.com/posts/vitosenic_mission-mode-founder-mode-this-piece-from-activity-7394835532737937408-7AIP?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAGCab3oBLBle-FA2VeA-gq8iejcsNhSNsUs
+
+
+--- Post #5 (2025-11-09 18:42:01) ---
+Engagement: 4 reactions, 0 comments, 0 reposts
+
+Following my last post, I want to share what we actually built at the Hack the Future hackathon.
+
+​We competed in the AI & Insurtech challenge, tackling a problem we believe is universal.
+
+Companies are struggling to make internal AI assistants (like Copilot) work.
+
+​The Problem:
+Many companies try to dump their entire knowledge base (all documents, all policies) into a single, massive LLM.
+
+The result? Constant halucinations, "context bleeding" (e.g., a car insurance query getting answers from a life insurance policy), and zero traceability. 
+
+This approach fails.
+​
+Our Solution:
+We didn't build a single "all-knowing" bot. We built an AI Agentic System based on a hierarchy of specialists.
+
+• ​Orchestrator Agent: The "manager" that first analyzes a user's query.
+
+• ​Specialist Agents: The Orchestrator then routes the query to a specialist (e.g., "Auto Insurance Agent," "Internal Process Agent").
+
+• ​Specialized Knowledge: Critically, each agent has its own, isolated vector database. The auto agent cannot see the life insurance docs. This is the key to eliminating hallucinations.
+
+• ​Supervisor Agent: A final "compliance" agent that validates the answer before it's shown to the user.
+
+​"But isn't a multi-agent system expensive and slow?"
+
+​This is the most exciting part. It's not. This architecture is more efficient by using smaller, powerful open-source models. 
+
+Specialist agents built on models like DeepSeek-R1 or the new Kimi K2 (K2) are designed for this.
+
+They can outperform giant, proprietary models on narrow tasks—delivering faster, cheaper, and more accurate results.
+
+​We believe this—a system of specialists, not a "one-model-to-rule-them-all" approach—is the real key to unlocking reliable enterprise AI.
+
+[Reshared Post]
+My team Asteras.ai and I didn't win the hackathon and it was a necessary cold shower.
+
+​We were 100% focused on building a robust, functional MVP, but we completely overlooked one of the most critical parts: the pitch.
+
+​It's a tough, but invaluable, lesson.
+
+We learned that the best product doesn't win; the best story about the product does.
+
+​We gained a ton of experience, new respect for the art of storytelling, and a laser focus on what to master next.
+
+Huge respect for my team, Anže Skralovnik and Žan Lah.
+
+I'm extremely proud of what we built under pressure. We’ll get the next one.
+
+LinkedIn URL: https://www.linkedin.com/posts/vitosenic_my-team-asterasai-and-i-didnt-win-the-hackathon-activity-7393342111644897280-4Oee?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAGCab3oBLBle-FA2VeA-gq8iejcsNhSNsUs
+
+
+--- Post #6 (2025-11-08 14:21:15) ---
+Engagement: 15 reactions, 1 comments, 2 reposts
+
+My team Asteras.ai and I didn't win the hackathon and it was a necessary cold shower.
+
+​We were 100% focused on building a robust, functional MVP, but we completely overlooked one of the most critical parts: the pitch.
+
+​It's a tough, but invaluable, lesson.
+
+We learned that the best product doesn't win; the best story about the product does.
+
+​We gained a ton of experience, new respect for the art of storytelling, and a laser focus on what to master next.
+
+Huge respect for my team, Anže Skralovnik and Žan Lah.
+
+I'm extremely proud of what we built under pressure. We’ll get the next one.
+
+LinkedIn URL: https://www.linkedin.com/posts/vitosenic_my-team-asterasai-and-i-didnt-win-the-hackathon-activity-7392914103528329216-s8UZ?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAGCab3oBLBle-FA2VeA-gq8iejcsNhSNsUs
+
+
+--- Post #8 (2025-10-23 11:45:01) ---
+Engagement: 4 reactions, 0 comments, 0 reposts
+
+Everyone’s chasing “hard skills.”
+But the real skill nobody teaches? Speed. ⚡
+
+Not typing speed but... Decision speed. Execution speed.
+Do → learn → adjust → repeat.
+
+Nat Friedman said it best:
+“Slow is fake. A week is 2% of the year. Time is the denominator.”
+
+School trains us to overthink. The world rewards those who move.
+I fight it daily — cutting social media, setting brutal deadlines, hitting the hardest task first.
+
+Because speed isn’t talent. It’s trainable. And it’s the ultimate edge in a world moving this fast.
+
+👉 What’s your way of getting faster?
+
+LinkedIn URL: https://www.linkedin.com/posts/vitosenic_everyones-chasing-hard-skills-but-the-activity-7387061478471786496-4cdH?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAGCab3oBLBle-FA2VeA-gq8iejcsNhSNsUs
+
+
+--- Post #9 (2025-10-22 11:45:06) ---
+Engagement: 7 reactions, 0 comments, 0 reposts
+
+Most people are still hyping LLMs and RAG.
+
+Cool — but that’s entry level.
+
+Here’s the real hierarchy of AI 👇
+1️⃣ LLM Workflow → basic text prediction. Good for email drafts and chatbots.
+2️⃣ RAG → better Q&A because you add external data. Still brittle.
+3️⃣ AI Agent → planning + reasoning + tools. Now you’re automating workflows.
+4️⃣ Agentic AI → multi-agent swarms. Specialized roles, memory, collaboration. 
+
+This is where scale and real disruption happens.
+
+Notice the pattern?
+Every step adds structure and autonomy.
+Every step pushes humans further out of the loop.
+
+👉 That’s why "just RAG" shops won’t survive. They’ll be leapfrogged by agentic systems that don’t just answer — they act.
+
+Your move:
+Are you still wiring prompts into RAG pipelines… or are you already building swarms?
+
+LinkedIn URL: https://www.linkedin.com/posts/vitosenic_most-people-are-still-hyping-llms-and-rag-activity-7386699112496300032-HJM0?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAGCab3oBLBle-FA2VeA-gq8iejcsNhSNsUs
+
+
+--- Post #10 (2025-10-21 12:00:22) ---
+Engagement: 4 reactions, 0 comments, 0 reposts
+
+This place worships kind leadership.
+
+🤝 Empathy. Soft skills. Being nice.
+
+But here’s the uncomfortable truth⚡
+
+Every legendary founder I’ve studied looked nothing like that.
+🏹 Larry Ellison (Oracle) – combative, fearless.
+🍏 Steve Jobs (Apple) – perfectionist, demanding.
+📦 Jeff Bezos (Amazon) – relentless, feared.
+🍔 Ray Kroc (McDonald’s) – ruthless scaler.
+🚗 Elon Musk (Tesla/SpaceX) – relentless, uncompromising.
+
+They’re brutal. 🔥 Screaming. Demanding. Obsessive.
+
+And when you dig into the real stories — it’s true. They didn’t succeed because they were polite.
+
+They succeeded because they refused to accept anything less than their vision. 🚀
+
+So here’s the paradox:
+👉 Does greatness in building come because of that tyrant energy… or despite it?
+
+I don’t have the final answer. But I do know this: the fire, the obsession, the refusal to compromise — it’s in every story.
+
+❓What do you think — are we romanticizing toxic leadership, or is this just the reality of building something world-changing?
+
+LinkedIn URL: https://www.linkedin.com/posts/vitosenic_this-place-worships-kind-leadership-activity-7386340565874900993-wTCH?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAGCab3oBLBle-FA2VeA-gq8iejcsNhSNsUs
+
+
+--- Post #11 (2025-10-16 12:15:08) ---
+Engagement: 5 reactions, 0 comments, 0 reposts
+
+The first “business movie” I ever watched was The Social Network.
+I was in 6th grade — and it flipped a switch in me.
+
+It wasn’t just “coding is cool.”
+
+It was the fire, the obsession, the raw ambition of building something from nothing.
+
+That’s what pulled me into computers and business.
+
+Since then, I’ve stacked up a list of movies that left the same kind of mark:
+🎬 The Social Network (the one that started it all for me)
+ 💸 The Big Short (insane soundtrack + brutal system lessons)
+ 🐺 Wolf of Wall Street & 💣 War Dogs (yeah, cliché, but fun and raw)
+ 🍔 The Founder → brutal, direct vision can shape an entire industry
+ 🍏 Steve Jobs (2015) → brutal, direct vision can shape an entire industry
+ 📱 BlackBerry (2023) → that MVP scene shows you can sell the dream before the product is ready
+
+These movies aren’t just entertainment. They spark that “aha” moment, they make you rethink ambition, risk, and what it takes to build.
+
+👉 Which one’s your favorite?
+ Or what should I add to this list?
+
+LinkedIn URL: https://www.linkedin.com/posts/vitosenic_the-first-business-movie-i-ever-watched-activity-7384532344885460993-9bHH?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAGCab3oBLBle-FA2VeA-gq8iejcsNhSNsUs
+
+
+--- Post #12 (2025-10-15 11:45:02) ---
+Engagement: 3 reactions, 0 comments, 0 reposts
+
+Most websites are still built for humans. 👤
+
+But the next traffic wave isn’t human. It’s agents. 🤖
+
+NLWeb flips your site from “pages” to natural-language endpoints.
+Think: HTML for the agentic web. 🌐⚡
+
+I dug into the repo. It’s not hype — it’s practical:
+💬 ask endpoint → query your site in plain language
+ 🔄 Schema.org / RSS / JSON Feed → reuse what you already have
+ 🗄️ Slots right into vector DBs (Qdrant, Milvus, Azure AI Search, Postgres, etc.)
+ 🔗 Works with OpenAI, Gemini, Anthropic, DeepSeek, local models
+ 🤝 Natively speaks MCP, A2A — humans and agents use the same interface
+
+What this means for you:
+🗣️ Your catalog, listings, docs → conversational
+ 🎯 Agents can find, understand, and act on your data without custom APIs
+ 🚀 You stop fighting SEO checkboxes and start building AIO — Agent Input Optimization
+
+Stop thinking “chatbot on top.” Start thinking natural language as a first-class API. 🧩
+
+And yes — NLWeb plays with MCP/A2A, not against them:
+🔧 MCP wires your tools/prompts/resources
+ 🤜🤛 A2A lets agents collaborate
+ 🌍 NLWeb makes your website agent-ready
+
+So… do you want to be invisible to AI traffic 👻 or become agent-ready by design? ⚡
+
+LinkedIn URL: https://www.linkedin.com/posts/vitosenic_most-websites-are-still-built-for-humans-activity-7384162381142249472-60KA?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAGCab3oBLBle-FA2VeA-gq8iejcsNhSNsUs
+
+
+--- Post #13 (2025-10-14 12:15:02) ---
+Engagement: 1 reactions, 0 comments, 0 reposts
+
+Most teams still wire “one big agent” to a pile of tools.
+
+Cute. But the real game? Agents talking to agents.
+
+That’s A2A (Agent-to-Agent Protocol https://lnkd.in/dNhNv82E) — an open spec (Google + 50+ partners) for interoperability. Not another wrapper. A common language so your sourcing agent briefs your CRM agent, which syncs with your scheduling agent, while compliance oversees it all.
+
+What A2A standardizes:
+👉 Agent Cards → agents advertise skills, auth, endpoints.
+👉 Tasks → Artifacts → workflows with state + outputs, not one-shots.
+👉 Collaboration Messages → context exchange, not duct-taped webhooks.
+👉 UX Negotiation → text, forms, files, audio, video.
+👉 Enterprise rails → HTTP, JSON-RPC, SSE.
+👉 Opaque by design → no secret-sauce leaks.
+
+How it fits with MCP:
+MCP = connect agents to tools/resources (inside).
+A2A = connect agents to each other (outside).
+
+Winners won’t build “super agents.” They’ll orchestrate specialists via A2A — measurable, swappable, secure.
+
+So… are you still shipping solo agents, or designing for multi-agent markets?
+Drop your first A2A use-case. If it’s “later,” you’re already late. 🚀
+
+[Article] Announcing the Agent2Agent Protocol (A2A)- Google Developers Blog
+URL: https://lnkd.in/dNhNv82E)
+
+LinkedIn URL: https://www.linkedin.com/posts/vitosenic_announcing-the-agent2agent-protocol-a2a-activity-7383807542885527553-3iNH?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAGCab3oBLBle-FA2VeA-gq8iejcsNhSNsUs
+
+
+--- Post #14 (2025-10-09 11:30:19) ---
+Engagement: 4 reactions, 0 comments, 0 reposts
+
+Everyone talks about MCP like it’s just a tool connector.
+Wrong. That’s only the surface. ⚡
+
+When I first looked into MCP, I went straight to the official docs (https://lnkd.in/dKwnKx9G). And that’s where it hit me. 💡
+
+MCP isn’t just about plugging APIs into your LLM.
+It’s a protocol with layers:
+  - Resources → structured context injection
+  - Prompts → reusable prompt libraries, standard across clients
+  - Tools → yes, the obvious one, but only part of the puzzle
+  - Discovery → how agents actually find what they can use
+  - Sampling → steering how responses get generated
+  - Roots → defining what’s possible in the environment
+  - Elicitation → shaping how agents extract data from humans
+
+Most current clients only bother with Tools. That’s why people think MCP = tool calling.
+
+But the real power? When all these components come together — a shared language for how AI agents access, use, and expand their world.
+
+This is bigger than “LLM wrappers.”
+It’s an operating system for agents. 🖥️ 🤖
+
+Question is:
+Do you see MCP evolving into the TCP/IP of the AI era — invisible but everywhere?
+Or will it stay a niche toy for the builders paying attention right now?
+I know where I’m placing my bet. What about you?
+
+LinkedIn URL: https://www.linkedin.com/posts/vitosenic_everyone-talks-about-mcp-like-its-just-a-activity-7381984349044436992-XWw5?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAGCab3oBLBle-FA2VeA-gq8iejcsNhSNsUs
+
+
+--- Post #15 (2025-10-08 12:15:01) ---
+Engagement: 3 reactions, 0 comments, 0 reposts
+
+Everyone screams “AI agents.”
+ 99% have no clue how they actually work.
+
+Reality check:
+If you’re just prompting ChatGPT — you’re babysitting a chatbot, not building an agent.
+
+The 5 real design patterns:
+ 1️⃣ Reflection → Checks its own work, iterates.
+ 2️⃣ Tool Use → Calls APIs, databases, code.
+ 3️⃣ ReAct → Think → Act → Observe → Repeat.
+ 4️⃣ Planning → Breaks problems into steps, executes.
+ 5️⃣ Multi-agent → A team of specialists working in sync.
+
+This is the playbook.
+Miss it, and you’re building toys while others build systems that take markets.
+
+👉 Still hacking prompts? Or building scalable agents?
+
+LinkedIn URL: https://www.linkedin.com/posts/vitosenic_everyone-screams-ai-agents-99-have-no-activity-7381633209421185024-EhN3?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAGCab3oBLBle-FA2VeA-gq8iejcsNhSNsUs
+
+
+--- Post #16 (2025-10-07 11:45:03) ---
+Engagement: 2 reactions, 0 comments, 0 reposts
+
+🧭 Planning is the underrated superpower of AI agents.
+
+Most agents answer one question. But drop them in a real task — they collapse.
+
+The fix? Planning.
+ → Set the goal
+ → Break it into steps
+ → Structure the output
+ → Re-plan when things change
+
+That’s how you turn chatbots into project managers.
+
+Scalable. Reliable. Flexible.
+Not sexy — but the difference between toy demos and production.
+
+👉 Do you see planning as the glue for multi-agent systems?
+
+LinkedIn URL: https://www.linkedin.com/posts/vitosenic_planning-is-the-underrated-superpower-activity-7381263281325424640-GXei?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAGCab3oBLBle-FA2VeA-gq8iejcsNhSNsUs
+
+
+--- Post #17 (2025-10-02 12:15:01) ---
+Engagement: 2 reactions, 0 comments, 0 reposts
+
+The old e-commerce playbook is about to get torched.
+
+For 20 years, merchants obsessed over funnels, landing pages, and checkout hacks. 🚀 Useless once AI agents start buying, not just recommending.
+
+That’s what the Agentic Commerce Protocol (ACP) does (https://lnkd.in/dgYHZnHE) — an open-source spec (Apache 2.0) backed by OpenAI + Stripe.
+
+ ✅ ChatGPT can alrevady check out with merchants inside chat.
+ ✅ Shopify + Etsy stores can apply with no extra integration.
+ ✅ Works with digital goods, physical, subscriptions, async orders.
+
+👉 Merchant sign-up + details are live here: https://lnkd.in/dc_rdR6g
+
+Game-changer, right? Yes — but with caveats:
+ ⚠️ It’s still a draft. Early adopters may need rewrites.
+ ⚠️ US-only (for now).
+ ⚠️ “Open” spec, but discovery + ranking will still be controlled.
+
+If ACP sticks, your website won’t be the front door anymore.
+Your customer will just say “buy this” to an AI.
+
+So: are you ready for commerce without a website? Or do you think this is just hype?
+
+Comment below — I want to see who’s bold enough to bet on this.
+
+LinkedIn URL: https://www.linkedin.com/posts/vitosenic_the-old-e-commerce-playbook-is-about-to-get-activity-7379458881397293056-_wCx?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAGCab3oBLBle-FA2VeA-gq8iejcsNhSNsUs
+
+
+--- Post #18 (2025-10-01 12:15:02) ---
+Engagement: 3 reactions, 2 comments, 0 reposts
+
+Most RAG is lazy:
+Query → Retrieve → Pray.
+
+Agentic RAG changes the game.
+It doesn’t just fetch context — it plans, tests, and fixes until the answer holds up.
+
+Think loop, not line:
+LLM → Tool → Check → Refine → Repeat.
+
+What it adds:
+ ⚡ Rewrites bad queries, switches tools.
+ ⚡ Maker–checker loop (generate → verify → fix).
+ ⚡ Multi-tool (vector, SQL, APIs, web).
+ ⚡ Memory (learns mid-run).
+ ⚡ Safe fails + human hand-off.
+
+Where it shines:
+- Compliance, legal, medical.
+- NL2SQL without hallucinations.
+- Long workflows that can’t afford mistakes.
+
+If your “RAG” can’t ask for more info, change its plan, and prove its sources…
+ It’s not agentic. It’s just a chatbot with a PDF fetish.
+
+👉 Who’s running Agentic RAG in prod — and what did it replace? 🚀
+
+LinkedIn URL: https://www.linkedin.com/posts/vitosenic_most-rag-is-lazy-query-retrieve-pray-activity-7379096500510896128-MqcJ?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAGCab3oBLBle-FA2VeA-gq8iejcsNhSNsUs
+
+
+--- Post #19 (2025-09-30 11:45:06) ---
+Engagement: 6 reactions, 1 comments, 0 reposts
+
+LLMs alone are useless.
+They can talk, but they can’t do.
+
+The unlock? Tools.
+That’s what turns a chatbot into an agent.
+
+Tool Use Pattern = backbone of every serious agent:
+ ⚡ Fetch data (stocks, weather, DBs)
+ ⚡ Execute (code, math, simulations)
+ ⚡ Automate (emails, tasks, workflows)
+ ⚡ Support (CRMs, tickets, KBs)
+
+But tools need design:
+- Schemas (so LLM knows what exists)
+- Logic (when to call what)
+- Error handling (because tools fail)
+- State & memory (don’t lose context)
+
+If your agent doesn’t use tools — it’s just a chatbot in a costume.
+👉 First tool you’d wire in if you had to ship tomorrow?
+
+LinkedIn URL: https://www.linkedin.com/posts/vitosenic_llms-alone-are-useless-they-can-talk-but-activity-7378726580661084161-Yha_?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAGCab3oBLBle-FA2VeA-gq8iejcsNhSNsUs
+
+
+--- Post #20 (2025-09-25 12:00:14) ---
+Engagement: 3 reactions, 1 comments, 0 reposts
+
+Everyone obsesses over frameworks (LangChain, CrewAI, AutoGen).
+Nobody talks about design.
+
+Bad code slows you down.
+Bad design kills trust instantly.
+
+Agentic design = principles:
+ ⚡ Transparency → always say it’s AI.
+ ⚡ Control → let me shape or erase.
+ ⚡ Consistency → don’t confuse with random UX.
+
+Example: even a travel agent should say:
+ “I’m AI. Here’s what I can do. Here’s how to edit me. Here’s how to delete my memory.”
+
+Most “agents” today? Spam, pop-ups, zero trust.
+
+👉 Who wins the race — best models, or best design?
+
+LinkedIn URL: https://www.linkedin.com/posts/vitosenic_everyone-obsesses-over-frameworks-langchain-activity-7376918445839450112-rrBl?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAGCab3oBLBle-FA2VeA-gq8iejcsNhSNsUs
+
+
+--- Post #21 (2025-09-24 11:45:03) ---
+Engagement: 8 reactions, 0 comments, 0 reposts
+
+Framework wars are a distraction.
+
+LangChain. AutoGen. CrewAI. Semantic Kernel.
+Stop arguing. Start shipping.
+
+Truth: frameworks don’t make agents smart. They just give you scaffolding:
+ ⚡ Orchestration
+ ⚡ Collaboration
+ ⚡ Memory
+ ⚡ Prod hygiene
+
+Quick cheat sheet:
+
+Prototype fast → AutoGen, SmolAgents
+Complex orchestration → LangGraph, CrewAI
+Enterprise guardrails → Semantic Kernel, Azure Agent Service
+General-purpose → LangChain
+
+If you’re still duct-taping scripts, you’re stuck in the tutorial.
+Pick one. Ship. Break. Learn.
+
+👉 Which stack are you betting on in 2025?
+
+LinkedIn URL: https://www.linkedin.com/posts/vitosenic_framework-wars-are-a-distraction-langchain-activity-7376552237935771648-kPcg?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAGCab3oBLBle-FA2VeA-gq8iejcsNhSNsUs
+
+
+--- Post #22 (2025-09-23 12:15:02) ---
+Engagement: 2 reactions, 0 comments, 0 reposts
+
+Everyone screams “AI Agents” like it’s the next revolution.
+But most people can’t even define what an agent actually is.
+Here’s the truth: an AI Agent isn’t just an LLM with prompts.
+
+It’s a system. With:
+     - Environment → the world it operates in
+     - Sensors → how it perceives what’s happening
+     - Actuators → how it acts to change that world
+     - Memory + Knowledge → short-term and long-term intelligence
+
+That’s when LLMs stop being “chatbots with nice answers”…
+…and start actually doing work.
+
+There are different breeds of agents too:
+     - Reflex agents (just react)
+     - Goal-based agents (plan)
+     - Utility-based agents (optimize tradeoffs)
+     - Learning agents (improve over time)
+     - Multi-agent systems (work together or even compete)
+
+So when does an agent make sense?
+👉 Open-ended problems (where you can’t hardcode every step)
+👉 Multi-step processes (complex workflows with tools + data)
+👉 Tasks that improve with feedback (real learning, not just parroting)
+
+Here’s the kicker: 95% of “agents” you see online aren’t agents at all. They’re just scripts chained together with marketing.
+
+Want to really understand the difference?
+This free course breaks it down: AI Agents for Beginners
+
+I’m still connecting the dots myself — but every lesson makes the hype less mysterious, and more buildable.
+Are you willing to dig deeper, or stay on the surface?
+
+LinkedIn URL: https://www.linkedin.com/posts/vitosenic_everyone-screams-ai-agents-like-its-the-activity-7376197397019979776-Zc_k?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAGCab3oBLBle-FA2VeA-gq8iejcsNhSNsUs
+
+
+--- Post #23 (2025-09-18 12:00:02) ---
+Engagement: 9 reactions, 1 comments, 0 reposts
+
+Most people today “build AI agents” in n8n or Make.
+And that’s fine — they ship fast, they deliver.
+
+But here’s the truth: almost nobody actually understands what’s happening under the hood.
+
+I didn’t want to just copy workflows. I wanted to know why this agentic hype works at all.
+
+So I took this 👉 AI Agents for Beginners course by Microsoft (https://lnkd.in/de_ZfTEQ).
+And it’s gold:
+      - Clear breakdown of agentic AI architecture & design
+      - How tools, memory, protocols (MCP, A2A, NLWeb), and infra really connect
+      - Practical code examples across multiple languages & frameworks
+      - Theory first → then you spin it up locally and see it run
+
+Now, I get it — these courses are also a way for big cloud providers to push their infra, burn tokens, and lock you in.
+
+But to be fair, this one felt surprisingly transparent. As an overview of the agentic hype, it actually delivers.
+
+The wild part? The YouTube vids behind this course barely have 5k views. Almost nobody has touched it.
+
+Most people just want to drive the car. I’m the guy who wants to open the hood, see the gears turning, and know why it runs.
+
+So here’s my challenge:
+Will you stay on the surface, stacking automations… or will you actually understand how agents really work?
+
+Your move. 🚀
+
+LinkedIn URL: https://www.linkedin.com/posts/vitosenic_most-people-today-build-ai-agents-in-n8n-activity-7374381681522249728-tqoX?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAGCab3oBLBle-FA2VeA-gq8iejcsNhSNsUs
+
+
+--- Post #24 (2025-09-17 14:45:01) ---
+Engagement: 5 reactions, 1 comments, 0 reposts
+
+Everyone talks about “AI agents.”
+But under the hood? It’s just LLMs with a few tricks slapped on top.
+
+Last week I went back to the foundations — the real mechanics behind the hype:
+    - Prompting (the art that separates average outputs from genius ones)
+    - RAG (the hidden engine that makes AI actually useful)
+    - Cloud + infra (the layer everyone ignores, but where the scale happens)
+
+This free course 👉 Microsoft Generative AI for Beginners (https://lnkd.in/d_vYjgU9) might be a year old, but it’s still absolutely relevant. Updated, practical, and it builds the fundamentals you need before diving into advanced systems like multi-agent architectures.
+
+Bonus: Anthropic’s Skilljar courses (https://lnkd.in/ddHq7H9C) — crystal clear structure, perfect for nailing the basics.
+
+Now, I get it. For most people, you don’t need to know how a car engine works if all you want is to drive. Same with AI — tons of “gurus” are building agencies on Make, n8n, and automations. And honestly, I respect that speed and execution.
+
+But I’m just a curious guy — like many of you here. I want to peek under the hood, see the gears turning, and understand why this stuff works.
+
+My “aha”? Realizing these are just techniques to make LLMs — and other foundation models (image, video, etc.) — more useful than before. Nothing else. Before, it was just magic. Now, it makes sense.
+
+LinkedIn URL: https://www.linkedin.com/posts/vitosenic_everyone-talks-about-ai-agents-but-under-activity-7374060812904267776-vLgd?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAGCab3oBLBle-FA2VeA-gq8iejcsNhSNsUs
+
+
+--- Post #25 (2025-09-16 14:45:06) ---
+Engagement: 9 reactions, 0 comments, 0 reposts
+
+Most people hide behind “waiting for the perfect idea.”
+I didn’t. I shipped.
+
+I joined the #nicehack69 Browser Use hackathon — the rule: your project must actually use Browser-Use at its core.
+
+Quick explainer: Browser-Use is an AI browser agent that automates real online tasks — logging in, clicking, scraping, filling forms, comparing data. Basically, it kills repetitive browsing work.
+
+My submission? Real Estate Agent 🏡
+Basically, a wrapper that lets AI crawl multiple property sites, extract listings, and show them side-by-side.
+Not world-changing. Not polished. But it works.
+👉 Demo: https://lnkd.in/dPbj8gEN
+👉 Repo: https://lnkd.in/dD7ySyHy
+
+Here’s the truth:
+   - Yes, it’s “just a wrapper.”
+   - Yes, Browser-Use itself is doing the heavy lifting.
+   - And yes, real use-cases with Browser-Use can get pricey ($1 per complex task isn’t crazy).
+
+But none of that matters. What matters is: I stopped overthinking and published. That’s the muscle I’m training.
+
+Too many of us sit on the sidelines waiting for a genius idea. The only way to find it? Ship the not-so-genius ones first.
+
+LinkedIn URL: https://www.linkedin.com/posts/vitosenic_nicehack69-activity-7373698448883216384-hxXM?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAGCab3oBLBle-FA2VeA-gq8iejcsNhSNsUs
+
+
+--- Post #26 (2025-09-15 11:15:02) ---
+Engagement: 7 reactions, 0 comments, 0 reposts
+
+🔄 Quick update to my last post on token efficiency (Slovenian 🇸🇮 vs English 🇬🇧).
+
+Thanks to Tomáš Majerčík 🙌 for sharing this great tool 👉 https://lnkd.in/dwq2JKhw
+
+It lets you compare tokenization not only for GPT models, but also for others (Anthropic, Mistral, LLaMA, etc.). Really useful if you want to see how different languages and models behave.
+
+[Reshared Post]
+💡 Slovenian vs English: how token-efficient are LLMs really?
+
+I was curious how much more (or less) efficient AI models are when working in Slovenian compared to English. So I tested it with OpenAI’s Tokenizer tool: https://lnkd.in/d9Zqm2XN
+
+Here’s what I found:
+🇸🇮 Slovenian: 304 tokens per 1000 characters
+🇬🇧 English: 181 tokens per 1000 characters
+    👉 That’s ~40% fewer tokens in English.
+
+📊 For comparison:
+    🇬🇧 English:
+       1 token ≈ ~4 characters
+       1 token ≈ ~¾ of a word
+       100 tokens ≈ ~75 words
+       1 paragraph ≈ ~100 tokens
+       1,500 words ≈ ~2,048 tokens
+
+   🇸🇮 Slovenian:
+      1 token ≈ ~3.3 characters
+      1 token ≈ ~½ of a word
+      100 tokens ≈ ~50 words
+      1 paragraph ≈ 120–150 tokens
+      1,500 words ≈ ~3,000 tokens
+
+At first this looks like a big gap – more tokens mean:
+        - Higher cost → every request in Slovenian consumes more tokens.
+        - Less context space → fewer tokens left for documents / history.
+        - Potentially weaker answers → model runs “tighter” on context window.
+
+But in practice, Slovenian still works fine for many local use cases (customer support, government services, education). English just gives you more “room” if you need large context or global knowledge.
+
+🔑 Takeaway: Token efficiency matters – but usability in your native language matters too.
+
+👉 What do you think – am I interpreting this right, or missing something? Would love to hear from others...
+
+LinkedIn URL: https://www.linkedin.com/posts/vitosenic_slovenian-vs-english-how-token-efficient-activity-7373283192717529088-6tKV?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAGCab3oBLBle-FA2VeA-gq8iejcsNhSNsUs
+
+
+--- Post #27 (2025-09-12 11:00:06) ---
+Engagement: 5 reactions, 1 comments, 0 reposts
+
+WhatsApp is built for control.
+Telegram is built for growth.
+
+When I hired an online fitness coach, all our chats ran through WhatsApp.
+He had 100+ clients. His replies were slow. Naturally, I researched automation.
+
+What I found?
+WhatsApp Business API is fundamentally broken in Europe.
+
+❌ No coexistence: you can’t use the app + API together (thanks, GDPR).
+❌ Brutal pricing: after 24h, every message = Meta-approved template. Wrong category? You pay more.
+❌ Awful UX: to “go API,” a coach would literally lose WhatsApp on his phone.
+❌ No chat history access: you only get what’s coming in now. Old conversations? Manual export/import hell.
+
+That’s not a business solution. That’s a nightmare.
+
+Then I looked at Telegram. Different universe:
+✅ Unlimited messaging, no restrictions.
+✅ Bots with full automation: anything you can code, you can run directly inside the business chat.
+✅ Business accounts with bot backend: hook a bot to your account and it replies as you. No “bot” label — clients think they’re talking directly to you.
+✅ Mini-apps: dashboards, portals, even CRMs — all inside Telegram.
+
+Telegram isn’t “just another chat app.”
+It’s a platform. A business OS.
+
+WhatsApp = legacy.
+Telegram = future.
+
+If you’re scaling communication, client support, or automation — ask yourself:
+👉 Are you still building on sand, or are you ready to switch before you’re forced?
+
+📖 Full breakdown here: https://lnkd.in/di_eWnM2
+
+LinkedIn URL: https://www.linkedin.com/posts/vitosenic_whatsapp-is-built-for-control-telegram-is-activity-7372192273494732801-eL5Z?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAGCab3oBLBle-FA2VeA-gq8iejcsNhSNsUs
+
+
+--- Post #28 (2025-09-10 15:30:36) ---
+Engagement: 6 reactions, 0 comments, 0 reposts
+
+I thought we nailed it.
+We didn’t.
+
+Three months ago I hired an online fitness coach.
+100+ clients. Answers came days late. Burnout was obvious.
+
+I pulled in a friend. We built him a solution:
+⚡ A digital twin that talked like him.
+⚡ Auto-generated diet & training plans.
+⚡ Coach only steps in for review — 80% of work gone.
+
+The ROI? Crystal clear.
+More time. More clients. More money.
+
+So we pitched him. Live. In Ljubljana.
+
+He liked the idea.
+But then came the price tag.
+He couldn’t pay. Not because it wasn’t valuable — but because he was a solo freelancer running on thin cash flow.
+
+That’s when it hit me:
+We didn’t fail on tech.
+We failed on customer selection.
+
+👉 The right buyer pays 10x more for the same solution.
+👉 The wrong buyer can’t even start.
+
+Our first big miss. But the lesson will stick forever.
+
+Full story here: https://lnkd.in/drP7mbgK
+
+So tell me — are you building for the problem… or for the buyer?
+
+[Article] The Missed Niche Lesson: Why Our First Big Pitch Failed
+URL: https://www.vitosenic.com/notes/2025-09-02_business-lesson
+
+LinkedIn URL: https://www.linkedin.com/posts/vitosenic_the-missed-niche-lesson-why-our-first-big-activity-7371535568691892224-hnET?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAGCab3oBLBle-FA2VeA-gq8iejcsNhSNsUs
+
+
+--- Post #29 (2025-09-08 11:15:03) ---
+Engagement: 7 reactions, 1 comments, 0 reposts
+
+Napoleon Hill said every great leader has a “mastermind group.”
+Advisors. Mentors. Giants in their corner.
+
+So I built mine.
+Not with humans. With AI.
+
+Elon Musk. Larry Ellison. Jeff Bezos.
+Personalities living inside ChatGPT.
+Brutally honest feedback, different lenses, zero sugarcoating.
+
+When I’m stuck, I don’t journal.
+I sit down with my “council” and ask:
+What would Musk do? What would Bezos cut? What would Larry kill?
+
+It’s not about accuracy — it’s about perspective.
+Forcing my brain to think bigger. Sharper. Ruthless.
+
+Call it delusional. Call it genius.
+But I’d rather spar with billion-dollar mindsets than my own excuses.
+
+👉 Who would you add to your AI mastermind group?
+
+LinkedIn URL: https://www.linkedin.com/posts/vitosenic_napoleon-hill-said-every-great-leader-has-activity-7370746481835716608-B9-I?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAGCab3oBLBle-FA2VeA-gq8iejcsNhSNsUs
+
+
+--- Post #30 (2025-09-05 11:15:01) ---
+Engagement: 3 reactions, 0 comments, 0 reposts
+
+Portfolios are boring.
+That’s why I killed mine.
+
+Instead, I built vitosenic.com — a site that talks back.
+Minimal design. Lightning fast. And powered by an AI that actually answers as me.
+
+Stack? Next.js. Supabase. GitHub Models.
+Plus a RAG pipeline that auto-feeds new content — notes, projects, CV — straight into the chat. No manual updates. No stale pages.
+
+This isn’t a portfolio.
+It’s a living system.
+
+Now imagine this at scale: a digital self that knows everything about you, sells for you, and solves problems while you sleep.
+
+👉 Full write-up of how I pulled it off: https://lnkd.in/dUmhWvsH
+👉 Or try it yourself: https://www.vitosenic.com/
+
+Question is… do you still want a portfolio, or do you want something that works while you sleep?
+
+[Article] Vito Senič | CS Student & AI Automation Builder
+URL: https://www.vitosenic.com/
+
+LinkedIn URL: https://www.linkedin.com/posts/vitosenic_vito-seni%C4%8D-cs-student-ai-automation-builder-activity-7369659309544103936-1cXD?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAGCab3oBLBle-FA2VeA-gq8iejcsNhSNsUs
+
+
+--- Post #31 (2025-08-27 12:43:01) ---
+Engagement: 11 reactions, 8 comments, 1 reposts
+
+💡 Slovenian vs English: how token-efficient are LLMs really?
+
+I was curious how much more (or less) efficient AI models are when working in Slovenian compared to English. So I tested it with OpenAI’s Tokenizer tool: https://lnkd.in/d9Zqm2XN
+
+Here’s what I found:
+🇸🇮 Slovenian: 304 tokens per 1000 characters
+🇬🇧 English: 181 tokens per 1000 characters
+    👉 That’s ~40% fewer tokens in English.
+
+📊 For comparison:
+    🇬🇧 English:
+       1 token ≈ ~4 characters
+       1 token ≈ ~¾ of a word
+       100 tokens ≈ ~75 words
+       1 paragraph ≈ ~100 tokens
+       1,500 words ≈ ~2,048 tokens
+
+   🇸🇮 Slovenian:
+      1 token ≈ ~3.3 characters
+      1 token ≈ ~½ of a word
+      100 tokens ≈ ~50 words
+      1 paragraph ≈ 120–150 tokens
+      1,500 words ≈ ~3,000 tokens
+
+At first this looks like a big gap – more tokens mean:
+        - Higher cost → every request in Slovenian consumes more tokens.
+        - Less context space → fewer tokens left for documents / history.
+        - Potentially weaker answers → model runs “tighter” on context window.
+
+But in practice, Slovenian still works fine for many local use cases (customer support, government services, education). English just gives you more “room” if you need large context or global knowledge.
+
+🔑 Takeaway: Token efficiency matters – but usability in your native language matters too.
+
+👉 What do you think – am I interpreting this right, or missing something? Would love to hear from others...
+
+LinkedIn URL: https://www.linkedin.com/posts/vitosenic_slovenian-vs-english-how-token-efficient-activity-7366419964771176449-dQqW?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAGCab3oBLBle-FA2VeA-gq8iejcsNhSNsUs
+
+
+--- Post #32 (2025-08-26 13:26:01) ---
+Engagement: 6 reactions, 1 comments, 0 reposts
+
+🚀 Just launched my personal website: vitosenic.com
+
+I wanted something minimal, fast, and truly mine — not just another template portfolio.
+
+Along the way, I experimented with Next.js, Supabase, and GitHub Models to integrate a RAG-powered AI chat that represents me in first person.
+
+I also wrote a short blog post about the journey, where I share:
+- Why I chose a minimal one-pager inspired by Michael Truell
+- What I learned from Microsoft’s Generative AI for Beginners course
+- How I built the pipeline so new content (notes, projects, CV) automatically    updates the chat context
+
+👉 Read the full write-up here: https://lnkd.in/djkQpPyb
+👉 Or just explore the site itself: vitosenic.com
+
+[Article] Vito Senič | CS Student & Builder
+URL: https://www.vitosenic.com/
+
+LinkedIn URL: https://www.linkedin.com/posts/vitosenic_vito-seni%C4%8D-cs-student-builder-activity-7366068398264324096-EuIc?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAGCab3oBLBle-FA2VeA-gq8iejcsNhSNsUs
+
+
+--- Post #34 (2025-08-11 17:07:01) ---
+Engagement: 10 reactions, 2 comments, 0 reposts
+
+🚀 Out of my comfort zone — hitting publish.
+
+I just finished reading Digital Fluency — and it’s not the tech overviews that stuck with me, but the last chapter: “Your Digital Action Plan.” 📘
+
+💡 3 takeaways I’ll actually use:
+Tools ≠ outcomes. Results come from org design, iteration cadence, and KPIs (buying an AI SaaS without process/KPIs = shelfware).
+
+Enterprise vs small teams. Big firms need governance & change management; small teams win on speed—borrow just enough playbook to scale without chaos.
+
+Tech-fit, quick map: repetitive knowledge work → AI/copilots/agents 🤖 (e.g., first-pass email drafts) · many parties needing shared truth → blockchain ⛓️ (e.g., supplier ledger) · quantum ✨ → exciting, but early for most.
+
+🔍 What stood out: 
+Many companies want to adopt AI or blockchain but quickly realise they lack the basic infrastructure — clean, centralised data, integrated systems, and scalable cloud setups.
+
+Without this foundation, these technologies become little more than fancy buzzwords for sales pitches.
+
+💰 The real opportunity? Helping companies build that foundation — and then unlocking the real value of advanced tech.
+
+Even though the book was written in 2021 and the tech examples are dated, the decision-making frameworks are still timeless.
+
+For the curious: 📘 Digital Fluency… (2021). Amazon: https://lnkd.in/dfRjMFcD
+
+LinkedIn URL: https://www.linkedin.com/posts/vitosenic_out-of-my-comfort-zone-hitting-publish-activity-7360688196680069120-kJD3?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAGCab3oBLBle-FA2VeA-gq8iejcsNhSNsUs
+

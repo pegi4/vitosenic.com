@@ -1,0 +1,95 @@
+=== CV / RESUME ===
+Name: Vito Senič
+Role: CS student · Web/AI automation
+Location: Slovenia
+
+=== CONTACT ===
+Email: vito.senic@gmail.com
+GitHub: https://github.com/vitosenic
+LinkedIn: https://linkedin.com/in/vitosenic
+X (Twitter): https://x.com/vitosenic
+Instagram: https://instagram.com/vitosenic
+
+=== SUMMARY ===
+I’m a Computer Science student at UM FERI, currently combining my studies with hands-on work in research and development. Through my studies, research at the Blockchain Lab, and personal experiments with AI, I’m exploring how technology can solve real problems, make work easier, and reduce manual effort. I like keeping things practical, curious, and always moving forward.
+
+=== CURRENT FOCUS ===
+Right now I’m finishing my CS degree and spending time at the Blockchain Lab as a student researcher. I’m also exploring how AI can make everyday work easier, more creative, and reduce manual work for businesses. For me, this stage is about learning, growing, and building projects that reflect both my technical skills and curiosity.
+
+=== EXPERIENCE ===
+
+Blockchain Lab (FERI) — Student Researcher
+Duration: September 2024 – Present
+  • Researched and prototyped decentralized identity systems (Self-Sovereign Identity, DID, Verifiable Credentials).
+  • Developed proof-of-concept integrations with Veramo agents for issuing and verifying credentials.
+  • Contributed to open source projects: [EduCTX Issuer Platform](https://github.com/blockchain-lab-um/issuer-platform-EduCTX) and [MASCA](https://github.com/blockchain-lab-um/masca).
+  • Collaborated in a small research team, applying R&D methods to blockchain-based authentication.
+
+SolveX — Frontend Developer (Vue + TypeScript)
+Duration: Oct 2023 – Feb 2025 (active, overlapping with Blockchain Lab since Jan 2024)
+  • Built and maintained B2B software solutions for Big Bang, a major Slovenian retailer.
+  • Implemented user interfaces using Vue.js 3 and TypeScript, following component-driven development.
+  • Integrated REST APIs with backend systems and improved data flows between teams.
+  • Gained hands-on experience in agile teamwork, project planning, and communication across roles.
+
+eAvio — Web Developer & E-commerce Manager
+Duration: Jul 2021 – May 2022
+  • Developed and maintained WordPress websites and WooCommerce e-commerce stores.
+  • Automated workflows with small Python scripts, improving efficiency in product updates.
+  • Handled content updates, email collection, and basic online marketing tasks.
+  • Learned client-facing communication and the importance of reliable delivery.
+
+Divorce My Job Marketing — Marketing Assistant
+Duration: Aug 2021 – May 2023
+  • Managed online product listings and created social media content for campaigns.
+  • Worked on dropshipping and print-on-demand stores, assisting with order management and customer support.
+  • Designed marketing materials and contributed to website design improvements.
+  • Gained insights into e-commerce operations and digital marketing tactics.
+
+=== SKILLS ===
+Web: Next.js, React, Vue, Tailwind, HTML/CSS
+Backend: Node.js, Express, FastAPI, PHP, SQL
+AI: RAG pipelines, Embeddings, LangChain, LLMs, Vector databases (pgvector, Pinecone, Weaviate), Prompt engineering, AI agents & orchestration, Model fine-tuning basics, OpenAI / Anthropic APIs, Image classification (K-Means, Mean-Shift, GTSRB dataset), Face recognition (custom FastAPI microservice)
+DevOps: Docker, CI/CD, VPS, Linux servers, GitHub Actions, Nginx
+Languages: TypeScript, JavaScript, Python, SQL, C++, C#
+
+=== EDUCATION ===
+  • UM FERI — Computer Science (2023–2026)
+  • SERS Maribor — Computer Technician (2019–2023)
+
+=== ROADMAP / TIMELINE ===
+before 2018: Early curiosity → video editing, modding games, file management.
+2018: First exposure to web dev → HTML & CSS → built fun websites.
+2019: Entered SERŠ (Computer Science) → learned C++ and Unity basics.
+2020: COVID pause → less productive, but gained perspective.
+2021: Worked at eAvio agency → WordPress e-commerce, marketing integrations, Python automation scripts.
+2022: Tried entrepreneurship → dropshipping, agencies, investing & crypto. Learned resilience and risk management.
+2023 (early): Final high school project: Decentralized portfolio tracker (React + Node + Moralis). Rediscovered passion for programming.
+2023 (late): Started CS & IT studies at FERI. Joined SolveX → Vue + TS, teamwork, APIs, project planning.
+2024 (early): Blockchain course → joined Blockchain Lab. Worked on DID, VC, Veramo.
+2024 (late): Startup Weekend → met co-founder. Began serious work in DevOps & Cloud (Docker, CI/CD, VPS, microservices) and AI integrations.
+2025: Balancing studies, lab work, and business. Building AI automation agency → merging LLMs, automation, and business execution.
+
+=== OTHER ===
+Born: 2004-sep
+Music: Pink Floyd
+Favorite Book: Principles by Ray Dalio
+Quote: Si al pa nisi
+Dream Car: Renault 5 Turbo II
+Dream Motorbike: Honda XR650L
+
+=== FAQ ===
+Who am I?
+I’m a CS student at UM FERI focused on practical web apps, AI automation, and scalable backends.
+
+What am I focused on now?
+Finishing CS at FERI and building an AI-first automation agency (LLMs + automation).
+
+How to contact me?
+Email: vito.senic@gmail.com • GitHub/LinkedIn/X links are on /cv#socials.
+
+What stacks do I use?
+Web: Next.js • Backend: NestJS/FastAPI • db: Supabase • AI: RAG, embeddings, LangChain, LLMs • DevOps: Docker, CI/CD • Languages: TS/JS/Python.
+
+Blockchain background?
+At FERI Blockchain Lab I worked on SSI/DID/Verifiable Credentials and contributed to EduCTX Issuer Platform and MASCA.
