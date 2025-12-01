@@ -15,7 +15,6 @@
     "@azure/core-sse": "latest",
     "@langchain/community": "^0.3.53",
     "@langchain/core": "^0.3.72",
-    "@supabase/supabase-js": "^2.55.0",
     "date-fns": "^3.0.0",
     "dotenv": "^17.2.1",
     "gray-matter": "^4.0.3",
