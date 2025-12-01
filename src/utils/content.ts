@@ -1,10 +1,13 @@
 import fs from 'fs';
 import path from 'path';
+import type { LinkedInProfile, LinkedInExperience, LinkedInEducation, LinkedInPost } from '@/types/linkedin';
+import type { CV, Experience, RoadmapItem } from '@/types/cv-types';
+import type { Project, ProjectLink } from '@/types/projects-types';
 
 /**
  * Formats LinkedIn profile JSON into readable text
  */
-function formatLinkedInProfile(profile: any): string {
+function formatLinkedInProfile(profile: LinkedInProfile): string {
   const parts: string[] = [];
   
   if (profile.basic_info?.fullname) {
@@ -25,7 +28,7 @@ function formatLinkedInProfile(profile: any): string {
   
   if (profile.experience && profile.experience.length > 0) {
     parts.push('\n=== EXPERIENCE ===');
-    profile.experience.forEach((exp: any, idx: number) => {
+    profile.experience.forEach((exp: LinkedInExperience, idx: number) => {
       parts.push(`\n${idx + 1}. ${exp.title} at ${exp.company}`);
       if (exp.duration) parts.push(`   Duration: ${exp.duration}`);
       if (exp.location) parts.push(`   Location: ${exp.location}`);
@@ -40,7 +43,7 @@ function formatLinkedInProfile(profile: any): string {
   
   if (profile.education && profile.education.length > 0) {
     parts.push('\n=== EDUCATION ===');
-    profile.education.forEach((edu: any, idx: number) => {
+    profile.education.forEach((edu: LinkedInEducation, idx: number) => {
       parts.push(`\n${idx + 1}. ${edu.school}`);
       if (edu.degree) parts.push(`   Degree: ${edu.degree}`);
       if (edu.field_of_study) parts.push(`   Field: ${edu.field_of_study}`);
@@ -56,7 +59,7 @@ function formatLinkedInProfile(profile: any): string {
 /**
  * Formats LinkedIn posts array into readable text
  */
-function formatLinkedInPosts(posts: any[]): string {
+function formatLinkedInPosts(posts: LinkedInPost[]): string {
   const parts: string[] = [];
   parts.push(`=== LINKEDIN POSTS (${posts.length} total) ===\n`);
   
@@ -106,7 +109,7 @@ function formatLinkedInPosts(posts: any[]): string {
 /**
  * Formats CV JSON into readable text
  */
-function formatCV(cv: any): string {
+function formatCV(cv: CV): string {
   const parts: string[] = [];
   
   parts.push(`Name: ${cv.name}`);
@@ -134,7 +137,7 @@ function formatCV(cv: any): string {
   
   if (cv.experience && cv.experience.length > 0) {
     parts.push('\n=== EXPERIENCE ===');
-    cv.experience.forEach((job: any) => {
+    cv.experience.forEach((job: Experience) => {
       if (job.id === 'experience-index') return;
       parts.push(`\n${job.company} — ${job.role}`);
       if (job.dates) parts.push(`Duration: ${job.dates}`);
@@ -164,7 +167,7 @@ function formatCV(cv: any): string {
   
   if (cv.roadmap && cv.roadmap.length > 0) {
     parts.push('\n=== ROADMAP / TIMELINE ===');
-    cv.roadmap.forEach((item: any) => {
+    cv.roadmap.forEach((item: RoadmapItem) => {
       parts.push(`${item.year}: ${item.milestone}`);
     });
   }
@@ -190,7 +193,7 @@ function formatCV(cv: any): string {
 /**
  * Formats projects JSON into readable text
  */
-function formatProjects(projects: any[]): string {
+function formatProjects(projects: Project[]): string {
   const parts: string[] = [];
   
   parts.push(`=== PROJECTS (${projects.length} total) ===\n`);
@@ -212,7 +215,7 @@ function formatProjects(projects: any[]): string {
     }
     if (project.links && project.links.length > 0) {
       parts.push('\nLinks:');
-      project.links.forEach((link: any) => {
+      project.links.forEach((link: ProjectLink) => {
         parts.push(`  • ${link.label}: ${link.url}`);
       });
     }

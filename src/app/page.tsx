@@ -1,15 +1,16 @@
 'use client';
 
-import { motion } from 'framer-motion';
+import { motion, type Variants } from 'framer-motion';
 import Image from 'next/image';
 import ChatInterface from '@/components/ChatInterface';
-import projects from '@public/content/projects.json';
-import type { Project } from '@public/content/projects.json';
+import projectsData from '@public/content/projects.json';
+import type { Project } from '@/types/projects-types';
 
 // Filter out the index project
+const projects = projectsData as Project[];
 const featuredProjects = projects.filter(p => p.slug !== 'projects-index').slice(0, 3);
 
-const containerVariants = {
+const containerVariants: Variants = {
   hidden: { opacity: 0 },
   visible: {
     opacity: 1,
@@ -19,14 +20,14 @@ const containerVariants = {
   }
 };
 
-const itemVariants = {
+const itemVariants: Variants = {
   hidden: { opacity: 0, y: 20 },
   visible: {
     opacity: 1,
     y: 0,
     transition: {
       duration: 0.5,
-      ease: 'easeOut'
+      ease: 'easeOut' as const
     }
   }
 };
@@ -153,7 +154,7 @@ export default function Home() {
             className="mb-16"
           >
             <h2 className="text-4xl sm:text-5xl font-bold mb-4 text-gray-100">Featured Projects</h2>
-            <p className="text-gray-400 text-lg">Some of the things I've built</p>
+            <p className="text-gray-400 text-lg">Some of the things I&apos;ve built</p>
           </motion.div>
 
           <motion.div
@@ -197,7 +198,7 @@ export default function Home() {
             viewport={{ once: true, margin: '-100px' }}
             transition={{ duration: 0.6 }}
           >
-            <h2 className="text-4xl sm:text-5xl font-bold mb-8 text-gray-100">Let's Connect</h2>
+            <h2 className="text-4xl sm:text-5xl font-bold mb-8 text-gray-100">Let&apos;s Connect</h2>
             
             <div className="flex flex-wrap justify-center gap-6">
               <motion.a

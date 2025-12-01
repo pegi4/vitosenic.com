@@ -1,4 +1,4 @@
-import { Pool } from 'pg';
+import { Pool, type PoolConfig } from 'pg';
 import dotenv from 'dotenv';
 
 dotenv.config();
@@ -14,7 +14,7 @@ function getPool(): Pool | null {
 
   // Create pool if it doesn't exist
   if (!pgPool) {
-    const config: any = {
+    const config: PoolConfig = {
       host: process.env.POSTGRES_HOST,
       port: parseInt(process.env.POSTGRES_PORT || '5432', 10),
       user: process.env.POSTGRES_USER,
@@ -32,7 +32,8 @@ function getPool(): Pool | null {
       } else {
         // If it's a JSON string, parse it
         try {
-          config.ssl = JSON.parse(process.env.POSTGRES_SSL);
+          const parsed = JSON.parse(process.env.POSTGRES_SSL);
+          config.ssl = parsed as PoolConfig['ssl'];
         } catch {
           // If parsing fails, treat as boolean
           config.ssl = {

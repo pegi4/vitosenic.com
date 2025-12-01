@@ -99,10 +99,6 @@ export async function POST(req: NextRequest) {
       content: msg.content
     }));
 
-    // Add the latest user message - context is provided in system message, so we don't need to repeat it
-    // This allows the model to focus on the conversation flow
-    const contextUserMessage = `Current question: ${latestMessage.content}\n\nRemember to use the provided context about Vito Senič to answer. Maintain conversation continuity with previous messages.`;
-
     // Build the system message with context included
     const systemMessageWithContext = `${systemMessage?.content || ''}\n\n--- AVAILABLE CONTEXT ---\n${context}\n\n--- IMPORTANT REMINDERS ---\n- Always respond in English, regardless of the user's language.\n- Use the conversation history to provide context-aware responses.\n- Be clear, thoughtful, and complete in your answers.`;
     

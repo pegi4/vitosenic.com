@@ -1,5 +1,5 @@
 import Image from "next/image";
-import type { Project } from "@public/content/projects.json";
+import type { Project } from "@/types/projects-types";
 
 export default function ProjectCard({ project }: { project: Project }) {
   return (
