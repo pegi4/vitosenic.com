@@ -1,6 +1,6 @@
 import fs from 'fs';
 import path from 'path';
-import { formatAllContent, formatCV, formatProjects, formatLinkedInProfile, formatLinkedInPosts } from './formatters';
+import { formatAllContent, formatCV, formatProjects } from './formatters';
 
 /**
  * Script to format all content files into readable text
@@ -37,34 +37,6 @@ async function main() {
     }
   } catch (error) {
     console.error('❌ Error formatting projects:', error);
-  }
-  
-  // Format LinkedIn Profile
-  try {
-    const profilePath = path.join(contentDir, 'linkedin_profile.json');
-    if (fs.existsSync(profilePath)) {
-      const profile = JSON.parse(fs.readFileSync(profilePath, 'utf-8'));
-      const formatted = formatLinkedInProfile(profile);
-      const outputPath = path.join(contentDir, 'linkedin_profile.txt');
-      fs.writeFileSync(outputPath, formatted, 'utf-8');
-      console.log(`✅ LinkedIn profile formatted: ${outputPath}`);
-    }
-  } catch (error) {
-    console.error('❌ Error formatting LinkedIn profile:', error);
-  }
-  
-  // Format LinkedIn Posts
-  try {
-    const postsPath = path.join(contentDir, 'linkedin_posts.json');
-    if (fs.existsSync(postsPath)) {
-      const posts = JSON.parse(fs.readFileSync(postsPath, 'utf-8'));
-      const formatted = formatLinkedInPosts(posts);
-      const outputPath = path.join(contentDir, 'linkedin_posts.txt');
-      fs.writeFileSync(outputPath, formatted, 'utf-8');
-      console.log(`✅ LinkedIn posts formatted: ${outputPath}`);
-    }
-  } catch (error) {
-    console.error('❌ Error formatting LinkedIn posts:', error);
   }
   
   // Create combined context file
