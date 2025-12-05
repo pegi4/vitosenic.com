@@ -12,20 +12,20 @@ export default function CVPage() {
     <Container>
       <main className="mx-auto max-w-[720px] px-4 py-10">
         <header className="mb-6">
-          <h1 className="text-2xl font-semibold">{cv.name}</h1>
-          <p className="text-gray-700">{cv.role}</p>
-          <p className="text-gray-700">{cv.location}</p>
-          <div className="mt-2 flex flex-wrap gap-3 text-sm text-gray-600">
-            <a href={cv.socials.github} target="_blank" rel="noreferrer">GitHub</a>
-            <a href={cv.socials.linkedin} target="_blank" rel="noreferrer">LinkedIn</a>
-            <a href={`mailto:${cv.socials.email}`}>Email</a>
-            <a href={cv.socials.x} target="_blank" rel="noreferrer">X</a>
-            <a href={cv.socials.instagram} target="_blank" rel="noreferrer">Instagram</a>
+          <h1 className="text-2xl font-semibold text-white">{cv.name}</h1>
+          <p className="text-white/90">{cv.role}</p>
+          <p className="text-white/90">{cv.location}</p>
+          <div className="mt-2 flex flex-wrap gap-3 text-sm text-white/80">
+            <a href={cv.socials.github} target="_blank" rel="noreferrer" className="hover:text-white">GitHub</a>
+            <a href={cv.socials.linkedin} target="_blank" rel="noreferrer" className="hover:text-white">LinkedIn</a>
+            <a href={`mailto:${cv.socials.email}`} className="hover:text-white">Email</a>
+            <a href={cv.socials.x} target="_blank" rel="noreferrer" className="hover:text-white">X</a>
+            <a href={cv.socials.instagram} target="_blank" rel="noreferrer" className="hover:text-white">Instagram</a>
             <span>Updated: {cv.updated}</span>
           </div>
         </header>
 
-        <article className="prose prose-neutral">
+        <article className="prose prose-invert prose-neutral max-w-none">
           <h2 id="summary">Summary</h2>
           <p>{cv.summary}</p>
 
@@ -35,8 +35,8 @@ export default function CVPage() {
           <h2 id="experience">Experience</h2>
           {cv.experience.map((job) => (
             <section key={job.id} id={job.id} className="mb-6">
-              <h3>{job.company} — {job.role}</h3>
-              <p className="text-sm text-gray-600">{job.dates}</p>
+              <h3 className="text-white">{job.company} — {job.role}</h3>
+              <p className="text-sm text-white/70">{job.dates}</p>
               <ul>
                 {job.bullets.map((bullet: string, i: number) => (
                   <li key={i}>{bullet}</li>

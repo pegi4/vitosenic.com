@@ -1,6 +1,6 @@
 {
   "name": "Vito Senič",
-  "role": "CS student · Web/AI automation",
+  "role": "AI Systems Architect | I connect business goals into working solutions",
   "location": "Slovenia",
   "socials": {
     "github": "https://github.com/pegi4",
@@ -9,7 +9,7 @@
     "instagram": "https://instagram.com/vitosenic",
     "email": "vito.senic@gmail.com"
   },
-  "updated": "2025-08-22",
+  "updated": "2025-12-05",
 
   "summary": "I’m a Computer Science student at UM FERI, currently combining my studies with hands-on work in research and development. Through my studies, research at the Blockchain Lab, and personal experiments with AI, I’m exploring how technology can solve real problems, make work easier, and reduce manual effort. I like keeping things practical, curious, and always moving forward.",
 
@@ -22,20 +22,34 @@
       "role": "Timeline",
       "dates": "",
       "bullets": [
-        "Currently active roles: Blockchain Lab (since September 2024) and SolveX (until February 2025).",
-        "Past roles: Marketing Assistant (2021–2023), eAvio Web Developer (2021–2022)."
+        "Currently active roles: Asteras.ai (since July 2025) and Blockchain Lab (since August 2024).",
+        "Past roles: SolveX (Oct 2023 – Feb 2025), Independent Entrepreneur (Jun 2020 – Jan 2024), Marketing Assistant (2021–2023), eAvio Web Developer (2021–2022)."
+      ]
+    },
+    {
+      "id": "asteras",
+      "company": "Asteras.ai",
+      "role": "CTO & Founder",
+      "dates": "July 2025 – Present",
+      "bullets": [
+        "Building Asteras.ai, an AI systems company focused on developing intelligent automation infrastructure for real-world operations.",
+        "Architecting secure, modular AI backends and automation pipelines from scratch for enterprise environments.",
+        "Developing multi-agent systems capable of analyzing data, identifying inefficiencies, and executing improvements autonomously.",
+        "Delivering end-to-end infrastructure setups, from data ingestion and monitoring to deployment and integration.",
+        "Partnering with clients to transform insights into scalable, measurable business outcomes."
       ]
     },
     {
       "id": "blocklab",
       "company": "Blockchain Lab (FERI)",
-      "role": "Student Researcher",
-      "dates": "September 2024 – Present",
+      "role": "R&D Blockchain Engineer",
+      "dates": "August 2024 – Present",
       "bullets": [
-        "Researched and prototyped decentralized identity systems (Self-Sovereign Identity, DID, Verifiable Credentials).",
+        "Working on decentralized Web3 applications focusing on self-sovereign identities (SSI), decentralized identifiers (DID), and verifiable credentials (VC).",
+        "Gained hands-on experience with Web3 protocols, blockchain-based authentication, cryptographic identity management, and secure communication flows.",
+        "Researched and prototyped decentralized identity systems, including SD-JWT standards integration within the EduCTX platform.",
         "Developed proof-of-concept integrations with Veramo agents for issuing and verifying credentials.",
-        "Contributed to open source projects: [EduCTX Issuer Platform](https://github.com/blockchain-lab-um/issuer-platform-EduCTX) and [MASCA](https://github.com/blockchain-lab-um/masca).",
-        "Collaborated in a small research team, applying R&D methods to blockchain-based authentication."
+        "Contributed to open source projects: [EduCTX Issuer Platform](https://github.com/blockchain-lab-um/issuer-platform-EduCTX) and [MASCA](https://github.com/blockchain-lab-um/masca)."
       ]
     },
     {
@@ -48,6 +62,21 @@
         "Implemented user interfaces using Vue.js 3 and TypeScript, following component-driven development.",
         "Integrated REST APIs with backend systems and improved data flows between teams.",
         "Gained hands-on experience in agile teamwork, project planning, and communication across roles."
+      ]
+    },
+    {
+      "id": "entrepreneur",
+      "company": "Self-employed",
+      "role": "Independent Entrepreneur — E-commerce & Digital Projects",
+      "dates": "Jun 2020 – Jan 2024",
+      "bullets": [
+        "Launched and managed multiple online ventures, including e-commerce stores and digital music distribution.",
+        "Built, tested, and scaled several business models — some gained real traction and generated consistent revenue.",
+        "Built and ran Shopify & WooCommerce stores end-to-end.",
+        "Managed digital distribution and content monetization across streaming platforms.",
+        "Executed marketing campaigns and optimized conversion performance.",
+        "Handled operations, suppliers, and automation workflows to improve margins.",
+        "Rapidly validated ideas and scaled what worked, gaining strong hands-on experience in growth, execution, and product-market fit."
       ]
     },
     {
@@ -65,12 +94,14 @@
     {
       "id": "marketing-assistant",
       "company": "Divorce My Job Marketing",
-      "role": "Marketing Assistant",
-      "dates": "Aug 2021 – May 2023",
+      "role": "E-commerce Web Developer & Technical Assistant",
+      "dates": "Aug 2021 – Aug 2023",
       "bullets": [
+        "Specialized in developing e-commerce solutions that streamlined online sales processes and improved customer engagement.",
+        "Maintained and enhanced e-commerce stores, including dropshipping and print-on-demand integrations.",
+        "Designed and implemented membership portals and landing pages to boost user experience.",
+        "Set up technical frameworks for blogs and social media, driving traffic and sales.",
         "Managed online product listings and created social media content for campaigns.",
-        "Worked on dropshipping and print-on-demand stores, assisting with order management and customer support.",
-        "Designed marketing materials and contributed to website design improvements.",
         "Gained insights into e-commerce operations and digital marketing tactics."
       ]
     }
@@ -97,8 +128,8 @@
   },
 
   "education": [
-    "UM FERI — Computer Science (2023–2026)",
-    "SERS Maribor — Computer Technician (2019–2023)"
+    "UM FERI — Bachelor's in Computer Science (Oct 2023 – Jun 2026) — Activities: Hackathons, Startup Weekends, Competitive Programming Workshops, additional elective courses (Machine Learning & Blockchain), Research Projects, Developer Communities",
+    "SERS Maribor — High School Diploma, Computer Science (2019–2023)"
   ],
 
   "roadmap": [
@@ -107,12 +138,13 @@
     { "year": "2019", "milestone": "Entered SERŠ (Computer Science) → learned C++ and Unity basics." },
     { "year": "2020", "milestone": "COVID pause → less productive, but gained perspective." },
     { "year": "2021", "milestone": "Worked at eAvio agency → WordPress e-commerce, marketing integrations, Python automation scripts." },
-    { "year": "2022", "milestone": "Tried entrepreneurship → dropshipping, agencies, investing & crypto. Learned resilience and risk management." },
+    { "year": "2022", "milestone": "Continued entrepreneurship → dropshipping, agencies, investing & crypto. Learned resilience and risk management. Built and scaled multiple online ventures." },
     { "year": "2023 (early)", "milestone": "Final high school project: Decentralized portfolio tracker (React + Node + Moralis). Rediscovered passion for programming." },
     { "year": "2023 (late)", "milestone": "Started CS & IT studies at FERI. Joined SolveX → Vue + TS, teamwork, APIs, project planning." },
-    { "year": "2024 (early)", "milestone": "Blockchain course → joined Blockchain Lab. Worked on DID, VC, Veramo." },
+    { "year": "2024 (early)", "milestone": "Blockchain course → joined Blockchain Lab as R&D Blockchain Engineer. Worked on DID, VC, Veramo, and SD-JWT standards." },
     { "year": "2024 (late)", "milestone": "Startup Weekend → met co-founder. Began serious work in DevOps & Cloud (Docker, CI/CD, VPS, microservices) and AI integrations." },
-    { "year": "2025", "milestone": "Balancing studies, lab work, and business. Building AI automation agency → merging LLMs, automation, and business execution." }
+    { "year": "2025 (mid)", "milestone": "Founded Asteras.ai as CTO & founder → building AI systems company focused on intelligent automation infrastructure for real-world operations." },
+    { "year": "2025 (late)", "milestone": "Balancing studies, lab work, and business. Leading Asteras.ai while continuing research at Blockchain Lab." }
   ],
 
   "other": {

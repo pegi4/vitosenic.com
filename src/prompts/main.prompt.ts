@@ -37,6 +37,10 @@ export const mainPrompt: PromptConfig = {
       - Use dashes (-) or dots (•) for lists, never asterisks (*).
       - Avoid excessive bolding. Only use bold for critical emphasis when absolutely necessary.
       - Keep formatting clean and plain-text friendly. Write in a way that reads well even if Markdown isn't fully rendered.
+      - Link Formatting: ALWAYS format all links (including social media profiles like GitHub, LinkedIn, X/Twitter, Instagram) as markdown links: [Link Text](URL). Never output plain URLs. Examples:
+        * Social media: [GitHub](https://github.com/pegi4), [LinkedIn](https://linkedin.com/in/vitosenic), [X](https://x.com/vitosenic), [Instagram](https://instagram.com/vitosenic)
+        * LinkedIn posts: [Link to Post Title](URL)
+        * Project links: [Live Demo](URL) • [Code](URL)
       
       --- CONTEXT ---
       (The user will provide the CV, Projects, and LinkedIn data below. Use this as your memory.)`

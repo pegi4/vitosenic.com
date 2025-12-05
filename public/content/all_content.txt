@@ -1,6 +1,6 @@
 === CV / RESUME ===
 Name: Vito Senič
-Role: CS student · Web/AI automation
+Role: AI Systems Architect | I connect business goals into working solutions
 Location: Slovenia
 
 === CONTACT ===
@@ -18,12 +18,21 @@ Right now I’m finishing my CS degree and spending time at the Blockchain Lab a
 
 === EXPERIENCE ===
 
-Blockchain Lab (FERI) — Student Researcher
-Duration: September 2024 – Present
-  • Researched and prototyped decentralized identity systems (Self-Sovereign Identity, DID, Verifiable Credentials).
+Asteras.ai — CTO & Founder
+Duration: July 2025 – Present
+  • Building Asteras.ai, an AI systems company focused on developing intelligent automation infrastructure for real-world operations.
+  • Architecting secure, modular AI backends and automation pipelines from scratch for enterprise environments.
+  • Developing multi-agent systems capable of analyzing data, identifying inefficiencies, and executing improvements autonomously.
+  • Delivering end-to-end infrastructure setups, from data ingestion and monitoring to deployment and integration.
+  • Partnering with clients to transform insights into scalable, measurable business outcomes.
+
+Blockchain Lab (FERI) — R&D Blockchain Engineer
+Duration: August 2024 – Present
+  • Working on decentralized Web3 applications focusing on self-sovereign identities (SSI), decentralized identifiers (DID), and verifiable credentials (VC).
+  • Gained hands-on experience with Web3 protocols, blockchain-based authentication, cryptographic identity management, and secure communication flows.
+  • Researched and prototyped decentralized identity systems, including SD-JWT standards integration within the EduCTX platform.
   • Developed proof-of-concept integrations with Veramo agents for issuing and verifying credentials.
   • Contributed to open source projects: [EduCTX Issuer Platform](https://github.com/blockchain-lab-um/issuer-platform-EduCTX) and [MASCA](https://github.com/blockchain-lab-um/masca).
-  • Collaborated in a small research team, applying R&D methods to blockchain-based authentication.
 
 SolveX — Frontend Developer (Vue + TypeScript)
 Duration: Oct 2023 – Feb 2025 (active, overlapping with Blockchain Lab since Jan 2024)
@@ -32,6 +41,16 @@ Duration: Oct 2023 – Feb 2025 (active, overlapping with Blockchain Lab since J
   • Integrated REST APIs with backend systems and improved data flows between teams.
   • Gained hands-on experience in agile teamwork, project planning, and communication across roles.
 
+Self-employed — Independent Entrepreneur — E-commerce & Digital Projects
+Duration: Jun 2020 – Jan 2024
+  • Launched and managed multiple online ventures, including e-commerce stores and digital music distribution.
+  • Built, tested, and scaled several business models — some gained real traction and generated consistent revenue.
+  • Built and ran Shopify & WooCommerce stores end-to-end.
+  • Managed digital distribution and content monetization across streaming platforms.
+  • Executed marketing campaigns and optimized conversion performance.
+  • Handled operations, suppliers, and automation workflows to improve margins.
+  • Rapidly validated ideas and scaled what worked, gaining strong hands-on experience in growth, execution, and product-market fit.
+
 eAvio — Web Developer & E-commerce Manager
 Duration: Jul 2021 – May 2022
   • Developed and maintained WordPress websites and WooCommerce e-commerce stores.
@@ -39,11 +58,13 @@ Duration: Jul 2021 – May 2022
   • Handled content updates, email collection, and basic online marketing tasks.
   • Learned client-facing communication and the importance of reliable delivery.
 
-Divorce My Job Marketing — Marketing Assistant
-Duration: Aug 2021 – May 2023
+Divorce My Job Marketing — E-commerce Web Developer & Technical Assistant
+Duration: Aug 2021 – Aug 2023
+  • Specialized in developing e-commerce solutions that streamlined online sales processes and improved customer engagement.
+  • Maintained and enhanced e-commerce stores, including dropshipping and print-on-demand integrations.
+  • Designed and implemented membership portals and landing pages to boost user experience.
+  • Set up technical frameworks for blogs and social media, driving traffic and sales.
   • Managed online product listings and created social media content for campaigns.
-  • Worked on dropshipping and print-on-demand stores, assisting with order management and customer support.
-  • Designed marketing materials and contributed to website design improvements.
   • Gained insights into e-commerce operations and digital marketing tactics.
 
 === SKILLS ===
@@ -54,8 +75,8 @@ DevOps: Docker, CI/CD, VPS, Linux servers, GitHub Actions, Nginx
 Languages: TypeScript, JavaScript, Python, SQL, C++, C#
 
 === EDUCATION ===
-  • UM FERI — Computer Science (2023–2026)
-  • SERS Maribor — Computer Technician (2019–2023)
+  • UM FERI — Bachelor's in Computer Science (Oct 2023 – Jun 2026) — Activities: Hackathons, Startup Weekends, Competitive Programming Workshops, additional elective courses (Machine Learning & Blockchain), Research Projects, Developer Communities
+  • SERS Maribor — High School Diploma, Computer Science (2019–2023)
 
 === ROADMAP / TIMELINE ===
 before 2018: Early curiosity → video editing, modding games, file management.
@@ -63,12 +84,13 @@ before 2018: Early curiosity → video editing, modding games, file management.
 2019: Entered SERŠ (Computer Science) → learned C++ and Unity basics.
 2020: COVID pause → less productive, but gained perspective.
 2021: Worked at eAvio agency → WordPress e-commerce, marketing integrations, Python automation scripts.
-2022: Tried entrepreneurship → dropshipping, agencies, investing & crypto. Learned resilience and risk management.
+2022: Continued entrepreneurship → dropshipping, agencies, investing & crypto. Learned resilience and risk management. Built and scaled multiple online ventures.
 2023 (early): Final high school project: Decentralized portfolio tracker (React + Node + Moralis). Rediscovered passion for programming.
 2023 (late): Started CS & IT studies at FERI. Joined SolveX → Vue + TS, teamwork, APIs, project planning.
-2024 (early): Blockchain course → joined Blockchain Lab. Worked on DID, VC, Veramo.
+2024 (early): Blockchain course → joined Blockchain Lab as R&D Blockchain Engineer. Worked on DID, VC, Veramo, and SD-JWT standards.
 2024 (late): Startup Weekend → met co-founder. Began serious work in DevOps & Cloud (Docker, CI/CD, VPS, microservices) and AI integrations.
-2025: Balancing studies, lab work, and business. Building AI automation agency → merging LLMs, automation, and business execution.
+2025 (mid): Founded Asteras.ai as CTO & founder → building AI systems company focused on intelligent automation infrastructure for real-world operations.
+2025 (late): Balancing studies, lab work, and business. Leading Asteras.ai while continuing research at Blockchain Lab.
 
 === OTHER ===
 Born: 2004-sep
