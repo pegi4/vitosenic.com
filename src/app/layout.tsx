@@ -1,41 +1,29 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Space_Grotesk } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const spaceGrotesk = Space_Grotesk({
+  variable: "--font-space-grotesk",
   subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://vitosenic.com"),
-  title: {
-    template: "%s | Vito Senič",
-    default: "Vito Senič | CS Student & AI Automation Builder",
-  },
-  description: "I’m a Computer Science student at UM FERI, currently combining my studies with hands-on work in research and development.",
+  title: "Vito Senič",
+  description: "CS student & AI automation builder.",
   openGraph: {
-    title: "Vito Senič | CS Student & AI Automation Builder",
-    description: "I’m a Computer Science student at UM FERI, currently combining my studies with hands-on work in research and development.",
+    title: "Vito Senič",
+    description: "CS student & AI automation builder.",
     url: "https://vitosenic.com",
     siteName: "Vito Senič",
     locale: "en_US",
-    type: "website"
+    type: "website",
   },
   twitter: {
-    card: "summary_large_image",
-    title: "Vito Senič | CS Student & AI Automation Builder",
-    description: "I’m a Computer Science student at UM FERI, currently combining my studies with hands-on work in research and development.",
+    card: "summary",
+    title: "Vito Senič",
+    description: "CS student & AI automation builder.",
     creator: "@vitosenic",
-  },
-  robots: {
-    index: true,
-    follow: true,
   },
   alternates: {
     canonical: "https://vitosenic.com",
@@ -49,10 +37,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen flex flex-col`}
-        suppressHydrationWarning={true}
-      >
+      <body className={spaceGrotesk.variable}>
         {children}
       </body>
     </html>
