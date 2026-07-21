@@ -8,8 +8,8 @@ const links = [
 
 export default function Home() {
   return (
-    <main className="min-h-screen flex flex-col items-center justify-center px-6">
-      <div className="w-full max-w-md">
+    <main className="min-h-screen px-8 py-16 sm:px-16 sm:py-20">
+      <div className="max-w-md">
         <h1
           className="rise text-4xl sm:text-5xl font-semibold tracking-tight"
           style={{ animationDelay: "0.05s" }}
