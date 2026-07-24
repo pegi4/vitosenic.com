@@ -1,28 +1,16 @@
 {
   "name": "vitosenic.com",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
-  "type": "modules",
+  "type": "module",
   "scripts": {
-    "dev": "next dev --turbopack",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "next": "15.4.8",
-    "react": "19.1.2",
-    "react-dom": "19.1.2"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "deploy": "wrangler deploy"
   },
   "devDependencies": {
-    "@eslint/eslintrc": "^3",
-    "@tailwindcss/postcss": "^4",
-    "@types/node": "^20",
-    "@types/react": "^19",
-    "@types/react-dom": "^19",
-    "eslint": "^9",
-    "eslint-config-next": "15.4.8",
-    "tailwindcss": "^4",
-    "typescript": "^5"
+    "vite": "^6.0.0",
+    "wrangler": "^4.0.0"
   }
 }
